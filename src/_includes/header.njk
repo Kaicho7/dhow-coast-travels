@@ -1,0 +1,21 @@
+<!-- Header -->
+<header class="site-header">
+  <div class="top-bar">
+    <span class="brand">Zanzibar Tourism Board</span>
+    <span class="contact">Call us: +255 123 456 789</span>
+  </div>
+  <nav class="main-nav" id="mainNav">
+    <a href="/" class="logo">Zanzibar</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <ul class="nav-list">
+      <li><a href="/" {% if page.url == '/' %}class="active"{% endif %}>Home</a></li>
+      <li><a href="/attractions/" {% if page.url == '/attractions/' %}class="active"{% endif %}>Attractions</a></li>
+      <li><a href="/hotels/" {% if page.url == '/hotels/' %}class="active"{% endif %}>Hotels</a></li>
+      <li><a href="/tours/" {% if page.url == '/tours/' %}class="active"{% endif %}>Tours & Safaris</a></li>
+      <li><a href="/blog/" {% if page.url == '/blog/' %}class="active"{% endif %}>Blog</a></li>
+      <li><a href="/contact/" {% if page.url == '/contact/' %}class="active"{% endif %}>Contact</a></li>
+    </ul>
+  </nav>
+</header>

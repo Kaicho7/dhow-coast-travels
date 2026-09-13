@@ -1,0 +1,18 @@
+{% include "seo.njk" %}
+{% include "header.njk" %}
+
+<main class="content">
+  <h1>Exciting Tours & Safaris</h1>
+  <section class="cards">
+    {% for tour in tours %}
+      <article class="card">
+        <h2>{{ tour.title }}</h2>
+        <p>{{ tour.description }}</p>
+        <p><strong>Price:</strong> {{ tour.price }}</p>
+        <a href="#" class="btn small">Reserve now</a>
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+{% include "footer.njk" %}

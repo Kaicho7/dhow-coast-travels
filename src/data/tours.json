@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Snorkeling at Mnemba Island",
+    "description": "Half‑day snorkeling tour with a guide, exploring vibrant coral reefs and marine life.",
+    "price": "$120 per person"
+  },
+  {
+    "title": "Spice Farm Day Trip",
+    "description": "Guided tour of Zanzibar’s spice farms, tasting fresh spices and learning about their history.",
+    "price": "$80 per person"
+  },
+  {
+    "title": "Cultural Stone Town Walking Tour",
+    "description": "Explore historic Stone Town with an expert guide, visiting markets, museums, and historic sites.",
+    "price": "$60 per person"
+  },
+  {
+    "title": "Serengeti Safari (Mainland Tanzania)",
+    "description": "7‑day safari adventure across the Serengeti, Ngorongoro, and Tarangire National Parks.",
+    "price": "$2,500 per person"
+  }
+]

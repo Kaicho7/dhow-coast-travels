@@ -1,0 +1,18 @@
+{% include "seo.njk" %}
+{% include "header.njk" %}
+
+<main class="content">
+  <h1>Recommended Hotels</h1>
+  <section class="cards">
+    {% for hotel in hotels %}
+      <article class="card">
+        <h2>{{ hotel.name }}</h2>
+        <p>{{ hotel.description }}</p>
+        <p><strong>Price:</strong> {{ hotel.price }}</p>
+        <a href="#" class="btn small">Check availability</a>
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+{% include "footer.njk" %}

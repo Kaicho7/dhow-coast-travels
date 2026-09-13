@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Zanzibar White Sand Resort",
+    "description": "Luxury beachfront resort with private villas, infinity pool, and spa services.",
+    "price": "$250‑$400 per night"
+  },
+  {
+    "name": "The Swahili House",
+    "description": "Boutique hotel in Stone Town with historic architecture and rooftop terrace.",
+    "price": "$120‑$200 per night"
+  },
+  {
+    "name": "Mnarani Beach Cottages",
+    "description": "Cozy beachfront cottages with direct access to Nungwi Beach.",
+    "price": "$90‑$150 per night"
+  },
+  {
+    "name": "Kisingani Lodge",
+    "description": "Eco‑lodge near Jozani Forest, ideal for nature lovers.",
+    "price": "$80‑$130 per night"
+  }
+]

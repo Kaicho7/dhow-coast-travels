@@ -1,0 +1,39 @@
+{% set pageTitle = title | default("Zanzibar Tourism") %}
+{% set pageDesc = description | default("Discover Zanzibar – beaches, culture, tours, and safaris.") %}
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDesc }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/images/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ pageTitle }}">
+<meta name="twitter:description" content="{{ pageDesc }}">
+<meta name="twitter:image" content="{{ site.url }}/images/og-image.png">
+
+<script type="application/ld+json">
+{{{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Zanzibar Tourism Board",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.url }}/images/logo.png",
+  "description": "Official tourism portal for Zanzibar – discover attractions, hotels, tours, and safaris.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "P.O. Box 123",
+    "addressLocality": "Zanzibar",
+    "addressCountry": "TZ"
+  },
+  "telephone": "+255 123 456 789",
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "-6.1659",
+    "longitude": "39.2026"
+  },
+  "sameAs": [
+    "https://facebook.com/zanzibar",
+    "https://instagram.com/zanzibar",
+    "https://twitter.com/zanzibar"
+  ]
+}| json }}
+</script>

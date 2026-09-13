@@ -1,0 +1,17 @@
+{% include "seo.njk" %}
+{% include "header.njk" %}
+
+<main class="content">
+  <h1>Top Attractions</h1>
+  <section class="cards">
+    {% for attraction in attractions %}
+      <article class="card">
+        <h2>{{ attraction.title }}</h2>
+        <p>{{ attraction.description }}</p>
+        <a href="#" class="btn small">Learn more</a>
+      </article>
+    {% endfor %}
+  </section>
+</main>
+
+{% include "footer.njk" %}
