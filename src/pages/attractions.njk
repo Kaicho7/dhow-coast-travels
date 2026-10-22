@@ -1,16 +1,45 @@
+---
+permalink: "/attractions/index.html"
+---
 {% include "seo.njk" %}
 {% include "header.njk" %}
 
 <main class="content">
-  <h1>Top Attractions</h1>
-  <section class="cards">
-    {% for attraction in attractions %}
-      <article class="card">
-        <h2>{{ attraction.title }}</h2>
-        <p>{{ attraction.description }}</p>
-        <a href="#" class="btn small">Learn more</a>
-      </article>
-    {% endfor %}
+  <header class="page-header">
+    <h1>Attractions & Activities</h1>
+    <p>Explore Zanzibar's UNESCO sites, marine parks, spice farms, and adventure activities. All attractions can be included in custom tour packages.</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="filters-bar reveal">
+        <button class="filter-btn active" data-filter="all">All Attractions</button>
+        <button class="filter-btn" data-filter="Attraction">Attractions</button>
+        <button class="filter-btn" data-filter="Dive Center">Dive Centers</button>
+        <button class="filter-btn" data-filter="Water Sports">Water Sports</button>
+      </div>
+      <div class="cards-grid attraction-grid">
+        {% for attraction in attractions %}
+          <article class="card attraction-card reveal" data-type="{{ attraction.category }}">
+            <div class="card-image image-placeholder">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2.5"/></svg>
+            </div>
+            <div class="card-content">
+              <span class="card-badge badge-cultural">{{ attraction.type }}</span>
+              <h3 class="card-title">{{ attraction.name }}</h3>
+              <p class="card-meta">{{ attraction.zone }}, {{ attraction.island }}</p>
+              <div class="card-footer">
+                {% if attraction.website %}
+                  <a href="{{ attraction.website }}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Website</a>
+                {% else %}
+                  <span class="btn btn-sm" style="color: var(--dct-gray); border: 1px solid var(--dct-gray-light);">No public website</span>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
   </section>
 </main>
 

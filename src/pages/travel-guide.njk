@@ -1,0 +1,310 @@
+---
+permalink: "/travel-guide/index.html"
+---
+{% include "seo.njk" %}
+{% include "header.njk" %}
+
+<main class="travel-guide">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Ultimate Zanzibar Travel Guide</h1>
+      <p class="hero-subtitle">Research-backed tips, prices, and itineraries based on what tourists actually search for — from budget to luxury, visa info to the best beaches.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Practical Info</span>
+        <h2>Best Time to Visit Zanzibar</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="info-card reveal">
+          <h3>Peak Season</h3>
+          <p><strong>{{ travelguide.best_time_to_visit.peak_season }}</strong></p>
+          <p>Sunny, cool, and dry — ideal for safaris and beach activities. July-August is the busiest.</p>
+        </div>
+        <div class="info-card reveal delay-2">
+          <h3>Best Overall Month</h3>
+          <p><strong>{{ travelguide.best_time_to_visit.best_overall_month }}</strong></p>
+          <p>Great weather with fewer crowds. Best value month for deals on accommodations.</p>
+        </div>
+        <div class="info-card reveal delay-3">
+          <h3>Best Value</h3>
+          <p><strong>{{ travelguide.best_time_to_visit.best_value_months }}</strong></p>
+          <p>Bonus: fewer crowds means better access to tours and lower prices.</p>
+        </div>
+        <div class="info-card reveal delay-4">
+          <h3>Avoid</h3>
+          <p><strong>{{ travelguide.best_time_to_visit.avoid }}</strong></p>
+          <p>Some hotels close during low season. Perfect for budget travelers seeking deals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Budget Guide</span>
+        <h2>Daily Budget Breakdown</h2>
+        <p>Based on real traveler expenses from budget bloggers who traveled Zanzibar.</p>
+      </div>
+      <div class="budget-table-wrap">
+        <table class="budget-table">
+          <thead>
+            <tr>
+              <th>Travel Tier</th>
+              <th>Daily Cost</th>
+              <th>Accommodation</th>
+              <th>Food</th>
+              <th>Transport</th>
+              <th>Activities</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Budget</strong></td>
+              <td>{{ travelguide.budget_tiers.budget.daily_range }}</td>
+              <td>Hostel $11-15/night</td>
+              <td>Street food $5-15/day</td>
+              <td>Dala dala $1-8/day</td>
+              <td>Basic tours $5-15/day</td>
+            </tr>
+            <tr>
+              <td><strong>Mid-Range</strong></td>
+              <td>{{ travelguide.budget_tiers.mid_range.daily_range }}</td>
+              <td>3-star hotel $50-120/night</td>
+              <td>Restaurant meals $15-30/day</td>
+              <td>Taxi $20-50/day</td>
+              <td>Tours $25-60/day</td>
+            </tr>
+            <tr>
+              <td><strong>Luxury</strong></td>
+              <td>{{ travelguide.budget_tiers.luxury.daily_range }}</td>
+              <td>Resort $150-400+/night</td>
+              <td>Fine dining $40-80/day</td>
+              <td>Private transfer $50-100/day</td>
+              <td>Premium excursions $100-200/day</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Activities</span>
+        <h2>Top Things to Do in Zanzibar</h2>
+        <p>Ranked by search volume and traveler popularity.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="activity-card reveal">
+          <div class="activity-rank">1</div>
+          <div class="activity-content">
+            <h3>Stone Town Walking Tour</h3>
+            <p>Explore the UNESCO World Heritage site with a licensed guide. Visit the House of Wonders, Old Fort, Sultan's Palace, and bustling markets.</p>
+            <span class="activity-price">$13–$80 per person</span>
+          </div>
+        </div>
+        <div class="activity-card reveal delay-2">
+          <div class="activity-rank">2</div>
+          <div class="activity-content">
+            <h3>Spice Farm Tour</h3>
+            <p>Journey into Zanzibar's interior to a working spice farm. Taste cloves, cinnamon, vanilla, and cardamom. Learn why Zanzibar is called the "Spice Island."</p>
+            <span class="activity-price">$25–$57 per person</span>
+          </div>
+        </div>
+        <div class="activity-card reveal delay-3">
+          <div class="activity-rank">3</div>
+          <div class="activity-content">
+            <h3>Safari Blue / Menai Bay Dhow Day</h3>
+            <p>Zanzibar's most famous dhow excursion: cruise to Menai Bay Conservation Area, snorkel over vibrant coral reefs, feast on a seafood barbecue on a private sandbank.</p>
+            <span class="activity-price">$45–$160 per person</span>
+          </div>
+        </div>
+        <div class="activity-card reveal delay-4">
+          <div class="activity-rank">4</div>
+          <div class="activity-content">
+            <h3>Mnemba Atoll Snorkeling</h3>
+            <p>Snorkel the pristine waters of Mnemba Atoll, Zanzibar's premier marine conservation area. Spot green sea turtles and colorful fish over healthy coral reefs.</p>
+            <span class="activity-price">$50–$150 per person</span>
+          </div>
+        </div>
+        <div class="activity-card reveal delay-5">
+          <div class="activity-rank">5</div>
+          <div class="activity-content">
+            <h3>Prison Island Tour</h3>
+            <p>Visit the island famous for its giant Aldabra tortoises (some over 190 years old), coral museums, and snorkeling spots.</p>
+            <span class="activity-price">$50–$100 per person</span>
+          </div>
+        </div>
+        <div class="activity-card reveal delay-6">
+          <div class="activity-rank">6</div>
+          <div class="activity-content">
+            <h3>Jozani Forest & Red Colobus</h3>
+            <p>Walk through the only remaining nature reserve on Zanzibar. Spot the endangered Zanzibar red colobus monkey and learn about the mangrove ecosystem.</p>
+            <span class="activity-price">$25–$60 per person</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Plan Your Trip</span>
+        <h2>How Long Do You Need?</h2>
+      </div>
+      <div class="cards-grid">
+        <div class="trip-length-card reveal">
+          <div class="trip-length-days">3 Nights</div>
+          <h3>Quick Beach Break</h3>
+          <p>Perfect if you're adding Zanzibar onto a safari trip. Just beach time, minimal exploration.</p>
+        </div>
+        <div class="trip-length-card reveal delay-2">
+          <div class="trip-length-days">4-5 Nights</div>
+          <h3>Safari Add-On</h3>
+          <p>Explore Stone Town's culture and spend your days on pristine beaches. Ideal split: 2 nights city + 2-3 nights beach.</p>
+        </div>
+        <div class="trip-length-card reveal delay-3">
+          <div class="trip-length-days">7 Nights</div>
+          <h3>Full Island Experience</h3>
+          <p>Two nights Stone Town + five nights on the beach, with tours to spice farms, Jozani Forest, and Menai Bay.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Cultural Tips</span>
+        <h2>Before You Go</h2>
+      </div>
+      <div class="tips-list reveal">
+        <ul>
+          {% for tip in travelguide.cultural_tips %}
+          <li>{{ tip }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">FAQ</span>
+        <h2>Travel Questions Answered</h2>
+      </div>
+      <div class="faq-grid">
+        {% for faq in travelguide.faqs %}
+        <details class="faq-item reveal">
+          <summary class="faq-question">{{ faq.question }}</summary>
+          <p class="faq-answer">{{ faq.answer }}</p>
+        </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Key Prices</span>
+        <h2>What Things Cost in Zanzibar</h2>
+      </div>
+      <!-- Budget pricing tier -->
+      <div class="budget-table-wrap reveal">
+        <table class="budget-table">
+          <thead>
+            <tr>
+              <th>Activity / Item</th>
+              <th>Budget Price</th>
+              <th>Mid-Range Price</th>
+              <th>Luxury Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hostel dorm bed</td>
+              <td>$11</td>
+              <td colspan="2">—</td>
+            </tr>
+            <tr>
+              <td>Mid-range hotel night</td>
+              <td colspan="2">$50-120</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Luxury resort night</td>
+              <td colspan="2">—</td>
+              <td>$150-400+</td>
+            </tr>
+            <tr>
+              <td>Stone Town walking tour</td>
+              <td colspan="3">$13–$80</td>
+            </tr>
+            <tr>
+              <td>Spice farm tour</td>
+              <td colspan="3">$25–$57</td>
+            </tr>
+            <tr>
+              <td>Dhow sunset cruise</td>
+              <td colspan="3">$20–$50</td>
+            </tr>
+            <tr>
+              <td>Snorkeling (Menemba/Mnemba)</td>
+              <td colspan="3">$50–$150</td>
+            </tr>
+            <tr>
+              <td>Prison Island tour</td>
+              <td colspan="3">$50–$100</td>
+            </tr>
+            <tr>
+              <td>Safari Blue full-day boat</td>
+              <td colspan="3">$45–$160</td>
+            </tr>
+            <tr>
+              <td>Kitesurfing lesson</td>
+              <td colspan="3">$50–$100/day</td>
+            </tr>
+            <tr>
+              <td>Taxi (airport transfer)</td>
+              <td colspan="3">$10–$30</td>
+            </tr>
+            <tr>
+              <td>Zanzibus shuttle (inter-city)</td>
+              <td colspan="3">$5–$8</td>
+            </tr>
+            <tr>
+              <td>Travel insurance (SafetyWing)</td>
+              <td colspan="3">$1.50/day</td>
+            </tr>
+            <tr>
+              <td>eSIM data (Airalo 1GB)</td>
+              <td colspan="3">$5.50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content reveal">
+      <h2>Ready to Experience Zanzibar?</h2>
+      <p>Message us on WhatsApp with your dates, budget, and interests. We'll send a personalized itinerary with transparent pricing within 24 hours.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/255672450934?text=I'd like to plan my Zanzibar trip" target="_blank" rel="noopener" class="btn btn-accent btn-lg">Plan My Trip on WhatsApp</a>
+        <a href="/tours/" class="btn btn-outline btn-lg">Browse Tours First</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "footer.njk" %}

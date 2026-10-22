@@ -1,0 +1,200 @@
+{
+  "best_time_to_visit": {
+    "peak_season": "June to October",
+    "best_overall_month": "September",
+    "best_value_months": "June and October",
+    "avoid": "March to May (long rains; April is wettest)",
+    "short_rains": "November to early December",
+    "diving_best": "February-March (visibility), July-October, January-March"
+  },
+  "visa_entry": {
+    "visa_duration": "90 days typical",
+    "e_visa_url": "https://visa.immigration.go.tz/",
+    "passport_validity": "6+ months from departure",
+    "mandatory_insurance": "Zanzibar inbound travel insurance required (apply at https://inbound.visitzanzibar.go.tz/)",
+    "visa_for_tanzania": "Covers both mainland Tanzania and Zanzibar"
+  },
+  "safety": {
+    "overall": "Generally safe for tourists, including solo female travelers",
+    "common_issues": ["petty theft", "persistent beach vendors", "tourist hassle in busy areas"],
+    "tips": ["Keep valuables secure", "Avoid walking alone late at night", "Use registered taxis or trusted drivers", "Watch for strong tides, sea urchins at low tide"]
+  },
+  "budget_tiers": {
+    "budget": {
+      "daily_range": "$25-60/day",
+      "accommodation": "$10-15/night (hostel), $20-40 (guesthouse)",
+      "food": "$5-15/day (street food, local markets)",
+      "transport": "$1-8 (dala dala, Zanzibus)",
+      "activities": "$5-15/day"
+    },
+    "mid_range": {
+      "daily_range": "$60-250/day",
+      "accommodation": "$50-120/night (mid-range hotels, boutique)",
+      "food": "$15-30/day (restaurant meals)",
+      "transport": "$20-50 (private taxis)",
+      "activities": "$25-60/tour"
+    },
+    "luxury": {
+      "daily_range": "$250+/day",
+      "accommodation": "$150-400+/night (luxury resorts, villas)",
+      "per_day": "$40-80 food, $50-100 private transfers, $100-200 premium excursions"
+    }
+  },
+  "key_prices": {
+    "ferry_dar_es_salaam": "$35-65 (90min-2hr)",
+    "domestic_flight": "$40-100",
+    "airport_transfer": "$10-30",
+    "stone_town_to_nungwi_taxi": "$50",
+    "zanzibus_shuttle": "$5-8",
+    "spice_tour": "$25-57",
+    "safari_blue_tour": "$30 (full-day boat trip)",
+    "prison_island_tour": "$50-100",
+    "dhow_sunset_cruise": "$20-50",
+    "kite_surfing_lessons": "$50-100/day",
+    "snorkeling_tours": "$30-60/person",
+    "travel_insurance_safetywing": "$1.50/day",
+    "esim_airalo": "$5.50 for 1GB, $20 for 10GB"
+  },
+  "package_tour_prices": {
+    "4_day_zanzibar_vacation": "$774 USD per person",
+    "5_day_zanzibar_adventure": "$1,074 USD per person",
+    "8_day_best_of_zanzibar": "$1,554 USD per person",
+    "12_day_tanzania_safari_zanzibar": "$4,280 USD per person"
+  },
+  "trip_lengths": {
+    "quick_break": "3 nights - quick beach break after safari",
+    "safari_addon": "4-5 nights - perfect for safari add-on + some exploration",
+    "full_experience": "7 nights - full island experience (Stone Town + multiple beach areas)",
+    "ideal_split": "2 nights Stone Town + 2-5 nights beach area"
+  },
+  "transportation": {
+    "getting_there": {
+      "airport": "Abeid Amani Karume International Airport (ZNZ)",
+      "ferry": "$35-65 from Dar es Salaam (90min-2hr)",
+      "domestic_flights": "$40-100 from Dar es Salaam or Arusha/Kilimanjaro"
+    },
+    "getting_around": {
+      "dala_dala": "$1 - local minibus, authentic but confusing",
+      "zanzibus": "$5-8 - Stone Town to Nungwi/Kendwa/Paje/Jambiani",
+      "taxi": "$20-25/hour or flat rates ($50 Stone Town to Nungwi)",
+      "car_rental": "Possible but driving is chaotic, left-side driving",
+      "stone_town_walking": "Best for short distances"
+    }
+  },
+  "areas": {
+    "northern_beaches": {
+      "nungwi": "Best for swimming, calm waters, sunset dhow cruises, full moon parties",
+      "kendwa": "Family-friendly, quieter than Nungwi, good for swimming"
+    },
+    "southeastern_beaches": {
+      "paje": "Kitesurfing hub (best in Africa), reef walking at low tide, Safari Blue tour departure point",
+      "jambiani": "Authentic fishing village, deep sea fishing, seaweed harvesting cultural experience"
+    },
+    "northeastern": {
+      "matemwe": "Most secluded, luxury resorts, snorkeling/diving around Mnemba Island, walk for miles"
+    },
+    "central": {
+      "stone_town": "UNESCO World Heritage Site, cultural hub, markets, historical sites"
+    }
+  },
+  "food": {
+    "signature_dishes": [
+      "Zanzibar pizza - flatbread with egg, cheese, meat/veg, chili (street food)",
+      "Biryani - spiced rice with meat/fish curry",
+      "Mishkaki - meat skewers/kebabs",
+      "Chips mayai - chip omelette (street food)",
+      "Pilau rice - spiced rice with meat",
+      "Nyama choma - grilled meat",
+      "Fresh seafood - grilled fish, prawns, lobster",
+      "Sugarcane juice - freshly pressed, refreshing"
+    ],
+    "best_spots": [
+      "Forodhani Gardens night market (Stone Town) - cheap, authentic",
+      "Darajani Market (Stone Town) - local market",
+      "Beachfront restaurants (Nungwi, Kendwa, Paje) - fresh seafood"
+    ]
+  },
+  "cultural_tips": [
+    "Dress modestly in towns/villages (cover shoulders and knees)",
+    "Beachwear OK only on beaches and at resorts",
+    "Respect Muslim customs during Ramadan (no public eating/drinking during daylight)",
+    "Learn basic Swahili phrases (Jambo, Asante, Karibu, Samahani)",
+    "Ask permission before photographing people",
+    "Bargaining is expected at markets and local shops",
+    "Tipping 5-10% for good service is customary",
+    "Remove shoes when entering local homes",
+    "Support local communities by visiting markets, eating locally"
+  ],
+  "faqs": [
+    {
+      "question": "Is Zanzibar safe for tourists?",
+      "answer": "Zanzibar is generally safe for tourists, including solo female travelers. Common issues include petty theft, persistent beach vendors, and tourist hassle in busy areas. Keep valuables secure, avoid walking alone late at night, and use registered taxis or trusted drivers. In Stone Town, it's safe during the day but use registered taxis or guides after dark."
+    },
+    {
+      "question": "Do I need a visa for Zanzibar?",
+      "answer": "Most nationalities require a Tanzania visa (which covers Zanzibar) valid for 90 days. Apply online via the official e-visa system at https://visa.immigration.go.tz/. Your passport must be valid for at least 6 months from departure. Zanzibar also requires mandatory inbound travel insurance — apply at https://inbound.visitzanzibar.go.tz/"
+    },
+    {
+      "question": "What is the best time to visit Zanzibar?",
+      "answer": "Peak season is June to October (cool, dry). September is the best overall month. Best value months are June and October with good weather and fewer crowds. Avoid March to May (long rains, April is wettest). July-August is the busiest. For diving and snorkeling, February-March offer the best visibility."
+    },
+    {
+      "question": "How many days do I need in Zanzibar?",
+      "answer": "3 nights for a quick beach break, 4-5 nights for a safari add-on plus some exploration, or 7 nights for a full island experience (Stone Town + multiple beach areas). The ideal split is 2 nights in Stone Town + 2-5 nights in a beach area."
+    },
+    {
+      "question": "What currency is used in Zanzibar?",
+      "answer": "The official currency is the Tanzanian Shilling (TZS). USD is widely accepted in tourist areas. Small local payments are easier in shillings — carry cash. ATMs are available in main towns and tourist areas."
+    },
+    {
+      "question": "Do I need malaria tablets for Zanzibar?",
+      "answer": "Malaria can occur in Zanzibar. Speak to a travel clinic for advice on anti-malaria medication before arrival. Pack insect repellent with DEET, long sleeves for evenings, and mosquito nets. The risk is lower in Stone Town and main tourist areas but higher in rural regions."
+    },
+    {
+      "question": "How do I get around Zanzibar?",
+      "answer": "In Stone Town, walking is the best option for short distances. For longer distances, use Zanzibus shuttles ($5-8), shared taxis (dala dalas at $1), or private taxis ($20-25/hour). Car rental is possible but driving is chaotic. Arrange airport transfers in advance through your accommodation ($10-30)."
+    }
+  ],
+  "booking_advice": [
+    "Book flights 3-6 months ahead for peak season (June-October)",
+    "Reserve accommodations early during peak season (July-August)",
+    "Book ferry tickets through official Azam Marine booths only — avoid unofficial sellers",
+    "Book safari-and-beach packages together for better rates",
+    "Shop around for safari operators — quotes vary significantly",
+    "Use SafetyWing travel insurance ($1.50/day) for comprehensive coverage",
+    "Get Zanzibar mandatory inbound travel insurance before arrival",
+    "Apply for e-visa online in advance via https://visa.immigration.go.tz/",
+    "Use eSIM (Airalo) to avoid SIM card scams at the airport",
+    "Book Stone Town tours and spice tours in advance during peak season"
+  ],
+  "search_intent_keywords": [
+    "zanzibar travel guide",
+    "zanzibar itinerary",
+    "things to do in zanzibar",
+    "zanzibar budget travel",
+    "zanzibar cheap travel",
+    "best time to visit zanzibar",
+    "zanzibar visa requirements",
+    "zanzibar safety",
+    "zanzibar beaches",
+    "best beaches in zanzibar",
+    "zanzibar accommodation",
+    "where to stay in zanzibar",
+    "zanzibar tours",
+    "zanzibar activities",
+    "zanzibar and tanzania safari combo",
+    "stone town zanzibar",
+    "zanzibar kitesurfing",
+    "zanzibar diving",
+    "zanzibar snorkeling",
+    "zanzibar spice tour",
+    "zanzibar food",
+    "zanzibar restaurants",
+    "zanzibar cultural tips",
+    "zanzibar dress code",
+    "how many days in zanzibar",
+    "zanzibar trip length",
+    "zanzibar travel tips",
+    "zanzibar faqs"
+  ]
+}

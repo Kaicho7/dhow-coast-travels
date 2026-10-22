@@ -1,0 +1,379 @@
+{
+  "zones": [
+    {
+      "slug": "stone-town",
+      "name": "Stone Town",
+      "island": "Unguja",
+      "description": "UNESCO World Heritage site \u2014 the historic heart of Zanzibar with winding alleys, carved doors, bustling markets, and centuries of Swahili, Arab, Indian, and European heritage.",
+      "hotel_count": 7,
+      "attraction_count": 2,
+      "hotels": [
+        "Emerson Spice",
+        "Emerson on Hurumzi",
+        "Jafferji House & Spa",
+        "The Neela Boutique Hotel",
+        "Zanzibar Palace Hotel",
+        "Africa House Hotel",
+        "Dhow Palace Hotel",
+        "Park Hyatt Mambo"
+      ],
+      "attractions": [
+        "House of Wonders",
+        "Palace Museum",
+        "Old Fort",
+        "Forodhani Market",
+        "Darajani Market",
+        "Freddie Mercury House",
+        "Anglican Cathedral (former slave market)"
+      ],
+      "tours": [
+        "stone-town-walking-tour",
+        "stone-town-spice-prison-combo",
+        "spice-farm"
+      ],
+      "transfer_id": "TRF-01"
+    },
+    {
+      "slug": "nungwi",
+      "name": "Nungwi",
+      "island": "Unguja",
+      "description": "Northern tip of Zanzibar \u2014 famous for white-sand beaches, turquoise water, traditional dhow building, and vibrant nightlife. Turtles, diving, and sunset cruises.",
+      "hotel_count": 9,
+      "attraction_count": 1,
+      "hotels": [
+        "Essque Zalu Zanzibar",
+        "Nungwi Dreams by Mantis",
+        "Safira Blu Luxury Resort",
+        "Royal Zanzibar Beach Resort",
+        "Riu Palace Zanzibar",
+        "Riu Jambo",
+        "Zuri Zanzibar",
+        "The Z Hotel",
+        "Coccobello Zanzibar",
+        "Baraka Beach Bungalows"
+      ],
+      "attractions": [
+        "Nungwi Beach",
+        "Mnarani Marine Turtle Pond",
+        "Baraka Aquarium",
+        "Zanzibar Horse Riding"
+      ],
+      "tours": [
+        "mnemba-snorkeling",
+        "sunset-dhow-cruise",
+        "kizimkazi-dolphin-tour"
+      ],
+      "transfer_id": "TRF-03"
+    },
+    {
+      "slug": "kendwa",
+      "name": "Kendwa",
+      "island": "Unguja",
+      "description": "Northwest coast \u2014 wide beaches with no tide restrictions, famous for full-moon parties, diving, and easy swimming all day.",
+      "hotel_count": 3,
+      "attraction_count": 1,
+      "hotels": [
+        "Gold Zanzibar Beach House & Spa",
+        "Kilindi Zanzibar",
+        "Nungwi Beach Resort by Turaco",
+        "Spanish Dancer (Kendwa)",
+        "One Ocean (Kendwa)",
+        "Zuri Zanzibar"
+      ],
+      "attractions": [
+        "Kendwa Beach",
+        "One Ocean Dive Centre"
+      ],
+      "tours": [
+        "mnemba-snorkeling",
+        "sunset-dhow-cruise"
+      ],
+      "transfer_id": "TRF-03"
+    },
+    {
+      "slug": "paje",
+      "name": "Paje",
+      "island": "Unguja",
+      "description": "Southeast coast \u2014 world-class kite-surfing, shallow turquoise lagoon, laid-back vibe, and easy access to Jozani Forest and Kuza Cave.",
+      "hotel_count": 1,
+      "attraction_count": 4,
+      "hotels": [
+        "B4 Beach Club",
+        "B4 Island",
+        "Aqua Holics Kite & Surf",
+        "Kite Centre Zanzibar",
+        "Airborne Kite Centre",
+        "Zanzibar Pro Kiting",
+        "Cristal Resort Zanzibar",
+        "Villa Tatu"
+      ],
+      "attractions": [
+        "Seaweed Center Paje",
+        "Airborne Kite Centre",
+        "Aqua Holics Kite & Surf",
+        "Kite Centre Zanzibar",
+        "Zanzibar Pro Kiting"
+      ],
+      "tours": [
+        "kizimkazi-dolphin-tour",
+        "kuza-cave-seaweed",
+        "jozani-forest"
+      ],
+      "transfer_id": "TRF-02"
+    },
+    {
+      "slug": "jambiani",
+      "name": "Jambiani",
+      "island": "Unguja",
+      "description": "Southeast fishing village \u2014 authentic Swahili culture, seaweed farming, tide pools, and access to Kuza Cave and Chumbe Island.",
+      "hotel_count": 3,
+      "attraction_count": 4,
+      "hotels": [
+        "Seconda Stella a Destra",
+        "Aluna Paje",
+        "Bamboo Design Hotel",
+        "Blue Earth",
+        "Blue Moon Resort",
+        "Blue Oyster Hotel",
+        "East Coast Reef Divers",
+        "Buccaneer Diving"
+      ],
+      "attractions": [
+        "Kuza Cave",
+        "Seaweed Center Paje",
+        "Dive 710",
+        "Buccaneer Diving",
+        "East Coast Reef Divers"
+      ],
+      "tours": [
+        "kuza-cave-seaweed",
+        "jozani-forest",
+        "chumbe-island"
+      ],
+      "transfer_id": "TRF-02"
+    },
+    {
+      "slug": "kiwengwa",
+      "name": "Kiwengwa",
+      "island": "Unguja",
+      "description": "Northeast coast \u2014 long white-sand beach, all-inclusive resorts, calm waters protected by reef, and easy access to Mnemba Atoll.",
+      "hotel_count": 5,
+      "attraction_count": 1,
+      "hotels": [
+        "Bluebay Beach Resort & Spa",
+        "Kiwengwa Beach Resort",
+        "Melia Zanzibar",
+        "Villa Stecchini",
+        "Blue Bay Diving Center",
+        "The Z Hotel"
+      ],
+      "attractions": [
+        "Kiwengwa Beach",
+        "Blue Bay Diving Center"
+      ],
+      "tours": [
+        "mnemba-snorkeling",
+        "safari-blue"
+      ],
+      "transfer_id": "TRF-03"
+    },
+    {
+      "slug": "pongwe",
+      "name": "Pongwe / Michamvi",
+      "island": "Unguja",
+      "description": "East-central coast \u2014 quiet beaches, mangrove channels, The Rock Restaurant nearby, and Isaraya overwater villas.",
+      "hotel_count": 3,
+      "attraction_count": 0,
+      "hotels": [
+        "Tulia Zanzibar",
+        "Isaraya Luxury Overwater Villas",
+        "Konokono Beach Resort",
+        "Le Mersenne Zanzibar",
+        "Barefoot Beach House",
+        "Baladin Zanzibar",
+        "Azao Resort & Spa",
+        "The Neela Oceanfront"
+      ],
+      "attractions": [
+        "The Rock Restaurant (nearby)",
+        "Michamvi Kae Beach"
+      ],
+      "tours": [
+        "mnemba-snorkeling",
+        "safari-blue",
+        "chumbe-island"
+      ],
+      "transfer_id": "TRF-02"
+    },
+    {
+      "slug": "bwejuu",
+      "name": "Bwejuu / Dongwe",
+      "island": "Unguja",
+      "description": "Southeast coast \u2014 tranquil beaches, luxury boutique resorts, seaweed farming, and access to Chumbe Island marine park.",
+      "hotel_count": 5,
+      "attraction_count": 1,
+      "hotels": [
+        "Baraza Resort and Spa",
+        "African Sun Sea Beach Resort",
+        "Anna of Zanzibar",
+        "Breezes Beach Club & Spa",
+        "Xanadu Luxury Villas",
+        "Bellevue Guest House",
+        "Zanzibar White Sand Luxury Villas",
+        "Rising Sun Dive Centre"
+      ],
+      "attractions": [
+        "Bwejuu Beach",
+        "Rising Sun Dive Centre"
+      ],
+      "tours": [
+        "chumbe-island",
+        "kuza-cave-seaweed",
+        "safari-blue"
+      ],
+      "transfer_id": "TRF-02"
+    },
+    {
+      "slug": "michamvi",
+      "name": "Michamvi / Pingwe",
+      "island": "Unguja",
+      "description": "East coast \u2014 The Rock Restaurant on a coral outcrop, calm lagoon waters, and boutique luxury resorts.",
+      "hotel_count": 3,
+      "attraction_count": 0,
+      "hotels": [
+        "Qambani Luxury Resort",
+        "The Mora Zanzibar",
+        "Matlai Boutique Hotel",
+        "Le Mersenne Zanzibar",
+        "Barefoot Beach House"
+      ],
+      "attractions": [
+        "The Rock Restaurant"
+      ],
+      "tours": [
+        "safari-blue",
+        "chumbe-island"
+      ],
+      "transfer_id": "TRF-02"
+    },
+    {
+      "slug": "kizimkazi",
+      "name": "Kizimkazi / Dimbani",
+      "island": "Unguja",
+      "description": "South coast \u2014 dolphin watching capital, ancient mosque (12th century), and access to Menai Bay Conservation Area.",
+      "hotel_count": 3,
+      "attraction_count": 1,
+      "hotels": [
+        "Fruit & Spice Wellness Resort",
+        "Aya Beach Bungalows",
+        "Kwanza Resort by SUNRISE",
+        "The Residence Zanzibar"
+      ],
+      "attractions": [
+        "Kizimkazi Dive & Dolphin",
+        "Kizimkazi Mosque (oldest in East Africa)"
+      ],
+      "tours": [
+        "kizimkazi-dolphin-tour",
+        "safari-blue"
+      ],
+      "transfer_id": "TRF-02"
+    },
+    {
+      "slug": "fumba",
+      "name": "Fumba / Mbweni",
+      "island": "Unguja",
+      "description": "Southwest peninsula \u2014 departure point for Safari Blue, marine conservation area access, and quiet residential beaches.",
+      "hotel_count": 3,
+      "attraction_count": 1,
+      "hotels": [
+        "Fumba Beach Lodge",
+        "The Neela Oceanfront",
+        "The Mora Zanzibar"
+      ],
+      "attractions": [
+        "Menai Bay Conservation Area",
+        "Fumba Water Sports"
+      ],
+      "tours": [
+        "safari-blue",
+        "sunset-dhow-cruise"
+      ],
+      "transfer_id": "TRF-02"
+    },
+    {
+      "slug": "matemwe",
+      "name": "Matemwe / Kigomani",
+      "island": "Unguja",
+      "description": "Northeast coast \u2014 pristine beaches, Mnemba Atoll access, turtle nesting sites, and quiet boutique properties.",
+      "hotel_count": 3,
+      "attraction_count": 2,
+      "hotels": [
+        "Kasha Boutique Hotel",
+        "Sunshine Marine Lodge",
+        "Matemwe Retreat",
+        "Che Che Vule",
+        "Scubafish Zanzibar",
+        "Mnemba Atoll Divers"
+      ],
+      "attractions": [
+        "Matemwe Beach",
+        "Mnemba Atoll Divers",
+        "Scubafish Zanzibar"
+      ],
+      "tours": [
+        "mnemba-snorkeling",
+        "sunset-dhow-cruise"
+      ],
+      "transfer_id": "TRF-03"
+    },
+    {
+      "slug": "chake-chake",
+      "name": "Chake Chake (Pemba)",
+      "island": "Pemba",
+      "description": "Main town of Pemba Island \u2014 authentic Swahili culture, clove plantations, and access to Pemba's pristine dive sites.",
+      "hotel_count": 0,
+      "attraction_count": 2,
+      "hotels": [
+        "Pemba Island Divers",
+        "Pemba Dive Center"
+      ],
+      "attractions": [
+        "Pemba Island Divers",
+        "Pemba Dive Center"
+      ],
+      "tours": [
+        "serengeti-3day-flyin"
+      ],
+      "transfer_id": null
+    },
+    {
+      "slug": "wambaa-gulf",
+      "name": "Wambaa Gulf / Makangale (Pemba)",
+      "island": "Pemba",
+      "description": "Pemba's luxury lodge area \u2014 Fundu Lagoon, world-class diving, and untouched coral reefs.",
+      "hotel_count": 2,
+      "attraction_count": 1,
+      "hotels": [
+        "Fundu Lagoon",
+        "The Manta Resort",
+        "Dive 360 Pemba",
+        "Fun Divers Zanzibar",
+        "Swahili Divers"
+      ],
+      "attractions": [
+        "Dive 360 Pemba",
+        "Fundu Lagoon / 710 Dive",
+        "Fun Divers Zanzibar"
+      ],
+      "tours": [],
+      "transfer_id": null
+    }
+  ],
+  "stats": {
+    "unguja_hotels": 48,
+    "pemba_hotels": 2,
+    "unguja_zones": 12,
+    "pemba_zones": 2
+  }
+}

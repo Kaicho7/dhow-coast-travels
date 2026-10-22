@@ -1,0 +1,166 @@
+---
+permalink: "/transfers/index.html"
+---
+{% include "seo.njk" %}
+{% include "header.njk" %}
+
+<main class="content">
+  <header class="page-header">
+    <h1>Airport Transfers</h1>
+    <p>Private, reliable transfers from Abeid Amani Karume International Airport (ZNZ) to any zone in Zanzibar. Fixed pricing, flight tracking, meet & greet included.</p>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Airport Transfers</span>
+        <h2>Private Transfers to Every Zone</h2>
+        <p class="section-subtitle">Fixed pricing, flight tracking, meet & greet included. Up to 4 passengers with luggage per vehicle.</p>
+      </div>
+      <div class="cards-grid transfer-grid">
+        {% for transfer in transfers %}
+          <article class="card transfer-card reveal" data-category="TRF">
+            <div class="card-image image-placeholder">
+              <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M8 28L28 8H56V36L36 56H8V28Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="44" r="4" stroke="currentColor" stroke-width="2"/><circle cx="40" cy="28" r="4" stroke="currentColor" stroke-width="2"/></svg>
+              <span class="card-badge badge-transfer" style="position: absolute; top: 1rem; left: 1rem; right: auto;">Transfer</span>
+            </div>
+            <div class="card-content">
+              <h3 class="card-title">{{ transfer.title }}</h3>
+              <p class="card-meta">{{ transfer.route }} • {{ transfer.duration }}</p>
+              <div class="transfer-includes" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--dct-gray-light);">
+                <h4 style="font-size: 0.85rem; color: var(--dct-ocean); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.5px;">Includes:</h4>
+                <ul style="list-style: none; display: grid; gap: 0.4rem;">
+                  {% for item in transfer.includes %}
+                  <li style="position: relative; padding-left: 1.25rem; color: var(--dct-text-muted); font-size: 0.85rem;">{% if loop.index0 == 0 %}✓{% else %}✓{% endif %} {{ item }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+              <div class="card-footer">
+                <span class="card-price">{{ transfer.price.display }}</span>
+                <a href="https://wa.me/255672450934?text=I'd%20like%20to%20book%20{{ transfer.title | urlize }}%20transfer" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Book via WhatsApp</a>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Service Details</span>
+        <h2>What's Included</h2>
+      </div>
+      <div class="safari-includes" style="max-width: 900px; margin: 0 auto;">
+        <div class="safari-include-item reveal">
+          <div style="width: 56px; height: 56px; border-radius: 14px; background: var(--dct-ocean-light); color: var(--dct-ocean); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">✈️</div>
+          <h4>Meet & Greet</h4>
+          <p>Name board at arrivals hall — we track your flight so you're never waiting.</p>
+        </div>
+        <div class="safari-include-item reveal">
+          <div style="width: 56px; height: 56px; border-radius: 14px; background: var(--dct-palm-light); color: var(--dct-palm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">⏱️</div>
+          <h4>60 Min Free Wait</h4>
+          <p>No extra charge for flight delays — first hour of waiting is free.</p>
+        </div>
+        <div class="safari-include-item reveal">
+          <div style="width: 56px; height: 56px; border-radius: 14px; background: var(--dct-spice-light); color: var(--dct-spice-dark); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">👶</div>
+          <h4>Child Seats</h4>
+          <p>Available on request with advance notice — safety first for families.</p>
+        </div>
+        <div class="safari-include-item reveal">
+          <div style="width: 56px; height: 56px; border-radius: 14px; background: #fef3e2; color: var(--dct-coral); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">🚐</div>
+          <h4>Large Groups</h4>
+          <p>Minivan and coach rates available for 5+ passengers — just ask us.</p>
+        </div>
+        <div class="safari-include-item reveal">
+          <div style="width: 56px; height: 56px; border-radius: 14px; background: var(--dct-ocean-light); color: var(--dct-ocean); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">🔄</div>
+          <h4>Return Transfers</h4>
+          <p>Same rate for return — book round-trip and save the hassle.</p>
+        </div>
+        <div class="safari-include-item reveal">
+          <div style="width: 56px; height: 56px; border-radius: 14px; background: var(--dct-palm-light); color: var(--dct-palm); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin: 0 auto 1rem;">💬</div>
+          <h4>WhatsApp Support</h4>
+          <p>Message us on landing — your driver will coordinate directly via WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Zones Covered</span>
+        <h2>All Zones We Cover</h2>
+        <p class="section-subtitle">From Stone Town to the farthest beaches — we cover every zone in Zanzibar.</p>
+      </div>
+      <div class="area-quick-picks" style="max-width: 900px; margin: 0 auto;">
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8C28.6863 8 26 10.6863 26 14V24H18V14C18 8.9706 21.9706 5 26 5C30.0294 5 34 8.9706 34 14V24H38V14C38 10.6863 35.3137 8 32 8ZM26 26V38H38V26H26ZM18 38H46V42H18V38Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3>Stone Town</h3>
+            <p>Historic centre — 15 min from airport</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M12 42C12 37.5817 15.5817 34 20 34H44C48.4183 34 52 37.5817 52 42V46H12V42Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3>Nungwi / Kendwa</h3>
+            <p>North coast — 65–70 min from airport</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 10C28.134 10 25 13.134 25 17C25 20.866 28.134 24 32 24C35.866 24 39 20.866 39 17C39 13.134 35.866 10 32 10Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3>Paje / Jambiani</h3>
+            <p>Southeast coast — 50–55 min from airport</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3>Kiwengwa / Pongwe</h3>
+            <p>Northeast coast — 45–50 min from airport</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3>Bwejuu / Dongwe</h3>
+            <p>Southeast luxury — 55–60 min from airport</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 10C28.134 10 25 13.134 25 17C25 20.866 28.134 24 32 24C35.866 24 39 20.866 39 17C39 13.134 35.866 10 32 10Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3>Michamvi / Pingwe</h3>
+            <p>East coast / The Rock — 50 min from airport</p>
+          </div>
+        </article>
+      </div>
+      <p style="text-align: center; margin-top: 2rem; color: var(--dct-text-muted);" class="reveal">Not sure of your zone? <a href="https://wa.me/255672450934" target="_blank" rel="noopener">WhatsApp us</a> with your hotel name and we'll confirm the rate.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content reveal">
+      <h2>Ready to Book Your Transfer?</h2>
+      <p>Message us on WhatsApp with your flight details, hotel name, and number of passengers. We'll confirm the fixed price instantly.</p>
+      <a href="https://wa.me/255672450934?text=I'd%20like%20to%20book%20an%20airport%20transfer%20in%20Zanzibar" target="_blank" rel="noopener" class="btn btn-accent btn-lg">Book Transfer on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+{% include "footer.njk" %}

@@ -1,10 +1,11 @@
-{% set pageTitle = title | default("Zanzibar Tourism") %}
-{% set pageDesc = description | default("Discover Zanzibar – beaches, culture, tours, and safaris.") %}
+{% set pageTitle = title | default("Dhow Coast Travels – Licensed Zanzibar Tour Operator") %}
+{% set pageDesc = description | default("Book Zanzibar tours, airport transfers, and packages with Dhow Coast Travels. Transparent pricing, marine fees included, WhatsApp-first booking. Stone Town based.") %}
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDesc }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 <meta property="og:image" content="{{ site.url }}/images/og-image.png">
+<meta property="og:site_name" content="Dhow Coast Travels">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ pageTitle }}">
 <meta name="twitter:description" content="{{ pageDesc }}">
@@ -13,27 +14,30 @@
 <script type="application/ld+json">
 {{{
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Zanzibar Tourism Board",
+  "@type": "TourOperator",
+  "name": "Dhow Coast Travels",
   "url": "{{ site.url }}",
   "logo": "{{ site.url }}/images/logo.png",
-  "description": "Official tourism portal for Zanzibar – discover attractions, hotels, tours, and safaris.",
+  "description": "Licensed Zanzibar tour operator offering tours, airport transfers, and multi-day packages. WhatsApp-first booking with transparent pricing including marine park fees.",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "P.O. Box 123",
+    "streetAddress": "Stone Town",
     "addressLocality": "Zanzibar",
     "addressCountry": "TZ"
   },
-  "telephone": "+255 123 456 789",
+  "telephone": "+255-7XX-XXXXXXX",
   "geo": {
     "@type": "GeoCoordinates",
     "latitude": "-6.1659",
     "longitude": "39.2026"
   },
   "sameAs": [
-    "https://facebook.com/zanzibar",
-    "https://instagram.com/zanzibar",
-    "https://twitter.com/zanzibar"
-  ]
+    "https://wa.me/255672450934",
+    "https://facebook.com/dhowcoasttravels",
+    "https://instagram.com/dhowcoasttravels"
+  ],
+  "priceRange": "$$",
+  "currenciesAccepted": "USD, TZS",
+  "paymentAccepted": "Cash, Mobile Money, Bank Transfer, Card (via link)"
 }| json }}
 </script>

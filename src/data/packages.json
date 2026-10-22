@@ -1,0 +1,21 @@
+[
+  {
+    "id": "PKG-01",
+    "slug": "zanzibar-essentials-3-day-pass",
+    "title": "Zanzibar Essentials 3-day pass",
+    "description": "Anchor bundle; validate supplier costs before publishing.",
+    "duration": "3 days",
+    "price": {
+      "min": 185.0,
+      "max": 260.0,
+      "basis": "per person",
+      "display": "$185\u2013$260"
+    },
+    "price_display": "$185\u2013$260",
+    "includes": [
+      "Return transfer, Safari Blue, Stone Town + Spice"
+    ],
+    "source_quality": "Existing strategy model",
+    "source_files": "Zanzibar_Master_Venture_Plan.md"
+  }
+]

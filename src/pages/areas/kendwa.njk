@@ -1,0 +1,170 @@
+---
+permalink: "/areas/kendwa/index.html"
+---
+{% include "seo.njk" %}
+{% include "header.njk" %}
+
+<main class="area-detail">
+  <section class="area-hero" style="background: linear-gradient(135deg, var(--dct-ocean) 0%, var(--dct-palm) 100%);">
+    <div class="area-hero-content">
+      <div class="area-tags">
+        <span class="area-tag">Unguja (Main Island)</span>
+        <span class="area-tag">Nightlife</span>
+      </div>
+      <h1>Kendwa</h1>
+      <p class="area-description">Northwest coast — wide beaches with no tide restrictions, famous for full-moon parties, diving, and easy swimming all day.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">At a Glance</span>
+        <h2>Kendwa Quick Stats</h2>
+      </div>
+      <div class="stats-grid" style="max-width: 600px; margin: 0 auto;">
+        <div class="stat-item reveal"><span class="stat-number">3</span><span class="stat-label">Partner Hotels</span></div>
+        <div class="stat-item reveal"><span class="stat-number">1</span><span class="stat-label">Attractions</span></div>
+        <div class="stat-item reveal"><span class="stat-number">2</span><span class="stat-label">Recommended Tours</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Where to Stay</span>
+        <h2>Where to Stay in Kendwa</h2>
+        <p class="section-subtitle">Boutique hotels and resorts in Kendwa. Click through for direct booking or contact us for referral rates.</p>
+      </div>
+      <div class="cards-grid hotel-grid">
+{% for hotel in hotels %}
+  {% if hotel.name in ["Gold Zanzibar Beach House & Spa", "Kilindi Zanzibar", "Nungwi Beach Resort by Turaco", "Spanish Dancer (Kendwa)", "One Ocean (Kendwa)", "Zuri Zanzibar"] %}
+  <article class="card hotel-card reveal" data-tier="{{ hotel.tier }}" data-zone="{{ hotel.zone }}" data-island="{{ hotel.island }}">
+    <div class="card-image image-placeholder">
+      {% if hotel.tier == 'luxury' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8C28.6863 8 26 10.6863 26 14V24H18V14C18 8.9706 21.9706 5 26 5C30.0294 5 34 8.9706 34 14V24H38V14C38 10.6863 35.3137 8 32 8ZM26 26V38H38V26H26ZM18 38H46V42H18V38Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="48" r="4" stroke="currentColor" stroke-width="2"/></svg>
+      {% elif hotel.tier == 'upper-mid' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {% elif hotel.tier == 'mid' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      {% else %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2.5"/></svg>
+      {% endif %}
+      <button class="card-favorite" aria-label="Add to favorites">♡</button>
+    </div>
+    <div class="card-content">
+      <span class="card-badge badge-{{ hotel.tier | lower | replace('upper-', 'upper-') }}">{{ hotel.tier | capitalize }}</span>
+      <h3 class="card-title"><a href="{{ hotel.website }}" target="_blank" rel="noopener">{{ hotel.name }}</a></h3>
+      <p class="card-meta">{{ hotel.zone }}, {{ hotel.island }} • {{ hotel.star_rating or "Ungraded" }} star</p>
+      {% if hotel.category %}<p class="card-description">{{ hotel.category }}</p>{% endif %}
+      <div class="card-footer">
+        <span class="card-price">{{ hotel.price_range or "Contact for rates" }}</span>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+          <a href="{{ hotel.website }}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">View Website</a>
+          {% if hotel.whatsapp %}
+          <a href="https://wa.me/{{ hotel.whatsapp | replace('+', '') | replace(' ', '') }}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">WhatsApp</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </article>
+  {% endif %}
+{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-gradient">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Attractions</span>
+        <h2>Attractions in Kendwa</h2>
+        <p class="section-subtitle">Local attractions, dive centers, and activity providers in Kendwa.</p>
+      </div>
+      <div class="cards-grid attraction-grid">
+{% for attraction in attractions %}
+  {% if attraction.name in ["Kendwa Beach", "One Ocean Dive Centre"] %}
+  <article class="card attraction-card reveal" data-type="{{ attraction.category }}">
+    <div class="card-image image-placeholder">
+      {% if "Beach" in attraction.type %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M12 42C12 37.5817 15.5817 34 20 34H44C48.4183 34 52 37.5817 52 42V46H12V42Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18C32 23.5228 27.5228 28 22 28C16.4772 28 12 23.5228 12 18C12 12.4772 16.4772 8 22 8C27.5228 8 32 12.4772 32 18Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {% elif "Dive" in attraction.type or "Diving" in attraction.type %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {% else %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2.5"/></svg>
+      {% endif %}
+    </div>
+    <div class="card-content">
+      <span class="card-badge badge-cultural">{{ attraction.type }}</span>
+      <h3 class="card-title">{{ attraction.name }}</h3>
+      <p class="card-meta">{{ attraction.zone }}, {{ attraction.island }}</p>
+      {% if attraction.website %}
+        <a href="{{ attraction.website }}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Website</a>
+      {% else %}
+        <span class="btn btn-sm" style="color: var(--dct-gray); border: 1px solid var(--dct-gray-light);">No public website</span>
+      {% endif %}
+    </div>
+  </article>
+  {% endif %}
+{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Tours</span>
+        <h2>Recommended Tours from Kendwa</h2>
+        <p class="section-subtitle">The best day tours and experiences starting from Kendwa.</p>
+      </div>
+      <div class="cards-grid tour-grid">
+{% for tour in tours %}
+  {% if tour.seo_slug in ["mnemba-snorkeling", "sunset-dhow-cruise"] %}
+  <article class="card tour-card reveal" data-category="{{ tour.category }}">
+    <div class="card-image image-placeholder">
+      {% if tour.category == 'CUL' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8C28.6863 8 26 10.6863 26 14V24H18V14C18 8.9706 21.9706 5 26 5C30.0294 5 34 8.9706 34 14V24H38V14C38 10.6863 35.3137 8 32 8ZM26 26V38H38V26H26ZM18 38H46V42H18V38Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {% elif tour.category == 'MAR' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M12 42C12 37.5817 15.5817 34 20 34H44C48.4183 34 52 37.5817 52 42V46H12V42Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18C32 23.5228 27.5228 28 22 28C16.4772 28 12 23.5228 12 18C12 12.4772 16.4772 8 22 8C27.5228 8 32 12.4772 32 18Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {% elif tour.category == 'NAT' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 10C28.134 10 25 13.134 25 17C25 20.866 28.134 24 32 24C35.866 24 39 20.866 39 17C39 13.134 35.866 10 32 10Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 24V44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      {% elif tour.category == 'SAF' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      {% elif tour.category == 'PKG' %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      {% else %}
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2.5"/></svg>
+      {% endif %}
+      <button class="card-favorite" aria-label="Add to favorites">♡</button>
+    </div>
+    <div class="card-content">
+      <span class="card-badge badge-{{ tour.category | lower }}">{{ tour.category }}</span>
+      <h3 class="card-title"><a href="/tours/{{ tour.seo_slug }}/">{{ tour.title }}</a></h3>
+      <p class="card-meta">{{ tour.duration }} • {{ tour.location }}</p>
+      <p class="card-description">{{ tour.short_description }}</p>
+      <div class="card-footer">
+        <span class="card-price">{{ tour.price.display }} <span class="price-basis">per person</span></span>
+        <a href="/tours/{{ tour.seo_slug }}/" class="btn btn-primary btn-sm">Details & Booking</a>
+      </div>
+    </div>
+  </article>
+  {% endif %}
+{% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container" style="text-align: center; max-width: 600px;">
+      <div class="reveal">
+        <h2 style="margin-bottom: 1rem;">Need an Airport Transfer?</h2>
+        <p style="color: var(--dct-text-muted); margin-bottom: 1.5rem;">Private transfer from ZNZ Airport to Kendwa — fixed price, flight tracking, meet & greet included.</p>
+        <a href="/transfers/" class="btn btn-primary btn-lg">View Transfer Options</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% include "footer.njk" %}

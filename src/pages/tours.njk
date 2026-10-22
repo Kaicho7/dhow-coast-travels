@@ -1,17 +1,80 @@
+---
+permalink: "/tours/index.html"
+---
 {% include "seo.njk" %}
 {% include "header.njk" %}
 
 <main class="content">
-  <h1>Exciting Tours & Safaris</h1>
-  <section class="cards">
+  <header class="page-header">
+    <h1>Zanzibar Tours & Day Trips</h1>
+    <p class="page-meta">Book directly with a licensed Zanzibar tour operator. All prices shown include marine park fees, guide fees, and transfers where applicable. WhatsApp-first booking — instant confirmation.</p>
+
+    <nav class="tour-filters" aria-label="Filter tours by type">
+      <button class="filter-btn active" data-filter="all">All Tours</button>
+      <button class="filter-btn" data-filter="CUL">Cultural Tours</button>
+      <button class="filter-btn" data-filter="MAR">Marine Excursions</button>
+      <button class="filter-btn" data-filter="NAT">Nature Activities</button>
+      <button class="filter-btn" data-filter="SAF">Safari Day Trips</button>
+      <button class="filter-btn" data-filter="PKG">Packages</button>
+    </nav>
+  </header>
+
+  <section class="cards tour-grid">
     {% for tour in tours %}
-      <article class="card">
-        <h2>{{ tour.title }}</h2>
-        <p>{{ tour.description }}</p>
-        <p><strong>Price:</strong> {{ tour.price }}</p>
-        <a href="#" class="btn small">Reserve now</a>
+      <article class="card tour-card reveal" data-category="{{ tour.category }}">
+        <div class="card-image image-placeholder">
+          {% if tour.category == 'CUL' %}
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8C28.6863 8 26 10.6863 26 14V24H18V14C18 8.9706 21.9706 5 26 5C30.0294 5 34 8.9706 34 14V24H38V14C38 10.6863 35.3137 8 32 8ZM26 26V38H38V26H26ZM18 38H46V42H18V38Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          {% elif tour.category == 'MAR' %}
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M12 42C12 37.5817 15.5817 34 20 34H44C48.4183 34 52 37.5817 52 42V46H12V42Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18C32 23.5228 27.5228 28 22 28C16.4772 28 12 23.5228 12 18C12 12.4772 16.4772 8 22 8C27.5228 8 32 12.4772 32 18Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          {% elif tour.category == 'NAT' %}
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 10C28.134 10 25 13.134 25 17C25 20.866 28.134 24 32 24C35.866 24 39 20.866 39 17C39 13.134 35.866 10 32 10Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 24V44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 34H42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 44H48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          {% elif tour.category == 'SAF' %}
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 42H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          {% elif tour.category == 'PKG' %}
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M32 22V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          {% else %}
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2.5"/></svg>
+          {% endif %}
+        </div>
+        <div class="card-content">
+          <span class="tour-category">{{ tour.category }}</span>
+          <h3><a href="/tours/{{ tour.seo_slug }}/">{{ tour.title }}</a></h3>
+          <p class="tour-meta">{{ tour.duration }} • {{ tour.location }}</p>
+          <p class="tour-description">{{ tour.short_description }}</p>
+          <div class="card-footer">
+            <span class="card-price">{{ tour.price.display }} <span class="price-basis">per person</span></span>
+            <a href="/tours/{{ tour.seo_slug }}/" class="btn btn-sm">Details & Booking</a>
+          </div>
+        </div>
       </article>
     {% endfor %}
+  </section>
+
+  <section class="transfer-link">
+    <h2>Need Airport Transfers?</h2>
+    <p>Private transfers from Abeid Amani Karume Airport (ZNZ) to Stone Town, Nungwi, Kendwa, Paje, Jambiani, and all zones.</p>
+    <a href="/transfers/" class="btn primary">View Transfer Options</a>
+  </section>
+
+  <section class="tour-faq">
+    <h2>Frequently Asked Questions about Zanzibar Tours</h2>
+    <details class="faq-item">
+      <summary>Do I need to book tours in advance?</summary>
+      <p>For popular activities (Safari Blue, Mnemba snorkeling, Jozani Forest), book 1–3 days ahead in peak season. Stone Town walks and spice tours can often be arranged same-day.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Can I customize tour durations?</summary>
+      <p>Yes — most tours are flexible. Morning or afternoon departures, add visits, extend to full-day. WhatsApp us to discuss.</p>
+    </details>
+    <details class="faq-item">
+      <summary>Are marine park fees included?</summary>
+      <p>Yes — Menai Bay ($10) and Mnemba ($25) conservation fees are included in our tour prices. Other entry fees (museums, Jozani park) are noted where not included.</p>
+    </details>
+    <details class="faq-item">
+      <summary>What if the weather is bad?</summary>
+      <p>Marine tours may be rescheduled for safety. We offer flexible rebooking or full refunds if conditions prevent departure.</p>
+    </details>
   </section>
 </main>
 

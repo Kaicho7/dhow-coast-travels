@@ -1,63 +1,290 @@
+---
+permalink: "/index.html"
+---
 {% include "seo.njk" %}
 {% include "header.njk" %}
 
 <main class="home">
   <section class="hero">
-    <h1>Discover <span class="highlight">Zanzibar</span> – Beaches, Culture &amp; Adventure</h1>
-    <p>Official portal for travel, tours, hotels, and safaris in Zanzibar.</p>
-    <a href="/attractions/" class="btn primary">Explore Attractions</a>
-    <a href="/tours/" class="btn secondary">Book a Tour</a>
+    <div class="hero-content">
+      <div class="hero-tagline reveal delay-1">
+        <span>✦</span> Licensed ZCT Tour Operator • Transparent Pricing • WhatsApp-First Booking
+      </div>
+      <h1 class="reveal delay-2">Discover <span class="highlight">Zanzibar</span> with Dhow Coast Travels</h1>
+      <p class="hero-subtitle reveal delay-3">Curated tours, seamless transfers, and multi-day packages. Marine fees included. Stone Town based. <strong>{{ stats.total_tours }} tours, {{ stats.total_hotels }} hotels, {{ stats.total_attractions }} attractions.</strong></p>
+      <div class="hero-cta reveal delay-4">
+        <a href="/tours/" class="btn btn-primary btn-lg">Browse All Zanzibar Tours</a>
+        <a href="https://wa.me/255672450934" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">Chat on WhatsApp</a>
+      </div>
+      <div class="hero-trust reveal delay-5">
+        <div class="trust-item"><span class="trust-icon">✓</span>Licensed ZCT Operator</div>
+        <div class="trust-item"><span class="trust-icon">💎</span>Marine Fees Included</div>
+        <div class="trust-item"><span class="trust-icon">💬</span>WhatsApp-First Booking</div>
+        <div class="trust-item"><span class="trust-icon">📍</span>Stone Town Based</div>
+      </div>
+    </div>
   </section>
 
   <section class="quick-links">
-    <div class="card">
-      <h2>Top Attractions</h2>
-      <p>Stone Town, Nungwi Beach, Jozani Forest, Prison Island, Spice Farm and more.</p>
-      <a href="/attractions/" class="btn small">See All</a>
+    <div class="quick-link-card reveal delay-1">
+      <div class="quick-link-icon">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 8C28.6863 8 26 10.6863 26 14V24H18V14C18 8.9706 21.9706 5 26 5C30.0294 5 34 8.9706 34 14V24H38V14C38 10.6863 35.3137 8 32 8ZM26 26V38H38V26H26ZM18 38H46V42H18V38Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <h3>Top Tours & Excursions</h3>
+      <p>Spice tours, Stone Town walks, snorkeling, dolphin trips, Safari Blue, Jozani Forest & more.</p>
+      <a href="/tours/" class="btn btn-primary btn-sm">Browse Tours</a>
     </div>
-    <div class="card">
-      <h2>Best Hotels</h2>
-      <p>Luxury resorts, boutique stays, and budget-friendly options.</p>
-      <a href="/hotels/" class="btn small">View Hotels</a>
+    <div class="quick-link-card reveal delay-2">
+      <div class="quick-link-icon">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2"/><path d="M22 42H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Airport Transfers ZNZ</h3>
+      <p>Private transfers from Abeid Amani Karume Airport to Nungwi, Kendwa, Paje, Jambiani, Stone Town & all zones.</p>
+      <a href="/transfers/" class="btn btn-primary btn-sm">View Transfers</a>
     </div>
-    <div class="card">
-      <h2>Exciting Tours</h2>
-      <p>Snorkeling, spice tours, cultural day trips, and Tanzania mainland safaris.</p>
-      <a href="/tours/" class="btn small">Browse Tours</a>
+    <div class="quick-link-card reveal delay-3">
+      <div class="quick-link-icon">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M32 22V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Multi-Day Packages</h3>
+      <p>3–7 day Zanzibar itineraries combining culture, marine, and nature. Including safari extensions to mainland Tanzania.</p>
+      <a href="/packages/" class="btn btn-primary btn-sm">View Packages</a>
     </div>
-  </section>
-
-  <section class="stats">
-    <div class="stat">
-      <span class="number">5</span>
-      <span class="label">Stars on TripAdvisor</span>
-    </div>
-    <div class="stat">
-      <span class="number">120</span>
-      <span class="label">Tours Booked Monthly</span>
-    </div>
-    <div class="stat">
-      <span class="number">200+</span>
-      <span class="label">Accommodations Listed</span>
-    </div>
-    <div class="stat">
-      <span class="number">3</span>
-      <span class="label">Safaris in Tanzania</span>
+    <div class="quick-link-card reveal delay-4">
+      <div class="quick-link-icon">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="8" y="18" width="48" height="38" rx="4" stroke="currentColor" stroke-width="2.5"/><path d="M24 26H40M24 34H40M24 42H40M24 50H40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </div>
+      <h3>Where to Stay in Zanzibar</h3>
+      <p>213 hand-picked hotels and resorts across Nungwi, Kendwa, Paje, Jambiani, Stone Town, Kiwengwa, Matemwe & more.</p>
+      <a href="/hotels/" class="btn btn-primary btn-sm">View Hotels</a>
     </div>
   </section>
 
-  <section class="latest-news">
-    <h2>Latest News</h2>
-    <article class="news-item">
-      <h3>New Luxury Resort Opens on Nungwi Beach</h3>
-      <p>Experience world‑class service and ocean‑front views.</p>
-      <a href="/blog/new-resort-nungwi" class="read-more">Read more →</a>
-    </article>
-    <article class="news-item">
-      <h3>Spice Tour Packages Now Available</h3>
-      <p>Explore Zanzibar’s famous spice farms with expert guides.</p>
-      <a href="/blog/spice-tour" class="read-more">Read more →</a>
-    </article>
+  <section class="stats-bar">
+    <div class="stats-grid">
+      <div class="stat-item reveal delay-1">
+        <span class="stat-number">{{ stats.total_tours }}</span>
+        <span class="stat-label">Tours & Activities</span>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <span class="stat-number">{{ stats.total_hotels }}</span>
+        <span class="stat-label">Partner Properties</span>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <span class="stat-number">{{ stats.total_attractions }}</span>
+        <span class="stat-label">Attractions & Activities</span>
+      </div>
+      <div class="stat-item reveal delay-4">
+        <span class="stat-number">{{ stats.zones_covered }}</span>
+        <span class="stat-label">Zones Covered</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-section section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Featured</span>
+        <h2>Most Popular Tours</h2>
+        <p>Hand-picked experiences our guests love — from cultural walks to marine adventures.</p>
+      </div>
+      <div class="cards-grid">
+        {% set featured = tours | limit(6) %}
+        {% for tour in featured %}
+          <article class="card featured-card reveal" data-category="{{ tour.category }}">
+            <div class="card-image image-placeholder">
+              {% if tour.category == 'CUL' %}
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8C28.6863 8 26 10.6863 26 14V24H18V14C18 8.9706 21.9706 5 26 5C30.0294 5 34 8.9706 34 14V24H38V14C38 10.6863 35.3137 8 32 8ZM26 26V38H38V26H26ZM18 38H46V42H18V38Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              {% elif tour.category == 'MAR' %}
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M12 42C12 37.5817 15.5817 34 20 34H44C48.4183 34 52 37.5817 52 42V46H12V42Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18C32 23.5228 27.5228 28 22 28C16.4772 28 12 23.5228 12 18C12 12.4772 16.4772 8 22 8C27.5228 8 32 12.4772 32 18Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              {% elif tour.category == 'NAT' %}
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 10C28.134 10 25 13.134 25 17C25 20.866 28.134 24 32 24C35.866 24 39 20.866 39 17C39 13.134 35.866 10 32 10Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 24V44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 34H42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 44H48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              {% elif tour.category == 'SAF' %}
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 42H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              {% elif tour.category == 'PKG' %}
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M32 22V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+              {% else %}
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><circle cx="32" cy="32" r="20" stroke="currentColor" stroke-width="2.5"/></svg>
+              {% endif %}
+              <button class="card-favorite" aria-label="Add to favorites">♡</button>
+            </div>
+            <div class="card-content">
+              <span class="card-badge badge-{{ tour.category | lower }}">{{ tour.category }}</span>
+              <h3 class="card-title"><a href="/tours/{{ tour.seo_slug }}/">{{ tour.title }}</a></h3>
+              <p class="card-meta">{{ tour.duration }} • {{ tour.location }}</p>
+              <p class="card-description">{{ tour.short_description }}</p>
+              <div class="card-footer">
+                <span class="card-price">{{ tour.price.display }} <span class="price-basis">per person</span></span>
+                <a href="/tours/{{ tour.seo_slug }}/" class="btn btn-primary btn-sm">View Details</a>
+              </div>
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+      <p class="view-all reveal"><a href="/tours/" class="btn btn-secondary">View All {{ stats.total_tours }} Tours →</a></p>
+    </div>
+  </section>
+
+  <section class="section section-gradient">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Destinations</span>
+        <h2>Best Beaches & Areas in Zanzibar</h2>
+        <p class="section-subtitle">Each zone offers a distinct vibe — choose by your travel style: nightlife, kitesurfing, relaxation, or culture.</p>
+      </div>
+      <div class="area-quick-picks">
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 18C32 23.5228 27.5228 28 22 28C16.4772 28 12 23.5228 12 18C12 12.4772 16.4772 8 22 8C27.5228 8 32 12.4772 32 18Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18V44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3><a href="/areas/nungwi/">Nungwi</a></h3>
+            <p class="beach-vibe">Nightlife • Diving • Sunset Cruises • Turtle Sanctuary</p>
+            <p>Northern tip — white sand, full-moon parties, Mnemba Atoll access, traditional dhow building. Best for couples and groups who want action.</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M12 42C12 37.5817 15.5817 34 20 34H44C48.4183 34 52 37.5817 52 42V46H12V42Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18C32 23.5228 27.5228 28 22 28C16.4772 28 12 23.5228 12 18C12 12.4772 16.4772 8 22 8C27.5228 8 32 12.4772 32 18Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 18V34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3><a href="/areas/kendwa/">Kendwa</a></h3>
+            <p class="beach-vibe">Full Moon Parties • All-Day Swimming • Wide Beach</p>
+            <p>Northwest — famous for full-moon parties, calm water all day (no tide issues), Kendwa Rocks beach club.</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 42H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3><a href="/areas/paje/">Paje</a></h3>
+            <p class="beach-vibe">Kitesurfing Capital • Shallow Lagoon • Laid-Back</p>
+            <p>Southeast — world-class kitesurfing, turquoise lagoon, seaweed farms, easy access to Jozani Forest & The Rock.</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 10C28.134 10 25 13.134 25 17C25 20.866 28.134 24 32 24C35.866 24 39 20.866 39 17C39 13.134 35.866 10 32 10Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M32 24V44" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M22 34H42" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M16 44H48" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3><a href="/areas/jambiani/">Jambiani</a></h3>
+            <p class="beach-vibe">Authentic Village • Seaweed Farms • Kuza Cave</p>
+            <p>Southeast fishing village — Swahili culture, tide pools, Kuza Cave freshwater pools, Chumbe Island day trips.</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8C28.6863 8 26 10.6863 26 14V24H18V14C18 8.9706 21.9706 5 26 5C30.0294 5 34 8.9706 34 14V24H38V14C38 10.6863 35.3137 8 32 8ZM26 26V38H38V26H26ZM18 38H46V42H18V38Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3><a href="/areas/stone-town/">Stone Town</a></h3>
+            <p class="beach-vibe">UNESCO Heritage • History • Culture • Food</p>
+            <p>Historic heart — carved doors, Sultan's Palace, Anglican Cathedral (former slave market), Forodhani food market.</p>
+          </div>
+        </article>
+        <article class="quick-pick reveal">
+          <div class="quick-pick-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M32 22V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <div class="quick-pick-content">
+            <h3><a href="/areas/kiwengwa/">Kiwengwa</a></h3>
+            <p class="beach-vibe">All-Inclusive Resorts • Family-Friendly • Mnemba Access</p>
+            <p>Northeast — long beach, family-friendly resorts, protected lagoon, easy boat access to Mnemba Atoll marine reserve.</p>
+          </div>
+        </article>
+      </div>
+      <p class="view-all reveal"><a href="/areas/" class="btn btn-secondary">Explore All 14 Areas →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Plan Your Trip</span>
+        <h2>Popular Zanzibar Itineraries</h2>
+        <p class="section-subtitle">Ready-made plans based on what travellers search for — from weekend getaways to week-long adventures.</p>
+      </div>
+      <div class="cards-grid">
+        <article class="card reveal" data-category="PKG">
+          <div class="card-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M32 22V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <button class="card-favorite" aria-label="Add to favorites">♡</button>
+          </div>
+          <div class="card-content">
+            <span class="card-badge badge-package">Package</span>
+            <div class="itinerary-days" style="font-family: var(--font-display); font-size: 1rem; color: var(--dct-spice); font-weight: 700; margin-bottom: 0.5rem;">3 Days</div>
+            <h3 class="card-title"><a href="/packages/zanzibar-essentials-3day/">Zanzibar Essentials 3-Day</a></h3>
+            <p class="card-description">Airport transfers + Stone Town tour + Safari Blue + Spice farm. Our signature intro package.</p>
+            <div class="card-footer">
+              <span class="card-price">$185–$260 <span class="price-basis">per person</span></span>
+              <a href="/packages/zanzibar-essentials-3day/" class="btn btn-primary btn-sm">View Itinerary</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal" data-category="PKG">
+          <div class="card-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M16 22L32 8L48 22V54H16V22Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 34H48" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M32 22V34" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+            <button class="card-favorite" aria-label="Add to favorites">♡</button>
+          </div>
+          <div class="card-content">
+            <span class="card-badge badge-package">Package</span>
+            <div class="itinerary-days" style="font-family: var(--font-display); font-size: 1rem; color: var(--dct-spice); font-weight: 700; margin-bottom: 0.5rem;">4–5 Days</div>
+            <h3 class="card-title">Beach & Culture Combo</h3>
+            <p class="card-description">Stone Town (1 night) + Nungwi/Kendwa (2 nights) + Spice tour + Mnemba snorkeling + sunset cruise.</p>
+            <div class="card-footer">
+              <span class="card-price">Custom quote</span>
+              <a href="https://wa.me/255672450934?text=I'd%20like%20a%204-5%20day%20Zanzibar%20itinerary" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Request Quote</a>
+            </div>
+          </div>
+        </article>
+        <article class="card reveal" data-category="SAF">
+          <div class="card-image image-placeholder">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="64" height="64" fill="currentColor" opacity="0.1"/><path d="M32 8L14 30V50H50V30L32 8Z" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="22" r="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 42H42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <button class="card-favorite" aria-label="Add to favorites">♡</button>
+          </div>
+          <div class="card-content">
+            <span class="card-badge badge-safari">Safari</span>
+            <div class="itinerary-days" style="font-family: var(--font-display); font-size: 1rem; color: var(--dct-spice); font-weight: 700; margin-bottom: 0.5rem;">7 Days</div>
+            <h3 class="card-title">Ultimate Zanzibar + Safari</h3>
+            <p class="card-description">Zanzibar highlights (4 nights) + Mikumi/Nyerere fly-in day safari or Serengeti 3-day fly-in.</p>
+            <div class="card-footer">
+              <span class="card-price">From $900 <span class="price-basis">per person</span></span>
+              <a href="/safaris/" class="btn btn-primary btn-sm">View Safaris</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">FAQ</span>
+        <h2>Zanzibar Travel FAQs</h2>
+        <p class="section-subtitle">Quick answers to the questions travellers ask most.</p>
+      </div>
+      <div class="faq-grid">
+        {% for faq in travelguide.faqs %}
+        <details class="faq-item reveal">
+          <summary class="faq-question">{{ faq.question }}</summary>
+          <p class="faq-answer">{{ faq.answer }}</p>
+        </details>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content reveal">
+      <h2>Ready to Experience Zanzibar?</h2>
+      <p>Message us on WhatsApp with your dates and interests. We'll send a personalized itinerary with transparent pricing within 24 hours.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/255672450934?text=I'd%20like%20to%20plan%20my%20Zanzibar%20trip" target="_blank" rel="noopener" class="btn btn-accent btn-lg">Plan My Trip on WhatsApp</a>
+        <a href="/tours/" class="btn btn-outline btn-lg">Browse Tours First</a>
+      </div>
+    </div>
   </section>
 </main>
 
