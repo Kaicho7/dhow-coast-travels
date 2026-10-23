@@ -24,6 +24,7 @@
 <header class="site-header" id="siteHeader">
   <div class="top-bar">
     <span class="brand">Dhow Coast Travels</span>
+    <span class="intent-indicator" id="intentIndicator"></span>
     <span class="contact"><a href="https://wa.me/255774600924" target="_blank" rel="noopener">+255 774 600 924</a></span>
 <span class="contact"><a href="https://wa.me/255672450934" target="_blank" rel="noopener">+255 672 450 934</a></span>
   </div>
@@ -49,6 +50,20 @@
       <li><a href="/contact/" >Contact</a></li>
     </ul>
   </nav>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const intentIndicators = {family: '👨‍👩‍👧‍👦', honeymoon: '💑', selfdrive: '🚗', migration: '🐋', health: '🏥', tribes: '🌿', packing: '🎒', spice: '🌿'};
+    const path = window.location.pathname;
+    if (path.includes('family-travel')) document.getElementById('intentIndicator').textContent = intentIndicators.family;
+    else if (path.includes('honeymoon-packages')) document.getElementById('intentIndicator').textContent = intentIndicators.honeymoon;
+    else if (path.includes('self-drive')) document.getElementById('intentIndicator').textContent = intentIndicators.selfdrive;
+    else if (path.includes('migration-calendar')) document.getElementById('intentIndicator').textContent = intentIndicators.migration;
+    else if (path.includes('health-safety')) document.getElementById('intentIndicator').textContent = intentIndicators.health;
+    else if (path.includes('tribes-culture')) document.getElementById('intentIndicator').textContent = intentIndicators.tribes;
+    else if (path.includes('packing-guide')) document.getElementById('intentIndicator').textContent = intentIndicators.packing;
+    else if (path.includes('spice-farm-cultural')) document.getElementById('intentIndicator').textContent = intentIndicators.spice;
+  });
+  </script>
 </header>
 
 <main class="tribes-culture">

@@ -99,7 +99,15 @@ permalink: "/honeymoon-packages/index.html"
         <a href="/packages/" class="btn btn-outline btn-lg">View Honeymoon Packages</a>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="supplementary-cta">
+    {% if page.intent %}
+      <p>Still have questions about your Zanzibar honeymoon? <span class="whatsapp-cta">{{ page.intent.cta_text }}</span></p>
+    {% else %}
+      <p>Still have questions? <span class="whatsapp-cta">{{ default.intent.cta_text }}</span></p>
+    {% endif %}
+  </div>
+</section>
 
   {% include "footer.njk" %}
 </main>

@@ -179,7 +179,15 @@ permalink: "/migration-calendar/index.html"
         <a href="/safaris/" class="btn btn-outline btn-lg">Explore Safari Options</a>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="supplementary-cta">
+    {% if page.intent %}
+      <p>Still have questions about timing your Zanzibar trip? <span class="whatsapp-cta">{{ page.intent.cta_text }}</span></p>
+    {% else %}
+      <p>Still have questions? <span class="whatsapp-cta">{{ default.intent.cta_text }}</span></p>
+    {% endif %}
+  </div>
+</section>
 
   {% include "footer.njk" %}
 </main>
