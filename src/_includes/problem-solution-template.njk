@@ -1,0 +1,76 @@
+---
+permalink: "/{{TOPIC_SLUG}}/index.html"
+eleventyExcludeFromCollections: false
+intent:
+  domain: "{{DOMAIN}}"
+  problem: "{{PROBLEM}}"
+  cta_text: "{{CTA_TEXT}}"
+---
+{% include "seo.njk" %}
+{% include "header.njk" %}
+
+<main class="problem-solution">
+  <section class="problem-hero" style="background: linear-gradient(135deg, var(--dct-ocean) 0%, var(--dct-palm) 100%);">
+    <div class="problem-hero-content">
+      <span class="card-badge badge-{{DOMAIN}}">{{DOMAIN | upper}} — Problem-Solution Guide</span>
+      <h1>{{TITLE}}</h1>
+      <p class="problem-meta">Solving: {{PROBLEM}}</p>
+      <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{CTA_TEXT | urlEncode}}" target="_blank" rel="noopener" class="btn btn-primary btn-lg">{{CTA_TEXT}}</a>
+    </div>
+  </section>
+
+  <div class="problem-grid">
+    <div class="problem-main">
+      <section class="problem-section">
+        <h2>The Problem</h2>
+        <p>Many travelers to Zanzibar face: {{PROBLEM}}. This guide provides practical, locally-sourced solutions from Dhow Coast Travels — a licensed Zanzibar tour operator.</p>
+      </section>
+
+      <section class="problem-section">
+        <h2>Local Insights & Solutions</h2>
+        <div class="solution-content">
+          <!-- Content populated from research data -->
+          <p><strong>Research Source:</strong> {{SOURCE}}</p>
+          <p><em>This page was auto-generated on {{WEEK}} from ZANZIABR CSV research data. Content will be enriched with local expertise.</em></p>
+        </div>
+      </section>
+
+      <section class="problem-section">
+        <h2>Related Resources</h2>
+        <ul class="related-links">
+          <li><a href="/health-safety/">Health & Safety Guide</a></li>
+          <li><a href="/migration-calendar/">Migration Calendar</a></li>
+          <li><a href="/packing-guide/">Packing Guide</a></li>
+          <li><a href="/tribes-culture/">Tribes & Culture</a></li>
+          <li><a href="/family-travel/">Family Travel</a></li>
+          <li><a href="/honeymoon-packages/">Honeymoon Packages</a></li>
+          <li><a href="/self-drive/">Self-Drive Rental</a></li>
+        </ul>
+      </section>
+
+      <section class="problem-section cta-section">
+        <h2>Still Have Questions?</h2>
+        <p>Every Zanzibar trip is unique. Message us on WhatsApp with your specific situation — we'll give you personalized guidance.</p>
+        <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{CTA_TEXT | urlEncode}}" target="_blank" rel="noopener" class="btn btn-accent btn-lg">{{CTA_TEXT}}</a>
+      </section>
+    </div>
+
+    <aside class="problem-sidebar">
+      <div class="info-card">
+        <h4>📋 Quick Reference</h4>
+        <ul>
+          <li><span class="label">Domain:</span><span class="value">{{DOMAIN}}</span></li>
+          <li><span class="label">Research:</span><span class="value">{{SOURCE}}</span></li>
+          <li><span class="label">Generated:</span><span class="value">{{WEEK}}</span></li>
+        </ul>
+        <div class="booking-card">
+          <h3>Get Personalized Help</h3>
+          <p style="opacity: 0.8; margin-bottom: 1.5rem;">Share your specific concerns on WhatsApp. We respond within 2 hours with tailored advice.</p>
+          <a href="https://wa.me/{{WHATSAPP_NUMBER}}?text={{CTA_TEXT | urlEncode}}" target="_blank" rel="noopener" class="btn btn-accent btn-lg">WhatsApp: +255 672 450 934</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+{% include "footer.njk" %}
