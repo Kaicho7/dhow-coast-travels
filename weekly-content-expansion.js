@@ -129,9 +129,11 @@ function saveTopicHistory(history) {
 function getNextWeek() {
   const history = loadTopicHistory();
   const usedWeeks = history.usedWeeks || [];
+  // Filter out null/undefined entries
+  const validWeeks = usedWeeks.filter(w => w && typeof w === 'number');
   let nextWeek = 1;
   
-  while (usedWeeks.includes(nextWeek)) {
+  while (validWeeks.includes(nextWeek)) {
     nextWeek++;
   }
   
