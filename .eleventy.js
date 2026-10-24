@@ -20,22 +20,24 @@ module.exports = function(eleventyConfig) {
     }
   }
   // Set global data with the featured image slug map
+  // Map tour slug → existing image filename (matching tours.json featured_image values)
   const slugMap = {
     "stone-town-walking-tour": "stone-town-feature.jpg",
     "stone-town-spice-prison-combo": "stone-town-feature.jpg",
     "spice-farm": "spice-farm-sign.jpg",
-    "kizimkazi-dolphin-tour": "mnemba-snorkeling.jpg",
+    "village-community-tour": "chake-chake-town.jpg",
+    "safari-blue": "mnemba-snorkeling.jpg",
     "mnemba-snorkeling": "mnemba-snorkeling.jpg",
-    "safari-blue": "safari-blue-feature.jpg",
-    "sunset-dhow-cruise": "sunset-dhow-feature.jpg",
-    "village-community-tour": "village-community-feature.jpg",
-    "chumbe-island": "chumbe-island-feature.jpg",
-    "jozani-forest": "jozani-forest-feature.jpg",
-    "nakupenda-sandbank": "nakupenda-sandbank-feature.jpg",
-    "kuza-cave-seaweed": "kuza-cave-seaweed-feature.jpg",
-    "mikumi-nyerere-day-safari": "mikumi-nyerere-day-safari-feature.jpg",
-    "serengeti-3day-flyin": "serengeti-3day-flyin-feature.jpg",
-    "zanzibar-essentials-3day": "zanzibar-essentials-3day-feature.jpg"
+    "prison-island-nakupenda": "migration-turtle.jpg",
+    "nakupenda-sandbank": "mnemba-snorkeling.jpg",
+    "chumbe-island": "mnemba-snorkeling.jpg",
+    "sunset-dhow-cruise": "packing-beach.jpg",
+    "kizimkazi-dolphin-tour": "kizimkazi-dolphin.jpg",
+    "jozani-forest": "tribes-culture-dance.jpg",
+    "kuza-cave-seaweed": "packing-beach.jpg",
+    "mikumi-nyerere-day-safari": "self-drive-suv.jpg",
+    "serengeti-3day-flyin": "self-drive-suv.jpg",
+    "zanzibar-essentials-3day": "packing-beach.jpg"
   };
   // Make slugMap available as global data so data extensions can access it
   eleventyConfig.addGlobalData("__slugMap", slugMap);
@@ -58,7 +60,7 @@ module.exports = function(eleventyConfig) {
     const inputPath = data.page.inputPath || "";
     const slugMap = data.__slugMap || slugMap;
     if (inputPath.startsWith("pages/tours/")) {
-      const slug = inputPath.replace("pages/tours/", "");
+      const slug = inputPath.replace("pages/tours/", "").replace(/\.(njk|md)$/, "");
       data.page.featured_image = slugMap[slug] || "default-tour-hero.jpg";
     } else if (slugMap[inputPath]) {
       data.page.featured_image = slugMap[inputPath] || "default-tour-hero.jpg";

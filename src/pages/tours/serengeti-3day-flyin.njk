@@ -7,9 +7,13 @@ permalink: "/tours/serengeti-3day-flyin/index.html"
 <main class="tour-detail">
   <section class="tour-hero" style="background: linear-gradient(135deg, #b8860b 0%, var(--dct-spice) 100%);">
     <div class="tour-hero-content">
-      {% if page.featured_image %}
-      <img src="/images/{{ page.featured_image }}" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
-      {% endif %}
+      {% set tourSlug = "serengeti-3day-flyin" %}
+{% set slugMap = __slugMap %}
+{% if slugMap[tourSlug] %}
+      <img src="/images/{{ slugMap[tourSlug] }}" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
+{% else %}
+      <img src="/images/default-tour-hero.jpg" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
+{% endif %}
 
       <span class="card-badge badge-safari">SAF — Safari</span>
       <h1>Serengeti 3-day fly-in safari</h1>
