@@ -838,5 +838,19 @@
     "directory_url": "https://www.tripadvisor.com/Attraction_Review-g670440-d12860662",
     "description": "Located in Paje, Unguja. A popular sports center for visitors to Zanzibar.",
     "source_dataset": "zanzibar_source_directory.csv"
+  },
+  {
+    "id": "the-rock-restaurant",
+    "slug": "the-rock-restaurant",
+    "name": "The Rock Restaurant",
+    "title": "The Rock Restaurant",
+    "type": "Restaurant",
+    "category": "Food & Dining",
+    "island": "Unguja",
+    "zone": "Michamvi / Pingwe",
+    "website": null,
+    "directory_url": null,
+    "description": "Iconic restaurant on a coral rock outcrop off Michamvi Pingwe beach, southeast Zanzibar — reachable by foot at low tide or by boat at high tide.",
+    "source_dataset": "zanzibar_source_directory.csv"
   }
 ]

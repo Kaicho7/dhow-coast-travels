@@ -1804,12 +1804,13 @@
       "file": "gettyimages-500870786-612x612_optimized.jpg",
       "width": 1920,
       "height": 1080,
-      "category": "beach-location",
-      "subcategory": "general",
-      "alt_text": "Zanzibar tropical scene - beach, ocean, island scenery, tourism",
-      "description": "Zanzibar tourism stock photo - tropical island scenery, beach, ocean, sea, vacation destination",
+      "category": "tourist-landmark",
+      "subcategory": "east-zanzibar",
+      "alt_text": "The Rock Restaurant \u2014 white building with thatched roof on coral rock outcrop at Michamvi Pingwe, southeast Zanzibar, Indian Ocean",
+      "description": "The Rock Restaurant at Michamvi Pingwe \u2014 iconic Zanzibar tourist landmark on a coral outcrop in the Indian Ocean, accessible by foot at low tide or by boat at high tide, southeast coast of Unguja island, Tanzania",
       "primary_use": [
         "home-hero",
+        "areas/michamvi",
         "areas/nungwi",
         "areas/paje",
         "areas/kendwa",
@@ -1821,9 +1822,10 @@
         "self-drive",
         "family-travel",
         "honeymoon-packages",
-        "travel-guide"
+        "travel-guide",
+        "romantic"
       ],
-      "photographer_source": "Unsplash/Pexels/Pixabay royalty-free stock - Zanzibar themed",
+      "photographer_source": "Getty Images \u2014 Zanzibar themed stock photography",
       "optimization": "webp-format, 85% quality, responsive srcset, lazy-loading",
       "original_filename": "gettyimages-500870786-612x612_optimized.jpg",
       "date_taken": "2026-research",
@@ -1836,7 +1838,12 @@
         "sea",
         "travel",
         "vacation",
-        "destination"
+        "destination",
+        "michamvi",
+        "pingwe",
+        "rock restaurant",
+        "tourist-landmark",
+        "east-zanzibar"
       ]
     },
     {
@@ -11556,10 +11563,10 @@
       "file": "xiserge-child-7281399_1280.jpg",
       "width": 1920,
       "height": 1080,
-      "category": "beach-location",
+      "category": "agricultural",
       "subcategory": "general",
-      "alt_text": "Zanzibar tropical scene - beach, ocean, island scenery, tourism",
-      "description": "Zanzibar tourism stock photo - tropical island scenery, beach, ocean, sea, vacation destination",
+      "alt_text": "Boy harvesting seaweed in shallow water \u2014 agricultural scene",
+      "description": "Boy in light shirt and blue shorts harvesting seaweed from farm stakes in shallow turquoise water",
       "primary_use": [
         "home-hero",
         "areas/nungwi",
@@ -11581,24 +11588,22 @@
       "date_taken": "2026-research",
       "seo_keywords": [
         "zanzibar",
-        "tourism",
-        "island",
-        "beach",
-        "ocean",
-        "sea",
-        "travel",
-        "vacation",
-        "destination"
+        "agricultural",
+        "seaweed",
+        "boy",
+        "harvest",
+        "farm",
+        "water"
       ]
     },
     {
       "file": "xiserge-woman-7281371_1280.jpg",
       "width": 1920,
       "height": 1080,
-      "category": "beach-location",
+      "category": "agricultural",
       "subcategory": "general",
-      "alt_text": "Zanzibar tropical scene - beach, ocean, island scenery, tourism",
-      "description": "Zanzibar tourism stock photo - tropical island scenery, beach, ocean, sea, vacation destination",
+      "alt_text": "Woman tending seaweed farm in shallow water \u2014 agricultural scene",
+      "description": "Woman in blue patterned dress and yellow headscarf working among seaweed farm stakes in shallow water",
       "primary_use": [
         "home-hero",
         "areas/nungwi",
@@ -11620,24 +11625,21 @@
       "date_taken": "2026-research",
       "seo_keywords": [
         "zanzibar",
-        "tourism",
-        "island",
-        "beach",
-        "ocean",
-        "sea",
-        "travel",
-        "vacation",
-        "destination"
+        "agricultural",
+        "seaweed",
+        "woman",
+        "farm",
+        "water"
       ]
     },
     {
       "file": "xiserge-woman-7281438_1280.jpg",
       "width": 1920,
       "height": 1080,
-      "category": "beach-location",
+      "category": "agricultural",
       "subcategory": "general",
-      "alt_text": "Zanzibar tropical scene - beach, ocean, island scenery, tourism",
-      "description": "Zanzibar tourism stock photo - tropical island scenery, beach, ocean, sea, vacation destination",
+      "alt_text": "Woman carrying large bundle of seaweed on beach \u2014 agricultural scene",
+      "description": "Woman carrying huge bundle of dried seaweed on her back while walking on wet sand at beach",
       "primary_use": [
         "home-hero",
         "areas/nungwi",
@@ -11659,24 +11661,21 @@
       "date_taken": "2026-research",
       "seo_keywords": [
         "zanzibar",
-        "tourism",
-        "island",
-        "beach",
-        "ocean",
-        "sea",
-        "travel",
-        "vacation",
-        "destination"
+        "agricultural",
+        "seaweed",
+        "woman",
+        "carrying",
+        "beach"
       ]
     },
     {
       "file": "xiserge-women-7285458_1280(1).jpg",
       "width": 1920,
       "height": 1080,
-      "category": "beach-location",
+      "category": "agricultural",
       "subcategory": "general",
-      "alt_text": "Zanzibar tropical scene - beach, ocean, island scenery, tourism",
-      "description": "Zanzibar tourism stock photo - tropical island scenery, beach, ocean, sea, vacation destination",
+      "alt_text": "Women working at seaweed farm with buckets \u2014 agricultural scene",
+      "description": "Group of women standing in shallow water at seaweed farm, carrying yellow buckets",
       "primary_use": [
         "home-hero",
         "areas/nungwi",
@@ -11698,24 +11697,22 @@
       "date_taken": "2026-research",
       "seo_keywords": [
         "zanzibar",
-        "tourism",
-        "island",
-        "beach",
-        "ocean",
-        "sea",
-        "travel",
-        "vacation",
-        "destination"
+        "agricultural",
+        "seaweed",
+        "women",
+        "farm",
+        "bucket",
+        "water"
       ]
     },
     {
       "file": "xiserge-women-7285458_1280.jpg",
       "width": 1920,
       "height": 1080,
-      "category": "beach-location",
+      "category": "agricultural",
       "subcategory": "general",
-      "alt_text": "Zanzibar tropical scene - beach, ocean, island scenery, tourism",
-      "description": "Zanzibar tourism stock photo - tropical island scenery, beach, ocean, sea, vacation destination",
+      "alt_text": "Women working at seaweed farm with buckets \u2014 agricultural scene",
+      "description": "Group of women standing in shallow water at seaweed farm, carrying yellow buckets",
       "primary_use": [
         "home-hero",
         "areas/nungwi",
@@ -11737,14 +11734,12 @@
       "date_taken": "2026-research",
       "seo_keywords": [
         "zanzibar",
-        "tourism",
-        "island",
-        "beach",
-        "ocean",
-        "sea",
-        "travel",
-        "vacation",
-        "destination"
+        "agricultural",
+        "seaweed",
+        "women",
+        "farm",
+        "bucket",
+        "water"
       ]
     },
     {
@@ -11753,8 +11748,8 @@
       "height": 1080,
       "category": "beach-location",
       "subcategory": "general",
-      "alt_text": "Zanzibar tropical scene - beach, ocean, island scenery, tourism",
-      "description": "Zanzibar tourism stock photo - tropical island scenery, beach, ocean, sea, vacation destination",
+      "alt_text": "Children in colorful dress walking on beach with dhows \u2014 beach scene",
+      "description": "Young girls in colorful dresses and headscarves on white sandy beach with traditional dhow boats in turquoise water behind",
       "primary_use": [
         "home-hero",
         "areas/nungwi",
@@ -11776,14 +11771,11 @@
       "date_taken": "2026-research",
       "seo_keywords": [
         "zanzibar",
-        "tourism",
-        "island",
         "beach",
-        "ocean",
-        "sea",
-        "travel",
-        "vacation",
-        "destination"
+        "children",
+        "dhow",
+        "turquoise",
+        "white-sand"
       ]
     }
   ]
