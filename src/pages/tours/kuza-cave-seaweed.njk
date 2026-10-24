@@ -7,6 +7,10 @@ permalink: "/tours/kuza-cave-seaweed/index.html"
 <main class="tour-detail">
   <section class="tour-hero" style="background: linear-gradient(135deg, #8b5e3c 0%, #a67c52 100%);">
     <div class="tour-hero-content">
+      {% if page.featured_image %}
+      <img src="/images/{{ page.featured_image }}" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
+      {% endif %}
+
       <span class="card-badge badge-nature">NAT — Nature Activity</span>
       <h1>Kuza Cave + seaweed farm</h1>
       <p class="tour-meta">3–5 hours · Jambiani / Paje</p>
