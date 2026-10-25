@@ -1,15 +1,23 @@
 {% set pageTitle = title | default("Dhow Coast Travels – Licensed Zanzibar Tour Operator") %}
 {% set pageDesc = description | default("Book Zanzibar tours, airport transfers, and packages with Dhow Coast Travels. Transparent pricing, marine fees included, WhatsApp-first booking. Stone Town based.") %}
+
+{% set featured = page.inputPath | featuredImage %}
+{% if featured.featuredImage != "default-tour-hero.jpg" %}
+  {% set ogImage = "/images/" + featured.featuredImage %}
+{% else %}
+  {% set ogImage = "/images/og-image.png" %}
+{% endif %}
+
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDesc }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-<meta property="og:image" content="{{ site.url }}/images/og-image.png">
+<meta property="og:image" content="{{ site.url }}{{ ogImage }}">
 <meta property="og:site_name" content="Dhow Coast Travels">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ pageTitle }}">
 <meta name="twitter:description" content="{{ pageDesc }}">
-<meta name="twitter:image" content="{{ site.url }}/images/og-image.png">
+<meta name="twitter:image" content="{{ site.url }}{{ ogImage }}">
 
 <script type="application/ld+json">
 {{{

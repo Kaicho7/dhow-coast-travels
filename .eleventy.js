@@ -3,24 +3,22 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"public/css": "css"});
   eleventyConfig.addPassthroughCopy({"public/js": "js"});
   eleventyConfig.addPassthroughCopy({"public/images": "images"});
-  // Load tours.json using fs (dir available later via getGlobals or in data extensions)
+  
+  // Load tours.json using fs
   const fs = require("fs");
   const path = require("path");
   let toursData = {};
   try {
-    // Try _data directory first (Eleventy automatic data)
     toursData = JSON.parse(fs.readFileSync(path.join("./", "_data", "tours.json"), "utf8"));
   } catch(e) {
-    // Fallback: read from src/data/tours.json
     try {
       toursData = JSON.parse(fs.readFileSync(path.join("./src", "data", "tours.json"), "utf8"));
     } catch(e2) {
-      // If all else fails, empty object - featured_image will use defaults
       toursData = {};
     }
   }
-  // Set global data with the featured image slug map
-  // Map tour slug → existing image filename (matching tours.json featured_image values)
+  
+  // Map tour slug → existing image filename
   const slugMap = {
     "stone-town-walking-tour": "stone-town-feature.jpg",
     "stone-town-spice-prison-combo": "stone-town-feature.jpg",
@@ -39,47 +37,116 @@ module.exports = function(eleventyConfig) {
     "serengeti-3day-flyin": "self-drive-suv.jpg",
     "zanzibar-essentials-3day": "packing-beach.jpg"
   };
-  // Make slugMap available as global data so data extensions can access it
-  eleventyConfig.addGlobalData("__slugMap", slugMap);
-  // Add data extension for problem page intents + featured image from tours.json
-  eleventyConfig.addDataExtension("page", function(data, content) {
-    const intentMap = {
-      "family-travel": {problem: "safe beaches children turtle snorkeling spice farm kids", cta_text: "Message us on WhatsApp with children's ages and interests"},
-      "honeymoon-packages": {problem: "romantic sunset dhow cruise private beach dinner", cta_text: "Message us on WhatsApp with preferred style and budget"},
-      "self-drive": {problem: "rental car SUV 4x4 Stone Town east coast", cta_text: "Message us on WhatsApp with preferred vehicle type pickup date duration"},
-      "migration-calendar": {problem: "turtle nesting whale watching dolphin bird migration", cta_text: "Message us on WhatsApp with preferred travel month"},
-      "health-safety": {problem: "mosquito net repellent antimalarial safe swimming", cta_text: "Message us on WhatsApp with specific health concern"},
-      "tribes-culture": {problem: "Swahili culture local tribes authentic traditions", cta_text: "Message us on WhatsApp for custom cultural itineraries"},
-      "packing-guide": {problem: "essential packing list seasonal what NOT to bring", cta_text: "Message us on WhatsApp for personalized packing list"},
-      "spice-farm-cultural": {problem: "spice trade history cloves vanilla nutmeg cinnamon", cta_text: "Message us on WhatsApp to arrange spice farm visit"},
-      "default": {problem: "zanzibar travel planning", cta_text: "Message us on WhatsApp for customized itinerary"}
-    };
-    data.page.intent = intentMap[data.page.inputPath || "default"] || intentMap.default;
 
-    // Map featured_image based on inputPath using the global slugMap
-    const inputPath = data.page.inputPath || "";
-    const slugMap = data.__slugMap || slugMap;
-    if (inputPath.startsWith("pages/tours/")) {
-      const slug = inputPath.replace("pages/tours/", "").replace(/\.(njk|md)$/, "");
-      data.page.featured_image = slugMap[slug] || "default-tour-hero.jpg";
-    } else if (slugMap[inputPath]) {
-      data.page.featured_image = slugMap[inputPath] || "default-tour-hero.jpg";
-    } else {
-      data.page.featured_image = "default-tour-hero.jpg";
+  // Load all 6 metadata JSON files to build a filename→metadata lookup
+  const metadataFiles = [
+    "complete-image-metadata.json",
+    "image-metadata.json",
+    "personal-photo-metadata-updated.json",
+    "personal-photo-metadata.json",
+    "stock-photo-metadata-updated.json",
+    "stock-photo-metadata.json"
+  ];
+  const metadataIndex = {};
+  metadataFiles.forEach(metadataFile => {
+    try {
+      const metadata = JSON.parse(fs.readFileSync(path.join(__dirname, "src", "data", metadataFile), "utf8"));
+      const entries = Array.isArray(metadata) ? metadata : (metadata.images || metadata.metadata || []);
+      entries.forEach(entry => {
+        if (entry && entry.file) {
+          metadataIndex[entry.file] = entry;
+        }
+      });
+    } catch(e) {
+      // Skip metadata files that can't be read
     }
-    return data;
   });
+
+  // Intent map for page intents
+  const intentMap = {
+    "family-travel": {problem: "safe beaches children turtle snorkeling spice farm kids", cta_text: "Message us on WhatsApp with children's ages and interests"},
+    "honeymoon-packages": {problem: "romantic sunset dhow cruise private beach dinner", cta_text: "Message us on WhatsApp with preferred style and budget"},
+    "self-drive": {problem: "rental car SUV 4x4 Stone Town east coast", cta_text: "Message us on WhatsApp with preferred vehicle type pickup date duration"},
+    "migration-calendar": {problem: "turtle nesting whale watching dolphin bird migration", cta_text: "Message us on WhatsApp with preferred travel month"},
+    "health-safety": {problem: "mosquito net repellent antimalarial safe swimming", cta_text: "Message us on WhatsApp with specific health concern"},
+    "tribes-culture": {problem: "Swahili culture local tribes authentic traditions", cta_text: "Message us on WhatsApp for custom cultural itineraries"},
+    "packing-guide": {problem: "essential packing list seasonal what NOT to bring", cta_text: "Message us on WhatsApp for personalized packing list"},
+    "spice-farm-cultural": {problem: "spice trade history cloves vanilla nutmeg cinnamon", cta_text: "Message us on WhatsApp to arrange spice farm visit"},
+    "default": {problem: "zanzibar travel planning", cta_text: "Message us on WhatsApp for customized itinerary"}
+  };
+
+  // Add global data
+  eleventyConfig.addGlobalData("__slugMap", slugMap);
+  eleventyConfig.addGlobalData("__intentMap", intentMap);
+  eleventyConfig.addGlobalData("__metadataIndex", metadataIndex);
+
+  // Helper function to normalize inputPath
+  function normalizePath(inputPath) {
+    if (!inputPath) return "";
+    let p = inputPath;
+    // Remove leading ./ or .\\
+    if (p.startsWith("./")) p = p.slice(2);
+    else if (p.startsWith(".\\")) p = p.slice(2);
+    // Remove leading src/
+    if (p.startsWith("src/")) p = p.slice(4);
+    else if (p.startsWith("src\\")) p = p.slice(4);
+    // Remove any leading path separators
+    while (p.startsWith("/") || p.startsWith("\\")) {
+      p = p.slice(1);
+    }
+    return p;
+  }
+
+  // Add filter to get featured image for a page
+  eleventyConfig.addNunjucksFilter("featuredImage", function(inputPath) {
+    let featuredImage = "default-tour-hero.jpg";
+    let featuredAlt = "";
+
+    const tourPath = normalizePath(inputPath);
+
+    if (tourPath.startsWith("pages/tours/")) {
+      const slug = tourPath.replace("pages/tours/", "").replace(/\.(njk|md)$/, "");
+      const mapSlug = slugMap[slug];
+      if (mapSlug && metadataIndex[mapSlug]) {
+        featuredImage = mapSlug;
+        featuredAlt = metadataIndex[mapSlug].alt_text || "";
+      } else if (mapSlug) {
+        featuredImage = mapSlug;
+      }
+    } else if (slugMap[tourPath]) {
+      const mapSlug = slugMap[tourPath];
+      if (metadataIndex[mapSlug]) {
+        featuredImage = mapSlug;
+        featuredAlt = metadataIndex[mapSlug].alt_text || "";
+      } else {
+        featuredImage = mapSlug;
+      }
+    }
+
+    return { featuredImage, featuredAlt };
+  });
+
+  // Add filter to get intent for a page
+  eleventyConfig.addNunjucksFilter("pageIntent", function(inputPath) {
+    if (!inputPath) return intentMap.default;
+    const tourPath = normalizePath(inputPath);
+    return intentMap[tourPath] || intentMap.default;
+  });
+
   // Enable deep data merging
   eleventyConfig.setDataDeepMerge(true);
+  
   // Add a filter for JSON stringification (useful for JSON‑LD)
   eleventyConfig.addNunjucksFilter("json", function(value) {
     return JSON.stringify(value);
   });
+  
   // Add limit filter for arrays
   eleventyConfig.addNunjucksFilter("limit", function(arr, n) {
     if (!Array.isArray(arr)) return arr;
     return arr.slice(0, n);
   });
+  
   // Add contains filter for strings/arrays
   eleventyConfig.addNunjucksFilter("contains", function(haystack, needle) {
     if (typeof haystack === 'string') {
@@ -90,6 +157,7 @@ module.exports = function(eleventyConfig) {
     }
     return false;
   });
+
   return {
     dir: {
       input: "src",

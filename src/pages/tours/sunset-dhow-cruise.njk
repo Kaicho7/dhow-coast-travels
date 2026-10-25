@@ -7,13 +7,8 @@ permalink: "/tours/sunset-dhow-cruise/index.html"
 <main class="tour-detail">
   <section class="tour-hero" style="background: linear-gradient(135deg, var(--dct-palm) 0%, var(--dct-ocean) 100%);">
     <div class="tour-hero-content">
-      {% set tourSlug = "sunset-dhow-cruise" %}
-{% set slugMap = __slugMap %}
-{% if slugMap[tourSlug] %}
-      <img src="/images/{{ slugMap[tourSlug] }}" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
-{% else %}
-      <img src="/images/default-tour-hero.jpg" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
-{% endif %}
+      {% set featured = page.inputPath | featuredImage %}
+<img src="/images/{{ featured.featuredImage }}" alt="{{ featured.featuredAlt or page.title }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
 
       <span class="card-badge badge-marine">MAR — Marine Excursion</span>
       <h1>Sunset dhow cruise</h1>
