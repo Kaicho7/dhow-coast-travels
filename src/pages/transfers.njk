@@ -21,7 +21,8 @@ permalink: "/transfers/index.html"
         {% for transfer in transfers %}
           <article class="card transfer-card reveal" data-category="TRF">
             <div class="card-image" style="position:relative;">
-            <img src="/images/zanzibar-private-hire-minivan-airport-transfer.jpg" alt="Private minivan waiting outside Zanzibar airport arrivals" loading="lazy">
+              {% set trImg = ["white-van-zanzibar-tourism.jpg","zanzibar-tourist-van-rental.jpg","private-hire-van-zanzibar.jpg"][loop.index0 % 3] %}
+              <img src="/images/{{ trImg }}" alt="{{ transfer.title }} — private transfer vehicle, Zanzibar" loading="lazy">
               <span class="card-badge badge-transfer" style="position: absolute; top: 1rem; left: 1rem; right: auto;">Transfer</span>
             </div>
             <div class="card-content">

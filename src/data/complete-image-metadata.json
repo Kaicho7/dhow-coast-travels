@@ -922,36 +922,6 @@
       ]
     },
     {
-      "file": "kizimkazi-dolphin-watching-tour.jpg",
-      "width": 1920,
-      "height": 1080,
-      "category": "marine-activity",
-      "subcategory": "dolphin-watching",
-      "alt_text": "Dolphins swimming in Indian Ocean — Kizimkazi morning trip, tourist boat",
-      "description": "Authentic Zanzibar beach photo from personal 2020 travel collection — pristine white sand, crystal-clear turquoise waters, tropical coastal scenery",
-      "primary_use": "tours/kizimkazi-dolphin-tour, travel-guide",
-      "secondary_use": [
-        "packages",
-        "self-drive",
-        "family-travel",
-        "honeymoon-packages"
-      ],
-      "photographer_source": "Personal collection — Zanzibar 2020 trip (camera & Facebook photos)",
-      "optimization": "webp-format, 85% quality, responsive srcset, lazy-loading",
-      "original_filename": "FB_IMG_1584392520358-300x300_8aac13b6bacdbf997784a3f84c7ee4c1_optimized.jpg",
-      "date_taken": "2020",
-      "seo_keywords": [
-        "kizimkazi",
-        "dolphin watching",
-        "zanzibar",
-        "marine life",
-        "boat trip",
-        "indian ocean",
-        "wildlife",
-        "ocean adventure"
-      ]
-    },
-    {
       "file": "kizimkazi-dolphin-tour.jpg",
       "width": 1920,
       "height": 1080,
@@ -4538,36 +4508,6 @@
       ]
     },
     {
-      "file": "nakupenda-sandbank-zanzibar-turquoise-water-boat.jpg",
-      "width": 1920,
-      "height": 1080,
-      "category": "beach-location",
-      "subcategory": "tour-summary",
-      "alt_text": "Nakupenda sandbank — white sand, turquoise Indian Ocean, traditional boat with orange canopy",
-      "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
-      "primary_use": "tours/nakupenda-sandbank, home-hero, gallery",
-      "secondary_use": [
-        "packages",
-        "self-drive",
-        "family-travel",
-        "honeymoon-packages"
-      ],
-      "photographer_source": "Unsplash/Pexels/Pixabay royalty-free stock — Zanzibar themed",
-      "optimization": "webp-format, 85% quality, responsive srcset, lazy-loading",
-      "original_filename": "gettyimages-585993588-612x612_optimized.jpg",
-      "date_taken": "2026-research",
-      "seo_keywords": [
-        "nakupenda",
-        "sandbank",
-        "stone town",
-        "zanzibar",
-        "indian ocean",
-        "turquoise water",
-        "boat trip",
-        "tropical island"
-      ]
-    },
-    {
       "file": "zanzibar-mnemba-atoll-scuba-diving-coral-reef.jpg",
       "width": 1920,
       "height": 1080,
@@ -4838,68 +4778,6 @@
         "kendwa",
         "paje",
         "taxi"
-      ]
-    },
-    {
-      "file": "zanzibar-airport-transfer-minivan-toyota-hiace.jpg",
-      "width": 1920,
-      "height": 1080,
-      "category": "vehicle-type",
-      "subcategory": "general",
-      "alt_text": "Toyota Hiace minivan — silver and brown exterior, tinted windows, tourism transport vehicle",
-      "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
-      "primary_use": "travel-guide, gallery",
-      "secondary_use": [
-        "packages",
-        "self-drive",
-        "family-travel",
-        "honeymoon-packages"
-      ],
-      "photographer_source": "Unsplash/Pexels/Pixabay royalty-free stock — Zanzibar themed",
-      "optimization": "webp-format, 85% quality, responsive srcset, lazy-loading",
-      "original_filename": "images (12)_optimized.jpg",
-      "date_taken": "2026-research",
-      "seo_keywords": [
-        "zanzibar",
-        "stone town",
-        "nungwi",
-        "airport transfer",
-        "toyota hiace",
-        "minivan",
-        "transportation",
-        "tourist shuttle",
-        "full time 4wd"
-      ]
-    },
-    {
-      "file": "zanzibar-airport-transfer-minivan-toyota-alphard.jpg",
-      "width": 1920,
-      "height": 1080,
-      "category": "vehicle-type",
-      "subcategory": "general",
-      "alt_text": "Toyota Alphard minivan — black luxury transport, airport transfer vehicle, parking area",
-      "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
-      "primary_use": "travel-guide, about-page, gallery",
-      "secondary_use": [
-        "packages",
-        "self-drive",
-        "family-travel",
-        "honeymoon-packages"
-      ],
-      "photographer_source": "Unsplash/Pexels/Pixabay royalty-free stock — Zanzibar themed",
-      "optimization": "webp-format, 85% quality, responsive srcset, lazy-loading",
-      "original_filename": "images (5)_optimized.jpg",
-      "date_taken": "2026-research",
-      "seo_keywords": [
-        "zanzibar",
-        "transport",
-        "toyota alphard",
-        "minivan",
-        "airport transfer",
-        "stone town",
-        "fumba",
-        "mbweni",
-        "taxi service"
       ]
     },
     {
