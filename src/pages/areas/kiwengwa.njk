@@ -41,7 +41,7 @@ permalink: "/areas/kiwengwa/index.html"
   {% if hotel.name in ["Bluebay Beach Resort & Spa", "Kiwengwa Beach Resort", "Melia Zanzibar", "Villa Stecchini", "Blue Bay Diving Center", "The Z Hotel"] %}
   <article class="card hotel-card reveal" data-tier="{{ hotel.tier }}" data-zone="{{ hotel.zone }}" data-island="{{ hotel.island }}">
     <div class="card-image" style="position:relative;">
-      <img src="/images/{{ hotel.zone | zoneImg }}" alt="{{ hotel.name }} — Zanzibar hotel" loading="lazy">
+      <img src="/images/{{ hotel.zone | zoneImg(hotel.name) }}" alt="{{ hotel.name }} — Zanzibar hotel" loading="lazy">
     <div class="card-content">
       <span class="card-badge badge-{{ hotel.tier | lower | replace('upper-', 'upper-') }}">{{ hotel.tier | capitalize }}</span>
       <h3 class="card-title"><a href="{{ hotel.website }}" target="_blank" rel="noopener">{{ hotel.name }}</a></h3>

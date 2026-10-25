@@ -114,7 +114,7 @@ module.exports = function(eleventyConfig) {
   // Map an attraction name/category → existing image filename (real local photos preferred)
   const attractionImage = {
     "Baraka Aquarium (Main)": "mnemba-atoll-snorkeling-green-sea-turtle.jpg",
-    "Baraka Natural Aquarium": "mnemba-atoll-snorkeling-green-sea-turtle.jpg",
+    "Baraka Natural Aquarium": "migration-turtle.jpg",
     "Cheetah's Rock": "jozani-forest-sykes-monkey-zanzibar-wildlife-2.jpg",
     "Forodhani Market (Official)": "stone-town-forodhani-gardens-cannons-harbor.jpg",
     "Fukuchani Ruins": "stone-town-market-old-fort.jpg",
@@ -124,7 +124,7 @@ module.exports = function(eleventyConfig) {
     "Kuza Cave": "zanzibar-jambiani-beach-low-tide-local-children.jpg",
     "Mangapwani Slave Chambers": "stone-town-former-slave-market.jpg",
     "Menai Bay Conservation": "zanzibar-traditional-wooden-boat-turquoise-water.jpg",
-    "Mnarani Marine Turtle Pond": "mnemba-atoll-snorkeling-green-sea-turtle.jpg",
+    "Mnarani Marine Turtle Pond": "migration-turtle.jpg",
     "Mrembo Spa & Traditional Services": "stone-town-courtyard-restaurant-emerson-spice.jpg",
     "Nakupenda Sandbank": "nakupenda-sandbank-tour-zanzibar.jpg",
     "Nakupenda Sandbank (Tour)": "nakupenda-sandbank-tour-zanzibar.jpg",
@@ -151,7 +151,7 @@ module.exports = function(eleventyConfig) {
     "Baraka Aquarium": "mnemba-atoll-snorkeling-green-sea-turtle.jpg",
     "Spice Farm Tour": "nutmeg-spice-farm-zanzibar.jpg",
     "Nungwi Beach": "nungwi-beach-children-swimming-traditional-dhow-boats.jpg",
-    "Mnarani Marine Turtle Pond": "mnemba-atoll-snorkeling-green-sea-turtle.jpg",
+    "Mnarani Marine Turtle Pond": "migration-turtle.jpg",
     "Kuza Cave": "zanzibar-jambiani-beach-low-tide-local-children.jpg"
   };
   const attrCategoryArrays = {
