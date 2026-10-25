@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://silly-horse-186f24.netlify.app/sitemap.xml
+Sitemap: https://dhowcoasttravel.netlify.app/sitemap.xml
