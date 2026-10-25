@@ -4,11 +4,8 @@
 
 # SPA fallback: rewrite all unknown URLs to index.html
 # force=false means real files (sitemap.xml, robots.txt, 404.html) are served first
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+# Redirects now handled by dist/_redirects file
+# (allows static files like sitemap.xml and robots.txt to be served first)
 
 [functions]
   directory = "netlify/functions"
