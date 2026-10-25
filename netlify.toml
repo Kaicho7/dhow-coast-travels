@@ -2,5 +2,13 @@
   publish = "dist"
   command = "npm install && npm run build"
 
+# SPA fallback: rewrite unknown routes to index.html
+# force=false (default) ensures static files are served first
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
 [functions]
   directory = "netlify/functions"
