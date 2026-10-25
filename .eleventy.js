@@ -18,23 +18,23 @@ module.exports = function(eleventyConfig) {
     }
   }
   
-  // Map tour slug → existing image filename
+  // Map tour slug → existing image filename (keyword-scored heroes from SEO re-tag)
   const slugMap = {
-    "stone-town-walking-tour": "stone-town-feature.jpg",
-    "stone-town-spice-prison-combo": "stone-town-feature.jpg",
-    "spice-farm": "spice-farm-sign.jpg",
-    "village-community-tour": "chake-chake-town.jpg",
-    "safari-blue": "mnemba-snorkeling.jpg",
-    "mnemba-snorkeling": "mnemba-snorkeling.jpg",
-    "prison-island-nakupenda": "migration-turtle.jpg",
-    "nakupenda-sandbank": "mnemba-snorkeling.jpg",
-    "chumbe-island": "mnemba-snorkeling.jpg",
-    "sunset-dhow-cruise": "packing-beach.jpg",
-    "kizimkazi-dolphin-tour": "kizimkazi-dolphin.jpg",
-    "jozani-forest": "tribes-culture-dance.jpg",
-    "kuza-cave-seaweed": "packing-beach.jpg",
-    "mikumi-nyerere-day-safari": "self-drive-suv.jpg",
-    "serengeti-3day-flyin": "self-drive-suv.jpg",
+    "stone-town-walking-tour": "mariola-grobelska-4DhGPppqcDE-unsplash.jpg",
+    "stone-town-spice-prison-combo": "excursions.png",
+    "spice-farm": "nutmeg-spice-farm-zanzibar.jpg",
+    "village-community-tour": "zanzibar-market-scene-local-produce.jpg",
+    "safari-blue": "zanzibar-traditional-wooden-boat-turquoise-water.jpg",
+    "mnemba-snorkeling": "mnemba-atoll-snorkeling-green-sea-turtle.jpg",
+    "prison-island-nakupenda": "prison-island-wooden-pier-boats-zanzibar.jpg",
+    "nakupenda-sandbank": "nakupenda-sandbank-tour-zanzibar.jpg",
+    "chumbe-island": "mnemba-atoll-snorkeling-tropical-fish-coral.jpg",
+    "sunset-dhow-cruise": "zanzibar-nungwi-sunset-dhow-cruise-ocean.jpg",
+    "kizimkazi-dolphin-tour": "kizimkazi-dolphin-watching-tour.jpg",
+    "jozani-forest": "jozani-forest-red-colobus-monkeys.jpg",
+    "kuza-cave-seaweed": "seaweed-farming-zanzibar-coast.jpg",
+    "mikumi-nyerere-day-safari": "lukasz-lu8BMgAs64Q-unsplash.jpg",
+    "serengeti-3day-flyin": "masai-giraffe-close-up-tanzania-safari.jpg",
     "zanzibar-essentials-3day": "packing-beach.jpg"
   };
 
