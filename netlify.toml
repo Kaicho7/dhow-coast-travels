@@ -2,6 +2,8 @@
   publish = "dist"
   command = "npm install && npm run build"
 
+# SPA fallback: rewrite all unknown URLs to index.html
+# force=false means real files (sitemap.xml, robots.txt, 404.html) are served first
 [[redirects]]
   from = "/*"
   to = "/index.html"
