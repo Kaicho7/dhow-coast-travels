@@ -22,7 +22,7 @@ permalink: "/tours/index.html"
   <section class="cards tour-grid">
     {% for tour in tours %}
       <article class="card tour-card reveal" data-category="{{ tour.category }}">
-        <div class="card-image image-placeholder">
+        <div class="card-image">
           {% set imgFile = __slugMap[tour.slug] or __slugMap[tour.seo_slug] or "default-tour-hero.jpg" %}
           <img src="/images/{{ imgFile }}" alt="{{ tour.title }} — Zanzibar tour" class="tour-card-image" loading="lazy">
         </div>
