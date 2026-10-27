@@ -47,7 +47,7 @@ permalink: "/areas/jambiani/index.html"
     <div class="card-content">
       <span class="card-badge badge-{{ hotel.tier | lower | replace('upper-', 'upper-') }}">{{ hotel.tier | capitalize }}</span>
       <h3 class="card-title"><a href="{{ hotel.website }}" target="_blank" rel="noopener">{{ hotel.name }}</a></h3>
-      <p class="card-meta">{{ hotel.zone }}, {{ hotel.island }} • {{ hotel.star_rating or "Ungraded" }}</p>
+      <p class="card-meta">{{ hotel.zone }}{% if hotel.zone %}, {% endif %}{{ hotel.island }} • {{ hotel.star_rating or "Ungraded" }}</p>
       {% if hotel.category %}<p class="card-description">{{ hotel.category }}</p>{% endif %}
       <div class="card-footer">
         <span class="card-price">{{ hotel.price_range or "Contact for rates" }}</span>
@@ -82,7 +82,7 @@ permalink: "/areas/jambiani/index.html"
     <div class="card-content">
       <span class="card-badge badge-cultural">{{ attraction.type }}</span>
       <h3 class="card-title">{{ attraction.name }}</h3>
-      <p class="card-meta">{{ attraction.zone }}, {{ attraction.island }}</p>
+      <p class="card-meta">{{ attraction.zone }}{% if attraction.zone %}, {% endif %}{{ attraction.island }}</p>
       {% if attraction.website %}
         <a href="{{ attraction.website }}" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Visit Website</a>
       {% else %}
