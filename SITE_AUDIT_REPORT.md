@@ -1,55 +1,58 @@
 # Site audit report
 
 Site: https://dhowcoasttravel.netlify.app/  
-Pages crawled: 55  
+Pages crawled: 61  
 Images seen: 68  
-Stamp: 2026-10-27 15:10
+Stamp: 2026-10-27 15:19
 
-**0 ERROR findings, 555 WARN findings.** Exit code is 0 (passed).
+**0 ERROR findings, 329 WARN findings.** Exit code is 0 (passed).
 
 ## Summary by check
 
 | Severity | Check | Count |
 |---|---|---|
-| WARN | ALT_FORMULAIC | 421 |
+| WARN | ALT_FORMULAIC | 229 |
 | WARN | ALT_VARIES_SAME_IMG | 53 |
+| WARN | DESC_LENGTH | 1 |
 | WARN | FILE_GENERIC | 2 |
 | WARN | FILE_STOCK | 2 |
 | WARN | IMG_BIG | 8 |
 | WARN | IMG_REUSE | 29 |
-| WARN | TEXT_GLITCH | 19 |
-| WARN | WA_REPEATED | 20 |
-| WARN | WA_SEQUENTIAL | 1 |
+| WARN | TEXT_GLITCH | 5 |
 
 ## Details (first 10 of each check; everything is in site_audit_findings.csv)
 
-### WARN ALT_FORMULAIC (421)
+### WARN ALT_FORMULAIC (229)
 
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/mariola-grobelska-4DhGPppqcDE-unsplash.jpg | alt: Stone Town walking tour — Zanzibar
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/nutmeg-spice-farm-zanzibar.jpg | alt: Spice farm tour — Zanzibar
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-market-scene-local-produce.jpg | alt: Village / community tour — Zanzibar
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/excursions.png | alt: Stone Town + Spice Farm + Prison Island combo — Zanzibar
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-traditional-wooden-boat-turquoise-water.jpg | alt: Safari Blue / Menai Bay dhow day — Zanzibar
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/mnemba-atoll-snorkeling-green-sea-turtle.jpg | alt: Mnemba Atoll snorkeling / dolphin trip — Zanzibar
-- `https://dhowcoasttravel.netlify.app/areas/` — https://dhowcoasttravel.netlify.app/images/mariola-grobelska-4DhGPppqcDE-unsplash.jpg | alt: Stone Town — Zanzibar
-- `https://dhowcoasttravel.netlify.app/areas/` — https://dhowcoasttravel.netlify.app/images/nungwi-beach-children-swimming-traditional-dhow-boats.jpg | alt: Nungwi — Zanzibar
-- `https://dhowcoasttravel.netlify.app/areas/` — https://dhowcoasttravel.netlify.app/images/zanzibar-kendwa-beach-aerial-dhow-kayak.jpg | alt: Kendwa — Zanzibar
-- `https://dhowcoasttravel.netlify.app/areas/` — https://dhowcoasttravel.netlify.app/images/paje-beach-zanzibar-kitesurfing-indian-ocean.jpg | alt: Paje — Zanzibar
-- … and 411 more
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-traditional-wooden-boat-turquoise-water.jpg | alt: &Beyond Mnemba Island — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-local-children-beach.jpg | alt: Baraza Resort and Spa — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-traditional-wooden-boat-turquoise-water.jpg | alt: Bawe Tropical Island — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-island-resort-pier-boats.jpg | alt: Bluebay Beach Resort & Spa — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-local-snorkeling-mnemba-atoll-matemwe.jpg | alt: Emerald Zanzibar Resort & Spa — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/stone-town-st-josephs-cathedral.jpg | alt: Emerson Spice — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/stone-town-forodhani-gardens-cannons-harbor.jpg | alt: Emerson on Hurumzi — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-fishermen-traditional-ngalawa-boat-nungwi.jpg | alt: Essque Zalu Zanzibar — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/kizimkazi-zanzibar-dolphins-jumping-indian-ocean.jpg | alt: Fruit & Spice Wellness Resort — Zanzibar hotel
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-traditional-wooden-boat-turquoise-water.jpg | alt: Fundu Lagoon — Zanzibar hotel
+- … and 219 more
 
 ### WARN ALT_VARIES_SAME_IMG (53)
 
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/mariola-grobelska-4DhGPppqcDE-unsplash.jpg has 9 different alts
+- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/mariola-grobelska-4DhGPppqcDE-unsplash.jpg has 11 different alts
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/nutmeg-spice-farm-zanzibar.jpg has 5 different alts
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-market-scene-local-produce.jpg has 3 different alts
+- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-market-scene-local-produce.jpg has 2 different alts
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/excursions.png has 3 different alts
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-traditional-wooden-boat-turquoise-water.jpg has 25 different alts
+- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-traditional-wooden-boat-turquoise-water.jpg has 28 different alts
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/mnemba-atoll-snorkeling-green-sea-turtle.jpg has 7 different alts
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/nungwi-beach-children-swimming-traditional-dhow-boats.jpg has 6 different alts
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-kendwa-beach-aerial-dhow-kayak.jpg has 13 different alts
-- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/paje-beach-zanzibar-kitesurfing-indian-ocean.jpg has 13 different alts
+- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/nungwi-beach-children-swimming-traditional-dhow-boats.jpg has 8 different alts
+- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-kendwa-beach-aerial-dhow-kayak.jpg has 14 different alts
+- `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/paje-beach-zanzibar-kitesurfing-indian-ocean.jpg has 14 different alts
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-jambiani-beach-village-life-women.jpg has 10 different alts
 - … and 43 more
+
+### WARN DESC_LENGTH (1)
+
+- `https://dhowcoasttravel.netlify.app/blog/zanzibar-marine-fees-explained.html` — 169 chars
 
 ### WARN FILE_GENERIC (2)
 
@@ -66,11 +69,11 @@ Stamp: 2026-10-27 15:10
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/mariola-grobelska-4DhGPppqcDE-unsplash.jpg is 720 KB
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/packing-beach.jpg is 466 KB
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/lukasz-lu8BMgAs64Q-unsplash.jpg is 2352 KB
-- `https://dhowcoasttravel.netlify.app/areas/` — https://dhowcoasttravel.netlify.app/images/zanzibar-jambiani-beach-low-tide-local-children.jpg is 655 KB
-- `https://dhowcoasttravel.netlify.app/areas/kendwa/` — https://dhowcoasttravel.netlify.app/images/zanzibar-beach-wedding-setup-nungwi-kendwa.jpg is 431 KB
-- `https://dhowcoasttravel.netlify.app/areas/stone-town/` — https://dhowcoasttravel.netlify.app/images/stone-town-courtyard-restaurant-emerson-spice.jpg is 704 KB
-- `https://dhowcoasttravel.netlify.app/attractions/` — https://dhowcoasttravel.netlify.app/images/stone-town-darajani-market-fresh-produce-vegetables.jpg is 439 KB
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/stone-town-courtyard-restaurant-emerson-spice.jpg is 704 KB
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-beach-wedding-setup-nungwi-kendwa.jpg is 431 KB
 - `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/nungwi-beach.jpg is 523 KB
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-jambiani-beach-low-tide-local-children.jpg is 655 KB
+- `https://dhowcoasttravel.netlify.app/attractions/` — https://dhowcoasttravel.netlify.app/images/stone-town-darajani-market-fresh-produce-vegetables.jpg is 439 KB
 
 ### WARN IMG_REUSE (29)
 
@@ -83,40 +86,16 @@ Stamp: 2026-10-27 15:10
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/paje-beach-zanzibar-kitesurfing-indian-ocean.jpg used 14 times across 5 page(s)
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-jambiani-beach-village-life-women.jpg used 10 times across 3 page(s)
 - `https://dhowcoasttravel.netlify.app/` — https://dhowcoasttravel.netlify.app/images/zanzibar-island-resort-pier-boats.jpg used 21 times across 6 page(s)
-- `https://dhowcoasttravel.netlify.app/areas/` — https://dhowcoasttravel.netlify.app/images/the-rock-restaurant-michamvi-pingwe-zanzibar.jpg used 14 times across 7 page(s)
+- `https://dhowcoasttravel.netlify.app/hotels/` — https://dhowcoasttravel.netlify.app/images/zanzibar-local-children-beach.jpg used 8 times across 2 page(s)
 - … and 19 more
 
-### WARN TEXT_GLITCH (19)
+### WARN TEXT_GLITCH (5)
 
+- `https://dhowcoasttravel.netlify.app/honeymoon-packages/` — underscore word (template leak?) (x1): …t doorways, and the atmospheric_forest create a magical ev…
+- `https://dhowcoasttravel.netlify.app/hotels/` — 'star' printed twice / 'Ungraded star' (x213): …te Island, Unguja • 5-Star star Luxury Boutique Con…
+- `https://dhowcoasttravel.netlify.app/hotels/` — location text starts with a comma (x3): …ii Garden Bungalows , Unguja • Ungraded sta…
+- `https://dhowcoasttravel.netlify.app/tribes-culture/` — location text starts with a comma (x1): …r 120 ethnic groups , each with distinct la…
 - `https://dhowcoasttravel.netlify.app/areas/` — repeated label (e.g. CUL CUL CUL) (x12): … European heritage. CUL CUL CUL 7 hotels · 2 attrac…
-- `https://dhowcoasttravel.netlify.app/areas/` — '1 attractions' grammar (x8): … CUL CUL 9 hotels · 1 attractions · 3 recommended tou…
-- `https://dhowcoasttravel.netlify.app/areas/bwejuu/` — 'star' printed twice / 'Ungraded star' (x5): …pa Bwejuu, Unguja • 5-Star star Luxury Resort Conta…
-- `https://dhowcoasttravel.netlify.app/areas/fumba/` — 'star' printed twice / 'Ungraded star' (x3): …ar Muyuni, Unguja • 5-Star star Luxury Resort Conta…
-- `https://dhowcoasttravel.netlify.app/areas/jambiani/` — 'star' printed twice / 'Ungraded star' (x3): …Paje Paje, Unguja • 3-Star star Boutique Contact fo…
-- `https://dhowcoasttravel.netlify.app/areas/kendwa/` — 'star' printed twice / 'Ungraded star' (x3): …pa Kendwa, Unguja • 5-Star star Luxury Resort Conta…
-- `https://dhowcoasttravel.netlify.app/areas/kiwengwa/` — 'star' printed twice / 'Ungraded star' (x5): … Kiwengwa, Unguja • 5-Star star Luxury Resort Conta…
-- `https://dhowcoasttravel.netlify.app/areas/kizimkazi/` — 'star' printed twice / 'Ungraded star' (x3): …Kizimkazi, Unguja • 5-Star star Luxury Resort Conta…
-- `https://dhowcoasttravel.netlify.app/areas/matemwe/` — 'star' printed twice / 'Ungraded star' (x3): …l Matemwe, Unguja • 5-Star star Luxury Boutique Con…
-- `https://dhowcoasttravel.netlify.app/areas/michamvi/` — 'star' printed twice / 'Ungraded star' (x3): … Michamvi, Unguja • 5-Star star Luxury Boutique Con…
-- … and 9 more
-
-### WARN WA_REPEATED (20)
-
-- `https://dhowcoasttravel.netlify.app/areas/bwejuu/, https://dhowcoasttravel.netlify.app/areas/kizimka` — +255774440900 is listed for 3 different headings: Baraza Resort and Spa; TUI BLUE Bahari Zanzibar; The Residence Zanzibar
-- `https://dhowcoasttravel.netlify.app/areas/bwejuu/, https://dhowcoasttravel.netlify.app/hotels/` — +255777444222 is listed for 2 different headings: Anna of Zanzibar; Paje By Night
-- `https://dhowcoasttravel.netlify.app/areas/fumba/, https://dhowcoasttravel.netlify.app/areas/pongwe/,` — +255777603559 is listed for 2 different headings: The Neela Boutique Hotel; The Neela Oceanfront
-- `https://dhowcoasttravel.netlify.app/areas/jambiani/, https://dhowcoasttravel.netlify.app/hotels/` — +255777666444 is listed for 2 different headings: Blue Oyster Hotel; Dhow Inn
-- `https://dhowcoasttravel.netlify.app/areas/kendwa/, https://dhowcoasttravel.netlify.app/areas/nungwi/` — +255779700005 is listed for 2 different headings: Gold Zanzibar Beach House & Spa; Zuri Zanzibar
-- `https://dhowcoasttravel.netlify.app/areas/kiwengwa/, https://dhowcoasttravel.netlify.app/hotels/` — +255774413321 is listed for 2 different headings: Bluebay Beach Resort & Spa; Sultan Sands Island Resort
-- `https://dhowcoasttravel.netlify.app/areas/matemwe/, https://dhowcoasttravel.netlify.app/hotels/` — +255736500515 is listed for 2 different headings: Matemwe Beach House; Matemwe Retreat
-- `https://dhowcoasttravel.netlify.app/areas/matemwe/, https://dhowcoasttravel.netlify.app/hotels/` — +255776595866 is listed for 2 different headings: Sunshine Hotel Matemwe; Sunshine Marine Lodge
-- `https://dhowcoasttravel.netlify.app/areas/nungwi/, https://dhowcoasttravel.netlify.app/hotels/` — +255774440991 is listed for 2 different headings: Riu Jambo; Riu Palace Zanzibar
-- `https://dhowcoasttravel.netlify.app/areas/nungwi/, https://dhowcoasttravel.netlify.app/hotels/` — +255777888999 is listed for 2 different headings: Baraka Beach Bungalows; Hodi Hodi Zanzibar
-- … and 10 more
-
-### WARN WA_SEQUENTIAL (1)
-
-- `(site-wide)` — 37 numbers follow the pattern 255777413 3xx (looks generated, e.g. 255777413324, 255777413326, 255777413327)
 
 ## Numbers the site claims (compare by eye)
 
@@ -133,12 +112,17 @@ Attractions
 - `https://dhowcoasttravel.netlify.app/`: 36
 Zones
 - `https://dhowcoasttravel.netlify.app/`: 14 Areas
+- `https://dhowcoasttravel.netlify.app/forty-activities/`: 16 tours
+- `https://dhowcoasttravel.netlify.app/forty-activities/`: 213 hotels
+- `https://dhowcoasttravel.netlify.app/forty-activities/`: 60 attractions
+- `https://dhowcoasttravel.netlify.app/forty-activities/`: 14 zones
+- `https://dhowcoasttravel.netlify.app/hotels/`: 213 hand-picked hotels
 - `https://dhowcoasttravel.netlify.app/areas/`: 7 hotels
 - `https://dhowcoasttravel.netlify.app/areas/`: 2 attractions
 - `https://dhowcoasttravel.netlify.app/areas/`: 9 hotels
-- `https://dhowcoasttravel.netlify.app/areas/`: 1 attractions
+- `https://dhowcoasttravel.netlify.app/areas/`: 1 attraction
 - `https://dhowcoasttravel.netlify.app/areas/`: 3 hotels
-- `https://dhowcoasttravel.netlify.app/areas/`: 1 hotels
+- `https://dhowcoasttravel.netlify.app/areas/`: 1 hotel
 - `https://dhowcoasttravel.netlify.app/areas/`: 4 attractions
 - `https://dhowcoasttravel.netlify.app/areas/`: 5 hotels
 - `https://dhowcoasttravel.netlify.app/areas/`: 0 attractions
@@ -204,11 +188,6 @@ Attractions
 Partner Hotels
 - `https://dhowcoasttravel.netlify.app/areas/wambaa-gulf/`: 1
 Attractions
-- `https://dhowcoasttravel.netlify.app/forty-activities/`: 16 tours
-- `https://dhowcoasttravel.netlify.app/forty-activities/`: 213 hotels
-- `https://dhowcoasttravel.netlify.app/forty-activities/`: 60 attractions
-- `https://dhowcoasttravel.netlify.app/forty-activities/`: 14 zones
-- `https://dhowcoasttravel.netlify.app/hotels/`: 213 hand-picked hotels
 
 ## Pages
 
@@ -216,6 +195,26 @@ Attractions
 |---|---|---|---|
 | 200 | https://dhowcoasttravel.netlify.app/ | Zanzibar Tours, Transfers & Packages | Dhow Coast Travels | 15 |
 | 200 | https://dhowcoasttravel.netlify.app/about/ | About Us | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/blog/ | Zanzibar Travel Blog & Guides | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/family-travel/ | Zanzibar Family Travel Guide | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/forty-activities/ | 40 Things to Do in Zanzibar | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/health-safety/ | Health & Safety in Zanzibar | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/honeymoon-packages/ | Zanzibar Honeymoon Packages | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/hotels/ | Zanzibar Hotels & Resorts | Dhow Coast Travels | 217 |
+| 200 | https://dhowcoasttravel.netlify.app/migration-calendar/ | Zanzibar & Tanzania Migration Calendar | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/packages/ | Zanzibar Multi-Day Packages | Dhow Coast Travels | 6 |
+| 200 | https://dhowcoasttravel.netlify.app/packages/zanzibar-essentials-3day/ | Zanzibar Essentials 3-Day Package | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/packing-guide/ | Zanzibar Packing Guide | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/safaris/ | Mainland Safaris from Zanzibar | Dhow Coast Travels | 3 |
+| 200 | https://dhowcoasttravel.netlify.app/safety-health-guide/ | Zanzibar Safety & Health Guide | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/self-drive/ | Zanzibar Self-Drive & 4x4 Hire | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/spice-farm-cultural/ | Zanzibar Spice Farm Experience | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/thirty-six-hours/ | 36 Hours in Zanzibar | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/tours/ | Zanzibar Tours & Day Trips | Dhow Coast Travels | 16 |
+| 200 | https://dhowcoasttravel.netlify.app/transfers/ | Zanzibar Airport Transfers | Dhow Coast Travels | 9 |
+| 200 | https://dhowcoasttravel.netlify.app/travel-guide/ | Ultimate Zanzibar Travel Guide | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/tribes-culture/ | Tribes & Culture of Tanzania | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/zanzibar-cultural-experiences/ | Zanzibar Cultural Experiences | Dhow Coast Travels | 0 |
 | 200 | https://dhowcoasttravel.netlify.app/areas/ | Zanzibar Areas & Beaches Guide | Dhow Coast Travels | 21 |
 | 200 | https://dhowcoasttravel.netlify.app/areas/bwejuu/ | Bwejuu & Dongwe | Dhow Coast Travels | 9 |
 | 200 | https://dhowcoasttravel.netlify.app/areas/chake-chake/ | Chake Chake, Pemba | Dhow Coast Travels | 3 |
@@ -232,23 +231,13 @@ Attractions
 | 200 | https://dhowcoasttravel.netlify.app/areas/stone-town/ | Stone Town | Dhow Coast Travels | 12 |
 | 200 | https://dhowcoasttravel.netlify.app/areas/wambaa-gulf/ | Wambaa Gulf, Pemba | Dhow Coast Travels | 3 |
 | 200 | https://dhowcoasttravel.netlify.app/attractions/ | Zanzibar Attractions & Activities | Dhow Coast Travels | 57 |
-| 200 | https://dhowcoasttravel.netlify.app/blog/ | Zanzibar Travel Blog & Guides | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/blog/best-time-to-visit-zanzibar.html | Best Time to Visit Zanzibar | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/blog/responsible-tourism-zanzibar.html | Responsible Tourism in Zanzibar | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/blog/safari-from-zanzibar-guide.html | Safari from Zanzibar Guide | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/blog/stone-town-walking-tour-guide.html | Stone Town Walking Tour Guide | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/blog/zanzibar-airport-transfer-guide.html | Zanzibar Airport Transfer Guide | Dhow Coast Travels | 0 |
+| 200 | https://dhowcoasttravel.netlify.app/blog/zanzibar-marine-fees-explained.html | Zanzibar Marine Fees Explained | Dhow Coast Travels | 0 |
 | 200 | https://dhowcoasttravel.netlify.app/contact/ | Contact Us | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/family-travel/ | Zanzibar Family Travel Guide | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/forty-activities/ | 40 Things to Do in Zanzibar | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/health-safety/ | Health & Safety in Zanzibar | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/honeymoon-packages/ | Zanzibar Honeymoon Packages | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/hotels/ | Zanzibar Hotels & Resorts | Dhow Coast Travels | 217 |
-| 200 | https://dhowcoasttravel.netlify.app/migration-calendar/ | Zanzibar & Tanzania Migration Calendar | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/packages/ | Zanzibar Multi-Day Packages | Dhow Coast Travels | 6 |
-| 200 | https://dhowcoasttravel.netlify.app/packages/zanzibar-essentials-3day/ | Zanzibar Essentials 3-Day Package | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/packing-guide/ | Zanzibar Packing Guide | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/safaris/ | Mainland Safaris from Zanzibar | Dhow Coast Travels | 3 |
-| 200 | https://dhowcoasttravel.netlify.app/safety-health-guide/ | Zanzibar Safety & Health Guide | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/self-drive/ | Zanzibar Self-Drive & 4x4 Hire | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/spice-farm-cultural/ | Zanzibar Spice Farm Experience | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/thirty-six-hours/ | 36 Hours in Zanzibar | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/tours/ | Zanzibar Tours & Day Trips | Dhow Coast Travels | 16 |
 | 200 | https://dhowcoasttravel.netlify.app/tours/chumbe-island/ | Chumbe Island Coral Park | Dhow Coast Travels | 1 |
 | 200 | https://dhowcoasttravel.netlify.app/tours/jozani-forest/ | Jozani Forest & Red Colobus | Dhow Coast Travels | 1 |
 | 200 | https://dhowcoasttravel.netlify.app/tours/kizimkazi-dolphin-tour/ | Kizimkazi Dolphin Tour | Dhow Coast Travels | 1 |
@@ -265,7 +254,3 @@ Attractions
 | 200 | https://dhowcoasttravel.netlify.app/tours/sunset-dhow-cruise/ | Sunset Dhow Cruise | Dhow Coast Travels | 1 |
 | 200 | https://dhowcoasttravel.netlify.app/tours/village-community-tour/ | Village & Community Tour | Dhow Coast Travels | 1 |
 | 200 | https://dhowcoasttravel.netlify.app/tours/zanzibar-essentials-3day/ | Zanzibar Essentials 3-Day Pass | Dhow Coast Travels | 1 |
-| 200 | https://dhowcoasttravel.netlify.app/transfers/ | Zanzibar Airport Transfers | Dhow Coast Travels | 9 |
-| 200 | https://dhowcoasttravel.netlify.app/travel-guide/ | Ultimate Zanzibar Travel Guide | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/tribes-culture/ | Tribes & Culture of Tanzania | Dhow Coast Travels | 0 |
-| 200 | https://dhowcoasttravel.netlify.app/zanzibar-cultural-experiences/ | Zanzibar Cultural Experiences | Dhow Coast Travels | 0 |
