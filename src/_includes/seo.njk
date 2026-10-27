@@ -13,7 +13,7 @@
   {% set ogImage = "/images/og-image.png" %}
 {% endif %}
 
-{% set SITE_URL = site.url | default("https://dhowcoasttravel.netlify.app") %}
+{% set SITE_URL = site.url | default("https://dhowcoasttravel.netlify.app") | replace("http://", "https://") %}
 
 <title>{{ pageTitle }}</title>
 <meta name="description" content="{{ pageDesc }}">

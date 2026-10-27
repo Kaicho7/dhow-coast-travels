@@ -9,13 +9,8 @@ permalink: "/tours/stone-town-spice-prison-combo/index.html"
 <main class="tour-detail">
   <section class="tour-hero" style="background: linear-gradient(135deg, var(--dct-ocean) 0%, var(--dct-palm) 100%);">
     <div class="tour-hero-content">
-      {% set tourSlug = "stone-town-spice-prison-combo" %}
-{% set slugMap = __slugMap %}
-{% if slugMap[tourSlug] %}
-      <img src="/images/{{ slugMap[tourSlug] }}" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
-{% else %}
-      <img src="/images/default-tour-hero.jpg" alt="{{ page.title | replace(' ', ' ') }} — Zanzibar tour" class="tour-hero-image" loading="lazy">
-{% endif %}
+      {% set featured = page.inputPath | featuredImage %}
+      <img src="/images/{{ featured.featuredImage }}" alt="{{ featured.featuredAlt or page.title }}" class="tour-hero-image" loading="lazy">
 
       <span class="card-badge badge-cultural">CUL — Cultural Tour</span>
       <h1>Stone Town + Spice Farm + Prison Island combo</h1>

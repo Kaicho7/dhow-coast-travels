@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
   // Load tours.json using fs
   const fs = require("fs");
   const path = require("path");
+  const slugify = require("slugify");
   let toursData = {};
   try {
     toursData = JSON.parse(fs.readFileSync(path.join("./", "_data", "tours.json"), "utf8"));
@@ -221,33 +222,53 @@ module.exports = function(eleventyConfig) {
     return p;
   }
 
-  // Add filter to get featured image for a page
+  // Add filter to get featured image for a page - prioritizes metadataIndex over slugMap
+  // Ensures consistent alt text for the same image across all tour pages (fixes ALT_VARIES_SAME_IMG)
   eleventyConfig.addNunjucksFilter("featuredImage", function(inputPath) {
     let featuredImage = "default-tour-hero.jpg";
     let featuredAlt = "";
 
     const tourPath = normalizePath(inputPath);
 
+    // Extract slug from the tour path (e.g., "stone-town-walking-tour" from "pages/tours/stone-town-walking-tour.njk")
+    let slug = "";
     if (tourPath.startsWith("pages/tours/")) {
-      const slug = tourPath.replace("pages/tours/", "").replace(/\.(njk|md)$/, "");
+      slug = tourPath.replace("pages/tours/", "").replace(/\.(njk|md)$/, "");
+    }
+
+    // Primary path: Look up slugMap to get the image filename, then metadataIndex for alt_text
+    // This ensures consistent alt text per image file across all pages
+    if (slug && slugMap[slug]) {
       const mapSlug = slugMap[slug];
-      if (mapSlug && metadataIndex[mapSlug]) {
-        featuredImage = mapSlug;
-        featuredAlt = metadataIndex[mapSlug].alt_text || "";
-      } else if (mapSlug) {
-        featuredImage = mapSlug;
-      }
-    } else if (slugMap[tourPath]) {
-      const mapSlug = slugMap[tourPath];
       if (metadataIndex[mapSlug]) {
-        featuredImage = mapSlug;
+        featuredImage = metadataIndex[mapSlug].file || mapSlug;
         featuredAlt = metadataIndex[mapSlug].alt_text || "";
       } else {
         featuredImage = mapSlug;
+        featuredAlt = "";
       }
     }
 
-    return { featuredImage, featuredAlt };
+    // Fallback: Try direct metadataIndex lookup by tourPath if slugMap doesn't have entry
+    if (!featuredImage && tourPath) {
+      const directKey = Object.keys(metadataIndex).find(k => 
+        k === tourPath || k.includes(tourPath) || tourPath.includes(k)
+      );
+      if (directKey && metadataIndex[directKey]) {
+        featuredImage = metadataIndex[directKey].file || "";
+        featuredAlt = metadataIndex[directKey].alt_text || "";
+      }
+    }
+
+    // Final fallback: use default
+    if (!featuredImage) {
+      featuredImage = "default-tour-hero.jpg";
+    }
+    if (!featuredAlt) {
+      featuredAlt = "";
+    }
+
+    return { featuredImage: featuredImage || "default-tour-hero.jpg", featuredAlt: featuredAlt || "" };
   });
 
   // Add filter to get intent for a page

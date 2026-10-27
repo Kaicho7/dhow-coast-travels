@@ -95,9 +95,22 @@ permalink: "/index.html"
         {% for tour in featured %}
           <article class="card featured-card reveal" data-category="{{ tour.category }}">
             <div class="card-image" style="position:relative;">
-              {% if __slugMap[tour.seo_slug] %}
-                <img src="/images/{{ __slugMap[tour.seo_slug] }}" alt="{{ tour.title }} — Zanzibar" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+              {% set tourSlug = tour.seo_slug %}
+              {% if tourSlug and __slugMap[tourSlug] %}
+                {% set mapSlug = __slugMap[tourSlug] %}
+                {% set meta = __metadataIndex[mapSlug] %}
+                {% if meta %}
+                  {% set imgFile = meta.file if meta.file else mapSlug %}
+                  {% set imgAlt = meta.alt_text if meta.alt_text else tour.title %}
+                  <img src="/images/{{ imgFile }}" alt="{{ imgAlt }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                {% else %}
+                  <img src="/images/{{ mapSlug }}" alt="{{ tour.title }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
+                {% endif %}
+              {% else %}
+                <img src="/images/default-tour-hero.jpg" alt="{{ tour.title }}" loading="lazy" style="width:100%;height:100%;object-fit:cover;">
               {% endif %}
+            </div>
+            <button class="card-favorite" aria-label="Add to favorites">♡</button>
               <button class="card-favorite" aria-label="Add to favorites">♡</button>
             </div>
             <div class="card-content">

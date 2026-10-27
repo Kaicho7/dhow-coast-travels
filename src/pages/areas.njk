@@ -80,7 +80,7 @@ permalink: "/areas/index.html"
         {% for zone in areas.zones %}
           <article class="card area-card reveal">
             <div class="card-image" style="position:relative;">
-              <img src="/images/{{ __zoneImage[zone.name] or 'excursions.png' }}" alt="{{ zone.name }} — Zanzibar" loading="lazy">
+              <img src="/images/{{ __zoneImage[zone.name] or 'excursions.png' }}" alt="{{ zone.name }}" loading="lazy">
             </div>
 
             <div class="card-content">
@@ -93,7 +93,7 @@ permalink: "/areas/index.html"
                   {% if tour_obj %}<span class="card-badge badge-{{ tour_obj.category | lower }}">{{ tour_obj.category }}</span>{% endif %}
                 {% endfor %}
               </div>
-              <p class="card-meta" style="margin-top: 0.75rem; font-size: 0.8rem;">{{ zone.hotel_count }} hotels · {{ zone.attraction_count }} attractions · {{ zone.tours | length }} recommended tours</p>
+              <p class="card-meta" style="margin-top: 0.75rem; font-size: 0.8rem;">{{ zone.hotel_count }}{% if zone.hotel_count == 1 %} hotel{% else %} hotels{% endif %} · {{ zone.attraction_count }}{% if zone.attraction_count == 1 %} attraction{% else %} attractions{% endif %} · {{ zone.tours | length }}{% if zone.tours | length == 1 %} recommended tour{% else %} recommended tours{% endif %}</p>
               <div class="card-footer" style="justify-content: flex-start; border-top: none; padding-top: 0;">
                 <a href="/areas/{{ zone.slug }}/" class="btn btn-primary btn-sm">Explore {{ zone.name }} →</a>
               </div>
