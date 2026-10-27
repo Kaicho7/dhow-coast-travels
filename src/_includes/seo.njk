@@ -1,5 +1,6 @@
-{% set pageTitle = title | default("Dhow Coast Travels – Licensed Zanzibar Tour Operator") %}
-{% set pageDesc = description | default("Book Zanzibar tours, airport transfers, and packages with Dhow Coast Travels. Transparent pricing, marine fees included, WhatsApp-first booking. Stone Town based.") %}
+{% set computedTitle = title or (page.fileSlug | replace("-", " ") | capitalize) %}
+{% set pageTitle = (computedTitle + " | Dhow Coast Travels") if (computedTitle and not computedTitle.includes("Dhow Coast Travels")) else (title | default("Zanzibar Tours & Transfers | Dhow Coast Travels")) %}
+{% set pageDesc = description | default("Book " + computedTitle + " with Dhow Coast Travels in Zanzibar. Clear pricing, verified local guides, and fast WhatsApp booking.") %}
 
 {% set featured = page.inputPath | featuredImage %}
 {% if featured.featuredImage != "default-tour-hero.jpg" %}
