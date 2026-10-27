@@ -6,7 +6,6 @@
 <url><loc>https://dhowcoasttravel.netlify.app/blog/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://dhowcoasttravel.netlify.app/about/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 <url><loc>https://dhowcoasttravel.netlify.app/safaris/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
-<url><loc>https://dhowcoasttravel.netlify.app/tours/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://dhowcoasttravel.netlify.app/packages/zanzibar-essentials-3day/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://dhowcoasttravel.netlify.app/travel-guide/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://dhowcoasttravel.netlify.app/tribes-culture/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -61,4 +60,5 @@
 <url><loc>https://dhowcoasttravel.netlify.app/areas/stone-town/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://dhowcoasttravel.netlify.app/areas/wambaa-gulf/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 <url><loc>https://dhowcoasttravel.netlify.app/hotels/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+<url><loc>https://dhowcoasttravel.netlify.app/tours/</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 </urlset>
