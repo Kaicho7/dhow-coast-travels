@@ -166,8 +166,27 @@ eleventyConfig.addFilter("attractionImg", (name, category) =>
 attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCategoryArrays["Attraction"]));
 
   // Add filter to get descriptive attraction type label (fixes CUL CUL CUL)
-  eleventyConfig.addFilter("attractionTypeLabel", (type) =>
-    attractionTypeLabels[type] || type || "Attraction");
+  eleventyConfig.addFilter("attractionTypeLabel", (type) => {
+    const label = attractionTypeLabels[type.toLowerCase()] || attractionTypeLabels[type] || type || "Attraction";
+    return label;
+  });
+
+// Map attraction type to badge class prefix
+  eleventyConfig.addFilter("attractionBadgeClass", (type) => {
+    const label = attractionTypeLabels[type.toLowerCase()] || attractionTypeLabels[type] || (type || "").toLowerCase();
+    // Map labels to badge class prefixes
+    const badgeMap = {
+      cultural: "cultural",
+      diving: "diving",
+      dining: "dining",
+      "water activities": "water-activities",
+      "ocean & adventure": "ocean-adventure",
+      nature: "nature",
+      safari: "safari",
+      package: "package",
+    };
+    return badgeMap[label] || "cultural";
+  });
 
   // Map attraction type to descriptive label (fixes CUL CUL CUL: shows 'Cultural' instead of 'CUL/Attraction')
   const attractionTypeLabels = {

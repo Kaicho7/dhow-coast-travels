@@ -28,7 +28,7 @@ permalink: "/hotels/index.html"
         <div class="card-content">
           <span class="card-badge badge-{{ hotel.tier | lower | replace('upper-', '') }}">{{ hotel.tier | capitalize }}</span>
           <h3 class="card-title"><a href="{{ hotel.website }}" target="_blank" rel="noopener">{{ hotel.name }}</a></h3>
-          <p class="card-meta">{{ hotel.zone }}{% if hotel.zone %}, {% endif %}{{ hotel.island }} • {{ hotel.star_rating or 'Ungraded' }}</p>
+          <p class="card-meta">{{ hotel.zone }}{% if hotel.zone %}, {% endif %}{{ hotel.island }}{% if hotel.star_rating %} • {{ hotel.star_rating }}{% endif %}</p>
           {% if hotel.category %}<p class="card-description">{{ hotel.category }}</p>{% endif %}
           <div class="card-footer">
             <span class="card-price">{{ hotel.price_range or 'Contact for rates' }}</span>
