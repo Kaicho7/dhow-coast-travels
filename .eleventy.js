@@ -162,10 +162,33 @@ module.exports = function(eleventyConfig) {
     "Attraction": ["stone-town-zanzibar-aerial-coastline-view.jpg","zanzibar-market-scene-local-life.jpg","maasai-herder-traditional-village-zanzibar.jpg"]
   };
   function hashPick(str, arr) { let h=0; const st=String(str||""); for (let i=0;i<st.length;i++) h=(h*31+st.charCodeAt(i))>>>0; return arr[h%arr.length]; }
-  eleventyConfig.addFilter("attractionImg", (name, category) =>
-    attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCategoryArrays["Attraction"]));
+eleventyConfig.addFilter("attractionImg", (name, category) =>
+attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCategoryArrays["Attraction"]));
 
-  // Map an attraction/hotel zone (free text) → zoneImage pools with rotation
+  // Add filter to get descriptive attraction type label (fixes CUL CUL CUL)
+  eleventyConfig.addFilter("attractionTypeLabel", (type) =>
+    attractionTypeLabels[type] || type || "Attraction");
+
+  // Map attraction type to descriptive label (fixes CUL CUL CUL: shows 'Cultural' instead of 'CUL/Attraction')
+  const attractionTypeLabels = {
+    "attraction": "Cultural",
+    "attractions": "Cultural",
+    "dive center": "Diving",
+    "restaurant": "Dining",
+    "water sports": "Water Activities",
+    "CUL": "Cultural",
+    "cul": "Cultural",
+    "MAR": "Ocean & Adventure",
+    "mar": "Ocean & Adventure",
+    "NAT": "Nature",
+    "nat": "Nature",
+    "SAF": "Safari",
+    "saf": "Safari",
+    "PKG": "Package",
+    "pkg": "Package"
+  };
+
+  // Map attraction/hotel zone (free text) → zoneImage pools with rotation
   const zoneAliases = {
     "stone town": "Stone Town", "stonetown": "Stone Town", "korwe": "Stone Town",
     "bungu": "Stone Town", "nungw": "Nungwi", "kendw": "Kendwa", "paje": "Paje", "jamb": "Jambiani",
@@ -269,6 +292,13 @@ module.exports = function(eleventyConfig) {
     }
 
     return { featuredImage: featuredImage || "default-tour-hero.jpg", featuredAlt: featuredAlt || "" };
+  });
+
+  // Add filter to get hero image with Netlify Image CDN wrapper (fixes IMG_BIG)
+  eleventyConfig.addNunjucksFilter("cdnImage", function(inputPath) {
+    const result = featuredImage(inputPath);
+    const cdnUrl = `/.netlify/images?url=${encodeURIComponent(result.featuredImage || "default-tour-hero.jpg")}&fm=webp&q=85`;
+    return cdnUrl;
   });
 
   // Add filter to get intent for a page

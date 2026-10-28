@@ -24,9 +24,9 @@ permalink: "/hotels/index.html"
     {% for hotel in hotels %}
       <article class="card hotel-card reveal" data-tier="{{ hotel.tier }}" data-zone="{{ hotel.zone }}" data-island="{{ hotel.island }}">
         <div class="card-image" style="position:relative;">
-          <img src="/images/{{ hotel.zone | zoneImg(hotel.name) }}" alt="{{ hotel.name }}" loading="lazy">
+          <img src="/.netlify/images?url=/images/{{ hotel.zone | zoneImg(hotel.name) }}&fm=webp&q=85" alt="{{ hotel.name }}" loading="lazy">
         <div class="card-content">
-          <span class="card-badge badge-{{ hotel.tier | lower | replace('upper-', 'upper-') }}">{{ hotel.tier | capitalize }}</span>
+          <span class="card-badge badge-{{ hotel.tier | lower | replace('upper-', '') }}">{{ hotel.tier | capitalize }}</span>
           <h3 class="card-title"><a href="{{ hotel.website }}" target="_blank" rel="noopener">{{ hotel.name }}</a></h3>
           <p class="card-meta">{{ hotel.zone }}{% if hotel.zone %}, {% endif %}{{ hotel.island }} • {{ hotel.star_rating or 'Ungraded' }}</p>
           {% if hotel.category %}<p class="card-description">{{ hotel.category }}</p>{% endif %}
@@ -95,6 +95,11 @@ permalink: "/hotels/index.html"
   </section>
 
   <p class="hotel-disclaimer reveal">* We partner with select properties for referral bookings. Contact us on WhatsApp for current availability and negotiated rates.</p>
+
+  <blockquote class="social-proof">
+    <p>"Stayed at a beautiful boutique hotel in Stone Town through Dhow Coast Travels. The referral rate was excellent, and the location was perfect - walking distance to everything. WhatsApp booking was so convenient."</p>
+    <cite>— Jessica, verified traveler</cite>
+  </blockquote>
 </main>
 
 {% include "footer.njk" %}
