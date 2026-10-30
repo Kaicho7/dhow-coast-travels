@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Static tourism website for Zanzibar with SEO and direct booking",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy && node scripts/normalize_img_alt.js",
     "start": "eleventy --serve"
   },
   "devDependencies": {

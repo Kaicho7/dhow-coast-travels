@@ -2,13 +2,12 @@
   publish = "dist"
   command = "npm install && npm run build"
 
-# SPA fallback: rewrite unknown routes to index.html
+# 404 fallback: unknown routes serve the branded 404 page with real 404 status
 # force=false (default) ensures static files are served first
 [[redirects]]
   from = "/*"
-  to = "/index.html"
-  status = 200
-  force = false
+  to = "/404.html"
+  status = 404
 
 [functions]
   directory = "netlify/functions"
