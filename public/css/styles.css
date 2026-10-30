@@ -278,19 +278,21 @@ p { margin-bottom: 1rem; }
   background: radial-gradient(ellipse at 30% 20%, rgba(232, 168, 23, 0.15) 0%, transparent 50%),
               radial-gradient(ellipse at 70% 80%, rgba(30, 122, 58, 0.15) 0%, transparent 50%);
 }
-.hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 4rem 1.5rem; }
+.hero-content { position: relative; z-index: 2; text-align: center; max-width: 900px; padding: 6rem 1.5rem 4.5rem; }
 .hero-tagline {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   background: rgba(255,255,255,0.1);
   backdrop-filter: blur(10px);
-  padding: 0.5rem 1.25rem;
+  padding: 0.6rem 1.5rem;
   border-radius: 50px;
   font-size: 0.875rem;
   font-weight: 500;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.25rem;
   border: 1px solid rgba(255,255,255,0.15);
+  letter-spacing: 0.04em;
+  line-height: 1.6;
 }
 .hero-tagline span { color: var(--dct-spice); }
 .hero h1 {
@@ -636,7 +638,10 @@ p { margin-bottom: 1rem; }
   inset: 0;
   background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 36v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 6V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-.tour-hero-content { position: relative; z-index: 2; max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; width: 100%; }
+.tour-hero-content { position: static; max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; width: 100%; }
+.tour-hero-content > * { position: relative; z-index: 2; }
+.tour-hero-image { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0; }
+.tour-hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.55) 100%); z-index: 1; }
 .tour-hero-meta { display: flex; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem; opacity: 0.9; }
 .tour-hero-meta span { display: flex; align-items: center; gap: 0.4rem; background: rgba(255,255,255,0.15); padding: 0.4rem 1rem; border-radius: 50px; backdrop-filter: blur(10px); }
 .tour-hero h1 { max-width: 800px; }
@@ -973,10 +978,12 @@ p { margin-bottom: 1rem; }
 .page-header {
   background: var(--dct-charcoal);
   color: var(--dct-white);
-  padding: 5rem 1.5rem 3rem;
+  padding: 6.5rem 1.5rem 3.5rem;
   margin-top: 80px;
   text-align: center;
 }
+.page-header h1 { margin-bottom: 1.25rem; }
+.page-header p { max-width: 780px; margin: 0 auto 1.5rem; line-height: 1.75; }
 .page-header h1 { color: var(--dct-white); margin-bottom: 1rem; }
 .page-header p { color: rgba(255,255,255,0.7); max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
 

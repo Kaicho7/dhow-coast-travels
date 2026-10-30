@@ -24,7 +24,7 @@ permalink: "/hotels/index.html"
     {% for hotel in hotels %}
       <article class="card hotel-card reveal" data-tier="{{ hotel.tier }}" data-zone="{{ hotel.zone }}" data-island="{{ hotel.island }}">
         <div class="card-image" style="position:relative;">
-          <img src="/.netlify/images?url=/images/{{ hotel.zone | zoneImg(hotel.name) }}&fm=webp&q=85" alt="{{ hotel.name }}" loading="lazy">
+          <img src="/images/{{ hotel.zone | zoneImg(hotel.name) }}" alt="{{ hotel.name }}" loading="lazy">
         <div class="card-content">
           <span class="card-badge badge-{{ hotel.tier | lower | replace('upper-', '') }}">{{ hotel.tier | capitalize }}</span>
           <h3 class="card-title"><a href="{{ hotel.website }}" target="_blank" rel="noopener">{{ hotel.name }}</a></h3>
@@ -56,7 +56,7 @@ permalink: "/hotels/index.html"
       <div class="area-quick-picks">
         <article class="quick-pick reveal">
           <div class="quick-pick-image">
-            <img src="/images/nungwi-beach.jpg" alt="Nungwi and Kendwa — north-coast beach, nightlife and watersports" loading="lazy">
+            <img src="/images/nungwi-beach-aerial-view-resorts-coastline.jpg" alt="Nungwi and Kendwa — north-coast beach, nightlife and watersports" loading="lazy">
           </div>
           <div class="quick-pick-content">
             <h3>Nungwi & Kendwa — Nightlife & Watersports</h3>
@@ -74,7 +74,7 @@ permalink: "/hotels/index.html"
         </article>
         <article class="quick-pick reveal">
           <div class="quick-pick-image">
-            <img src="/images/packing-beach.jpg" alt="Stone Town — carved wooden door, UNESCO World Heritage" loading="lazy">
+            <img src="/images/packing-beach.jpg" alt="Beach packing essentials — sunscreen, hat and sunglasses for a Zanzibar trip" loading="lazy">
           </div>
           <div class="quick-pick-content">
             <h3>Stone Town — Culture & History</h3>

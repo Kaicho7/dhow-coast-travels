@@ -2,17 +2,17 @@
   {
     "id": "TRF-01",
     "slug": "airport-transfer-znz-to-stone-town",
-    "title": "Airport transfer \u2014 ZNZ to Stone Town",
+    "title": "Zanzibar Airport Transfer — ZNZ to Stone Town hotel",
     "description": "",
-    "route": "Abeid Amani Karume International Airport \u2192 Stone Town",
-    "duration": "10\u201320 min",
+    "route": "Abeid Amani Karume International Airport → Stone Town",
+    "duration": "10–20 min",
     "price": {
       "min": 35.0,
       "max": 40.0,
       "basis": "per private vehicle up to 4 pax",
-      "display": "$35\u2013$40"
+      "display": "$35–$40"
     },
-    "price_display": "$35\u2013$40",
+    "price_display": "$35–$40",
     "includes": [
       "Meet & greet, flight tracking, waiting, water, luggage help"
     ],
@@ -22,17 +22,17 @@
   {
     "id": "TRF-02",
     "slug": "airport-transfer-znz-to-pajejambiani",
-    "title": "Airport transfer \u2014 ZNZ to Paje/Jambiani",
+    "title": "Zanzibar Airport Transfer — ZNZ to Paje & Jambiani hotels",
     "description": "",
-    "route": "ZNZ \u2192 Paje/Jambiani",
-    "duration": "55\u201370 min",
+    "route": "ZNZ → Paje/Jambiani",
+    "duration": "55–70 min",
     "price": {
       "min": 45.0,
       "max": 55.0,
       "basis": "per private vehicle up to 4 pax",
-      "display": "$45\u2013$55"
+      "display": "$45–$55"
     },
-    "price_display": "$45\u2013$55",
+    "price_display": "$45–$55",
     "includes": [
       "Meet & greet, flight tracking, waiting, water, luggage help"
     ],
@@ -42,17 +42,17 @@
   {
     "id": "TRF-03",
     "slug": "airport-transfer-znz-to-nungwikendwa",
-    "title": "Airport transfer \u2014 ZNZ to Nungwi/Kendwa",
+    "title": "Zanzibar Airport Transfer — ZNZ to Nungwi & Kendwa hotels",
     "description": "",
-    "route": "ZNZ \u2192 Nungwi/Kendwa",
-    "duration": "70\u201390 min",
+    "route": "ZNZ → Nungwi/Kendwa",
+    "duration": "70–90 min",
     "price": {
       "min": 50.0,
       "max": 60.0,
       "basis": "per private vehicle up to 4 pax",
-      "display": "$50\u2013$60"
+      "display": "$50–$60"
     },
-    "price_display": "$50\u2013$60",
+    "price_display": "$50–$60",
     "includes": [
       "Meet & greet, flight tracking, waiting, water, luggage help"
     ],

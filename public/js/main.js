@@ -36,14 +36,17 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('click', function() {
       var filter = btn.getAttribute('data-filter');
       var section = btn.closest('section');
-      if (!section) return;
-      
+      var scope = section && section.querySelector('.card') ? section
+        : document.querySelector('.cards.tour-grid, .cards-grid.hotel-grid, .cards-grid.attraction-grid') || section;
+      if (!scope) return;
+      section = section || (scope.closest('section') || scope);
+
       section.querySelectorAll('.filter-btn').forEach(function(b) {
         b.classList.remove('active');
       });
       btn.classList.add('active');
 
-      var cards = section.querySelectorAll('.card');
+      var cards = scope.querySelectorAll('.card');
       cards.forEach(function(card) {
         var cardFilter = card.getAttribute('data-category') || card.getAttribute('data-type') || card.getAttribute('data-tier');
         if (filter === 'all' || cardFilter === filter) {

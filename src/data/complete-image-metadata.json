@@ -27,32 +27,6 @@
       ]
     },
     {
-      "file": "nungwi-beach.jpg",
-      "width": 1600,
-      "height": 900,
-      "category": "tourist-landmark",
-      "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — winding alleys, weathered facades, historic limestone buildings",
-      "description": "Nungwi beach image — northern tip of Zanzibar famous for white-sand beaches, turquoise water, traditional dhow building, and vibrant nightlife",
-      "primary_use": "tours/stone-town-walking-tour, travel-guide, gallery",
-      "secondary_use": [
-        "honeymoon-packages",
-        "self-drive"
-      ],
-      "photographer_source": "Unsplash/Pexels/Pixabay royalty-free",
-      "optimization": "webp-format, 85% quality, responsive srcset",
-      "seo_keywords": [
-        "stone town",
-        "zanzibar",
-        "unesco heritage",
-        "swahili architecture",
-        "narrow streets",
-        "historic buildings",
-        "old town",
-        "tanzania"
-      ]
-    },
-    {
       "file": "mnemba-snorkeling.jpg",
       "width": 1920,
       "height": 1080,
@@ -136,7 +110,7 @@
       "height": 900,
       "category": "cultural-activity",
       "subcategory": "swahili-traditions",
-      "alt_text": "Seaweed farming in Paje — local woman in colorful kanga, harvesting seaweed, white sand beach",
+      "alt_text": "Family-safe beach — children swimming, calm waters, parental supervision",
       "description": "Family-safe beach image — calm shallow waters suitable for children, parental supervision recommended",
       "primary_use": "tours/kuza-cave-seaweed, areas/east-zanzibar, travel-guide",
       "secondary_use": [
@@ -265,7 +239,7 @@
       "height": 900,
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — ornate carved door, gold leaf calligraphy, swahili architecture",
+      "alt_text": "Beach packing essentials — sunscreen, hat, sunglasses, water bottle",
       "description": "Beach packing image — essential items for Zanzibar beach trip: sunscreen, hat, sunglasses, water",
       "primary_use": "tours/stone-town-walking-tour, areas/stone-town, travel-guide",
       "secondary_use": [
@@ -3394,7 +3368,7 @@
       "height": 1080,
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — historic architecture, wooden shutters, palm trees, vintage street lamp",
+      "alt_text": "Stone Town historic architecture — palm trees between coral stone buildings",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/stone-town-walking-tour, areas/stone-town, travel-guide",
       "secondary_use": [
@@ -3663,7 +3637,7 @@
       "height": 1080,
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — ornate carved door, gold leaf calligraphy, swahili architecture",
+      "alt_text": "Ornate carved wooden door of a Stone Town heritage house, Zanzibar",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/stone-town-walking-tour, areas/stone-town, travel-guide",
       "secondary_use": [
@@ -4087,7 +4061,7 @@
       "height": 1080,
       "category": "cultural-activity",
       "subcategory": "swahili-traditions",
-      "alt_text": "Seaweed farming in Paje — local woman in colorful kanga, harvesting seaweed, white sand beach",
+      "alt_text": "Seaweed farming in Paje — local woman in colourful kanga harvesting, shallow ocean",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/kuza-cave-seaweed, areas/east-zanzibar, travel-guide",
       "secondary_use": [
@@ -4178,7 +4152,7 @@
       "height": 1080,
       "category": "beach-location",
       "subcategory": "east-zanzibar",
-      "alt_text": "Paje beach — white sand, leaning palm trees, women in traditional kanga walking by turquoise ocean",
+      "alt_text": "Women walking along Paje beach under leaning palm trees, Zanzibar",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "home-hero, areas/east-zanzibar, travel-guide",
       "secondary_use": [
@@ -4209,7 +4183,7 @@
       "height": 1080,
       "category": "beach-location",
       "subcategory": "east-zanzibar",
-      "alt_text": "Paje beach — white sand, leaning palm trees, women in traditional kanga walking by turquoise ocean",
+      "alt_text": "Women walking along Paje beach — second view with palm trees, Zanzibar",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "home-hero, areas/east-zanzibar, travel-guide",
       "secondary_use": [
@@ -4543,7 +4517,7 @@
       "height": 1080,
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — aerial view, historic architecture, turquoise ocean, traditional boats",
+      "alt_text": "Stone Town aerial coastline view — historic waterfront from above",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "home-hero, tours/stone-town-walking-tour, travel-guide",
       "secondary_use": [
@@ -4573,7 +4547,7 @@
       "height": 1080,
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — aerial view, historic architecture, turquoise ocean, traditional boats",
+      "alt_text": "Stone Town aerial coastline view — second angle of the historic waterfront",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "home-hero, tours/stone-town-walking-tour, travel-guide",
       "secondary_use": [
@@ -6355,7 +6329,7 @@
       "height": 1080,
       "category": "marine-activity",
       "subcategory": "snorkeling-diving",
-      "alt_text": "Traditional dhow boat near Mnemba Atoll — turquoise Indian Ocean, white sandbank, clear blue sky",
+      "alt_text": "Traditional dhow boat trip to Mnemba Atoll — third view, turquoise water",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/mnemba-snorkeling, areas/north-zanzibar, gallery",
       "secondary_use": [
@@ -6385,7 +6359,7 @@
       "height": 1080,
       "category": "marine-activity",
       "subcategory": "snorkeling-diving",
-      "alt_text": "Traditional dhow boat near Mnemba Atoll — turquoise Indian Ocean, white sandbank, clear blue sky",
+      "alt_text": "Traditional dhow boat trip to Mnemba Atoll — second view, turquoise water",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/mnemba-snorkeling, areas/north-zanzibar, gallery",
       "secondary_use": [
@@ -6625,7 +6599,7 @@
       "height": 1080,
       "category": "marine-activity",
       "subcategory": "snorkeling-diving",
-      "alt_text": "Mnemba Atoll snorkeling — colorful coral reef, healthy fish population, clear turquoise water",
+      "alt_text": "Mnemba Atoll snorkeling — tropical fish over the coral reef, underwater view two",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/mnemba-snorkeling, areas/north-zanzibar, travel-guide",
       "secondary_use": [
@@ -6718,7 +6692,7 @@
       "height": 1080,
       "category": "marine-activity",
       "subcategory": "snorkeling-diving",
-      "alt_text": "Mnemba Atoll snorkeling — colorful coral reef, healthy fish population, clear turquoise water",
+      "alt_text": "Mnemba Atoll snorkeling — tropical fish over the coral reef, underwater view five",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/mnemba-snorkeling, areas/matemwe, gallery",
       "secondary_use": [
@@ -6811,7 +6785,7 @@
       "height": 1080,
       "category": "marine-activity",
       "subcategory": "snorkeling-diving",
-      "alt_text": "Mnemba Atoll snorkeling — colorful coral reef, healthy fish population, clear turquoise water",
+      "alt_text": "Mnemba Atoll snorkeling — tropical fish over the coral reef, underwater view seven",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/mnemba-snorkeling, areas/east-zanzibar, gallery",
       "secondary_use": [
@@ -8174,7 +8148,7 @@
       "height": 1080,
       "category": "cultural-activity",
       "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — weathered wooden door, coral stone wall, historic architecture",
+      "alt_text": "Weathered wooden door on an aged coral wall in Stone Town",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/stone-town-walking-tour, travel-guide, gallery",
       "secondary_use": [
@@ -8204,7 +8178,7 @@
       "height": 1080,
       "category": "cultural-activity",
       "subcategory": "unesco-heritage",
-      "alt_text": "Stone Town UNESCO World Heritage site — weathered wooden door, coral stone wall, historic architecture",
+      "alt_text": "Weathered wooden door on an aged coral wall in Stone Town — second angle",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "tours/stone-town-walking-tour, travel-guide, gallery",
       "secondary_use": [
@@ -9104,7 +9078,7 @@
       "height": 1080,
       "category": "family-activity",
       "subcategory": "safe-beach",
-      "alt_text": "Family-safe beach — children swimming, calm waters, parental supervision",
+      "alt_text": "Children swimming in shallows at Stone Town beach — boats and buildings behind, Zanzibar",
       "description": "Professional Zanzibar tourism stock photo — beach location theme showcasing the beauty of Zanzibar archipelago, Unguja and Pemba islands, spice trade heritage, marine conservation, and Swahili culture",
       "primary_use": "travel-guide, areas/stone-town, gallery",
       "secondary_use": [
@@ -11930,7 +11904,7 @@
     },
     {
       "file": "default-tour-hero.jpg",
-      "alt_text": "Stone Town UNESCO World Heritage site — historic architecture, wooden shutters, palm trees, vintage street lamp",
+      "alt_text": "Dhow Coast Travels featured tour — Zanzibar dhow boat at sea (photo)",
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
       "seo_keywords": [
@@ -11948,7 +11922,7 @@
     },
     {
       "file": "default-tour-hero.png",
-      "alt_text": "Stone Town UNESCO World Heritage site — historic coral stone building, wooden shutters, palm trees, vintage street lamp",
+      "alt_text": "Dhow Coast Travels featured tour — Zanzibar dhow boat at sea (graphic)",
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
       "seo_keywords": [
@@ -11966,7 +11940,7 @@
     },
     {
       "file": "stone-town-historic-architecture-palm-trees.png",
-      "alt_text": "Stone Town UNESCO World Heritage site — historic architecture, wooden shutters, palm trees, vintage street lamp",
+      "alt_text": "Stone Town skyline — historic coral stone buildings with palm trees",
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
       "seo_keywords": [
@@ -11984,7 +11958,7 @@
     },
     {
       "file": "og-image.png",
-      "alt_text": "Stone Town UNESCO World Heritage site — historic coral stone building, wooden shutters, palm trees, vintage street lamp",
+      "alt_text": "Dhow Coast Travels — Zanzibar tours, hotels and transfers, social share image",
       "category": "tourist-landmark",
       "subcategory": "unesco-heritage",
       "seo_keywords": [
@@ -11999,6 +11973,10 @@
       ],
       "primary_use": "tours/stone-town-walking-tour, areas/stone-town, travel-guide",
       "source": "already-ok"
+    },
+    {
+      "file": "stone-town-historic-facades.jpg",
+      "alt_text": "Stone Town historic facades — weathered coral stone buildings, winding alley, Zanzibar"
     }
   ],
   "metadata": {

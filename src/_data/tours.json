@@ -173,7 +173,8 @@
     ],
     "itinerary": [],
     "has_itinerary": false,
-    "featured_image": "stone-town-feature.jpg"
+    "featured_image": "zanzibar-stone-town-nakupenda-dhow-boats.jpg",
+    "featuredImage": "zanzibar-stone-town-nakupenda-dhow-boats.jpg"
   },
   {
     "id": "MAR-01",
@@ -218,7 +219,7 @@
     ],
     "itinerary": [],
     "has_itinerary": false,
-    "featured_image": "mnemba-snorkeling.jpg"
+    "featured_image": "mnemba-atoll-snorkeling-blue-tang-fish.jpg"
   },
   {
     "id": "MAR-02",
@@ -352,7 +353,7 @@
     ],
     "itinerary": [],
     "has_itinerary": false,
-    "featured_image": "mnemba-snorkeling.jpg"
+    "featured_image": "nakupenda-sandbank-zanzibar-boat-trip-stone-town.jpg"
   },
   {
     "id": "MAR-05",
@@ -397,7 +398,7 @@
     ],
     "itinerary": [],
     "has_itinerary": false,
-    "featured_image": "mnemba-snorkeling.jpg"
+    "featured_image": "prison-island-wooden-walkway-sandbank-boats.jpg"
   },
   {
     "id": "MAR-06",
@@ -574,7 +575,7 @@
     ],
     "itinerary": [],
     "has_itinerary": false,
-    "featured_image": "packing-beach.jpg"
+    "featured_image": "zanzibar-jambiani-beach-village-life-women.jpg"
   },
   {
     "id": "SAF-01",
@@ -618,7 +619,7 @@
     ],
     "itinerary": [],
     "has_itinerary": false,
-    "featured_image": "safari-lion-and-safari-vehicle.jpg"
+    "featured_image": "mikumi-safari-lions-resting-savannah.jpg"
   },
   {
     "id": "SAF-02",
@@ -662,7 +663,7 @@
     ],
     "itinerary": [],
     "has_itinerary": false,
-    "featured_image": "safari-lion-and-safari-vehicle.jpg"
+    "featured_image": "giraffe-in-savannah-mikumi-safari.jpg"
   },
   {
     "id": "PKG-01",
