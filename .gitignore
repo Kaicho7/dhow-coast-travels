@@ -1,8 +1,8 @@
 node_modules/
 .cache/
-public/
 .DS_Store
 .env
 .aider*
 dist/
+public/images/*.bak
 public/images/*.bak
