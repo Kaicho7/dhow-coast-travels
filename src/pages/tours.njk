@@ -29,7 +29,7 @@ permalink: "/tours/index.html"
           <img src="/images/{{ imgFile }}" alt="{{ tour.title }}" class="tour-card-image" loading="lazy">
         </div>
         <div class="card-content">
-          <span class="tour-category">{{ tour.category }}</span>
+          <span class="tour-category">{{ tour.category | attractionTypeLabel }}</span>
           <h3><a href="/tours/{{ tour.seo_slug }}/">{{ tour.title }}</a></h3>
           <p class="tour-meta">{{ tour.duration }} • {{ tour.location }}</p>
           <p class="tour-description">{{ tour.short_description }}</p>

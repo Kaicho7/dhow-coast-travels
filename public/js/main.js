@@ -80,6 +80,36 @@ document.addEventListener('DOMContentLoaded', function () {
     revealObserver.observe(el);
   });
 
+
+  // Contact form -> WhatsApp (works on any static host)
+  var inquiryForm = document.querySelector('form.contact-form');
+  if (inquiryForm) {
+    inquiryForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var f = inquiryForm;
+      function field(name) {
+        var el = f.elements[name];
+        if (!el) return '-';
+        if (el.tagName === 'SELECT') {
+          return el.options[el.selectedIndex] ? el.options[el.selectedIndex].text : '-';
+        }
+        return (el.value || '').trim() || '-';
+      }
+      var msg = [
+        'Hello Dhow Coast Travels!',
+        'Name: ' + field('name'),
+        'Email: ' + field('email'),
+        'WhatsApp: ' + field('phone'),
+        'Travel dates: ' + field('travel_dates'),
+        'Interests: ' + field('interests'),
+        'Group size: ' + field('group_size'),
+        'Message: ' + field('message')
+      ].join('\n');
+      window.open('https://wa.me/255672450934?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      window.location.href = '/thank-you/';
+    });
+  }
+
   // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     anchor.addEventListener('click', function(e) {

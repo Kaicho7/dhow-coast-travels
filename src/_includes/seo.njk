@@ -6,12 +6,7 @@
 {% set pageTitle = (computedTitle + " | Dhow Coast Travels") if (computedTitle and not computedTitle.includes("Dhow Coast Travels")) else (title | default("Zanzibar Tours & Transfers | Dhow Coast Travels")) %}
 {% set pageDesc = description | default("Book " + computedTitle + " with Dhow Coast Travels in Zanzibar. Clear pricing, verified local guides, and fast WhatsApp booking.") %}
 
-{% set featured = page.inputPath | featuredImage %}
-{% if featured.featuredImage != "default-tour-hero.jpg" %}
-  {% set ogImage = "/images/" + featured.featuredImage %}
-{% else %}
-  {% set ogImage = "/images/og-image.png" %}
-{% endif %}
+{% set ogImage = page.inputPath | rawImage %}
 
 {% set SITE_URL = site.url | default("https://dhowcoasttravel.netlify.app") | replace("http://", "https://") %}
 

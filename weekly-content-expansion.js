@@ -106,7 +106,7 @@ function loadTopicHistory() {
     return { usedWeeks: [], lastUpdated: new Date().toISOString() };
   } catch (error) {
     console.error('Error loading topic history:', error.message);
-    return { usedWeeks: [], lastUpdated: new Date().toISOISOString() };
+    return { usedWeeks: [], lastUpdated: new Date().toISOString() };
   }
 }
 

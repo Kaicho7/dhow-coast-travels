@@ -2,11 +2,11 @@ const fs = require('fs');
 const path = require('path');
 
 // Read existing image-metadata.json
-const existing = JSON.parse(fs.readFileSync('image-metadata.json', 'utf8'));
+const existing = JSON.parse(fs.readFileSync(path.join(__dirname, 'src', 'data', 'image-metadata.json'), 'utf8'));
 // Read personal photo metadata
-const personal = JSON.parse(fs.readFileSync('personal-photo-metadata.json', 'utf8'));
+const personal = JSON.parse(fs.readFileSync(path.join(__dirname, 'src', 'data', 'personal-photo-metadata.json'), 'utf8'));
 // Read stock photo metadata
-const stock = JSON.parse(fs.readFileSync('stock-photo-metadata.json', 'utf8'));
+const stock = JSON.parse(fs.readFileSync(path.join(__dirname, 'src', 'data', 'stock-photo-metadata.json'), 'utf8'));
 
 // Combine all images
 const allImages = [

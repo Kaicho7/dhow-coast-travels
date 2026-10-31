@@ -5,6 +5,11 @@
 # 404 fallback: unknown routes serve the branded 404 page with real 404 status
 # force=false (default) ensures static files are served first
 [[redirects]]
+  from = "/pages/thank-you/*"
+  to = "/thank-you/"
+  status = 301
+
+[[redirects]]
   from = "/*"
   to = "/404.html"
   status = 404

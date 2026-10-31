@@ -156,10 +156,10 @@ module.exports = function(eleventyConfig) {
     "Kuza Cave": "zanzibar-jambiani-beach-low-tide-local-children.jpg"
   };
   const attrCategoryArrays = {
-    "Dive Center": ["FB_IMG_1584440677724_optimized.jpg","FB_IMG_1584462337586_optimized.jpg","zanzibar-snorkeling-coral-reef-shallow-water.jpg","mnemba-atoll-snorkeling-blue-tang-fish.jpg","mnemba-atoll-snorkeling-coral-reef-fish-2.jpg","mnemba-atoll-snorkeling-coral-reef-fish-3.jpg","mnemba-atoll-snorkeling-coral-reef-fish-4.jpg","mnemba-atoll-snorkeling-coral-reef-fish-5.jpg","mnemba-atoll-snorkeling-coral-reef-fish-6.jpg","mnemba-atoll-snorkeling-coral-reef-fish-7.jpg","zanzibar-diving-boat-trip.jpg","snorkeling-underwater-boat-ladder.jpg","zanzibar-local-snorkeling-mnemba-atoll-matemwe.jpg","mnemba-atoll-snorkeling-tropical-fish-coral.jpg","mnemba-atoll-snorkeling-green-sea-turtle.jpg"],
-    "Water Sports": ["FB_IMG_1584440677724_optimized.jpg","FB_IMG_1584462337586_optimized.jpg","paje-beach-zanzibar-kitesurfing-indian-ocean.jpg","horse-riding-in-zanzibar-ocean.jpg","quad-biking-zanzibar-countryside.jpg"],
-    "Restaurant": ["FB_IMG_1584393128878-768x510_50ff73b44b7461b5b835dbe14c3a05db_optimized.jpg","FB_IMG_1584465308649_optimized.jpg","the-rock-restaurant-michamvi-pingwe-zanzibar.jpg"],
-    "Attraction": ["FB_IMG_1584391754807_optimized.jpg","FB_IMG_1584461690922_optimized.jpg","zanzibar-stone-town-waterfront-view-from-ocean.jpg","zanzibar-market-scene-local-life.jpg","maasai-herder-traditional-village-zanzibar.jpg"]
+    "Dive Center": ["zanzibar-marine-1.jpg","zanzibar-marine-2.jpg","zanzibar-snorkeling-coral-reef-shallow-water.jpg","mnemba-atoll-snorkeling-blue-tang-fish.jpg","mnemba-atoll-snorkeling-coral-reef-fish-2.jpg","mnemba-atoll-snorkeling-coral-reef-fish-3.jpg","mnemba-atoll-snorkeling-coral-reef-fish-4.jpg","mnemba-atoll-snorkeling-coral-reef-fish-5.jpg","mnemba-atoll-snorkeling-coral-reef-fish-6.jpg","mnemba-atoll-snorkeling-coral-reef-fish-7.jpg","zanzibar-diving-boat-trip.jpg","snorkeling-underwater-boat-ladder.jpg","zanzibar-local-snorkeling-mnemba-atoll-matemwe.jpg","mnemba-atoll-snorkeling-tropical-fish-coral.jpg","mnemba-atoll-snorkeling-green-sea-turtle.jpg"],
+    "Water Sports": ["zanzibar-marine-1.jpg","zanzibar-marine-2.jpg","paje-beach-zanzibar-kitesurfing-indian-ocean.jpg","horse-riding-in-zanzibar-ocean.jpg","quad-biking-zanzibar-countryside.jpg"],
+    "Restaurant": ["zanzibar-food-1.jpg","zanzibar-food-2.jpg","the-rock-restaurant-michamvi-pingwe-zanzibar.jpg"],
+    "Attraction": ["stone-town-culture-1.jpg","stone-town-culture-2.jpg","zanzibar-stone-town-waterfront-view-from-ocean.jpg","zanzibar-market-scene-local-life.jpg","maasai-herder-traditional-village-zanzibar.jpg"]
   };
   function hashPick(str, arr) { let h=0; const st=String(str||""); for (let i=0;i<st.length;i++) h=(h*31+st.charCodeAt(i))>>>0; return arr[h%arr.length]; }
 eleventyConfig.addFilter("attractionImg", (name, category) =>
@@ -240,7 +240,7 @@ attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCate
     for (const [frag, key] of Object.entries(zoneAliases)) if (z.startsWith(frag)) {
       return hashPick(seed || zone, zoneFiles[key] || [zoneImage[key]]);
     }
-    return hashPick(seed || z, ["FB_IMG_1584391824958_optimized.jpg", "FB_IMG_1584392520358-300x300_8aac13b6bacdbf997784a3f84c7ee4c1_optimized.jpg", "zanzibar-northeast-coast-fishing-boats-low-tide.jpg", "zanzibar-kendwa-beach-aerial-dhow-kayak.jpg", "zanzibar-jambiani-beach-village-life-women.jpg", "zanzibar-stone-town-waterfront-view-from-ocean.jpg"]);
+    return hashPick(seed || z, ["zanzibar-beach-1.jpg", "zanzibar-beach-2.jpg", "zanzibar-northeast-coast-fishing-boats-low-tide.jpg", "zanzibar-kendwa-beach-aerial-dhow-kayak.jpg", "zanzibar-jambiani-beach-village-life-women.jpg", "zanzibar-stone-town-waterfront-view-from-ocean.jpg"]);
   });
 
   eleventyConfig.addGlobalData("__intentMap", intentMap);
@@ -264,22 +264,18 @@ attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCate
     return p;
   }
 
-  // Add filter to get featured image for a page - prioritizes metadataIndex over slugMap
-  // Ensures consistent alt text for the same image across all tour pages (fixes ALT_VARIES_SAME_IMG)
-  eleventyConfig.addNunjucksFilter("featuredImage", function(inputPath) {
+  // Standalone featured image lookup (used by both filters)
+  function getFeaturedImage(inputPath) {
     let featuredImage = "default-tour-hero.jpg";
     let featuredAlt = "";
 
     const tourPath = normalizePath(inputPath);
 
-    // Extract slug from the tour path (e.g., "stone-town-walking-tour" from "pages/tours/stone-town-walking-tour.njk")
     let slug = "";
     if (tourPath.startsWith("pages/tours/")) {
       slug = tourPath.replace("pages/tours/", "").replace(/\.(njk|md)$/, "");
     }
 
-    // Primary path: Look up slugMap to get the image filename, then metadataIndex for alt_text
-    // This ensures consistent alt text per image file across all pages
     if (slug && slugMap[slug]) {
       const mapSlug = slugMap[slug];
       if (metadataIndex[mapSlug]) {
@@ -291,7 +287,6 @@ attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCate
       }
     }
 
-    // Fallback: Try direct metadataIndex lookup by tourPath if slugMap doesn't have entry
     if (!featuredImage && tourPath) {
       const directKey = Object.keys(metadataIndex).find(k => 
         k === tourPath || k.includes(tourPath) || tourPath.includes(k)
@@ -302,7 +297,6 @@ attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCate
       }
     }
 
-    // Final fallback: use default
     if (!featuredImage) {
       featuredImage = "default-tour-hero.jpg";
     }
@@ -311,13 +305,25 @@ attractionImage[name] || hashPick(name, attrCategoryArrays[category] || attrCate
     }
 
     return { featuredImage: featuredImage || "default-tour-hero.jpg", featuredAlt: featuredAlt || "" };
+  }
+
+  // Add filter to get featured image for a page - prioritizes metadataIndex over slugMap
+  // Ensures consistent alt text for the same image across all tour pages (fixes ALT_VARIES_SAME_IMG)
+  eleventyConfig.addNunjucksFilter("featuredImage", function(inputPath) {
+    return getFeaturedImage(inputPath);
   });
 
   // Add filter to get hero image with Netlify Image CDN wrapper (fixes IMG_BIG)
   eleventyConfig.addNunjucksFilter("cdnImage", function(inputPath) {
-    const result = featuredImage(inputPath);
+    const result = getFeaturedImage(inputPath);
     const cdnUrl = `/.netlify/images?url=${encodeURIComponent(result.featuredImage || "default-tour-hero.jpg")}&fm=webp&q=85`;
     return cdnUrl;
+  });
+
+  // Add filter to get raw hero image path (for GitHub Pages / non-Netlify hosts)
+  eleventyConfig.addNunjucksFilter("rawImage", function(inputPath) {
+    const result = getFeaturedImage(inputPath);
+    return `/images/${result.featuredImage || "default-tour-hero.jpg"}`;
   });
 
   // Add filter to get intent for a page

@@ -1,5 +1,6 @@
 ---
 title: Thank you — Dhow Coast Travels
+permalink: "/thank-you/index.html"
 ---
 {% include "seo.njk" %}
 {% include "header.njk" %}
@@ -11,9 +12,13 @@ title: Thank you — Dhow Coast Travels
       <p>We've received your request and will get back to you shortly via WhatsApp.</p>
 
       <div class="confirmation-details">
-        <p><strong>Reference ID:</strong> {{ request.id | default("TBD") }}</p>
-        <p><strong>Expected response:</strong> Within 24 hours</p>
+        <p><strong>Fastest reply:</strong> message us on WhatsApp — usually within minutes, 07:00–22:00 EAT.</p>
+        <p><strong>Submitted:</strong> <span id="thank-you-time"></span></p>
       </div>
+      <script>
+        document.getElementById('thank-you-time').textContent =
+          new Date().toLocaleString('en-GB', { dateStyle: 'medium', timeStyle: 'short' });
+      </script>
 
       <a href="https://wa.me/255672450934" class="btn btn-accent btn-block" target="_blank" rel="noopener">
         Contact us on WhatsApp directly
