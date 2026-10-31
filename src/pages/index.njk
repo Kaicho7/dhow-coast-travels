@@ -1,6 +1,6 @@
 ---
 title: "Zanzibar Tours, Transfers & Packages"
-description: "Licensed Zanzibar tour operator for Stone Town walks, spice tours, Safari Blue, dolphin trips, airport transfers and multi-day packages."
+description: "Zanzibar tours, transfers and packages — Stone Town walks, spice tours, Safari Blue, dolphin trips, airport transfers and multi-day itineraries."
 permalink: "/index.html"
 ---
 {% include "seo.njk" %}
@@ -10,16 +10,16 @@ permalink: "/index.html"
   <section class="hero">
     <div class="hero-content">
       <div class="hero-tagline reveal delay-1">
-        <span>✦</span> Licensed ZCT Tour Operator • Transparent Pricing • WhatsApp-First Booking
+        <span>✦</span> Locally Owned in Stone Town • Transparent Pricing • WhatsApp-First Booking
       </div>
-      <h1 class="reveal delay-2">Discover <span class="highlight">Zanzibar</span> with Dhow Coast Travels</h1>
+      <h1 class="reveal delay-2">Zanzibar Tours, Transfers & <span class="highlight">Island Experiences</span></h1>
       <p class="hero-subtitle reveal delay-3">Curated tours, seamless transfers, and multi-day packages. Marine fees included. Stone Town based. <strong>{{ stats.total_tours }} tours, {{ stats.total_hotels }} hotels, {{ stats.total_attractions }} attractions.</strong></p>
       <div class="hero-cta reveal delay-4">
         <a href="/tours/" class="btn btn-primary btn-lg">Browse All Zanzibar Tours</a>
         <a href="https://wa.me/255672450934" target="_blank" rel="noopener" class="btn btn-secondary btn-lg">Chat on WhatsApp</a>
       </div>
       <div class="hero-trust reveal delay-5">
-        <div class="trust-item"><span class="trust-icon">✓</span>Licensed ZCT Operator</div>
+        <div class="trust-item"><span class="trust-icon">✓</span>Small-Group & Private Options</div>
         <div class="trust-item"><span class="trust-icon">💎</span>Marine Fees Included</div>
         <div class="trust-item"><span class="trust-icon">💬</span>WhatsApp-First Booking</div>
         <div class="trust-item"><span class="trust-icon">📍</span>Stone Town Based</div>
@@ -111,8 +111,6 @@ permalink: "/index.html"
               {% endif %}
             </div>
             <button class="card-favorite" aria-label="Add to favorites">♡</button>
-              <button class="card-favorite" aria-label="Add to favorites">♡</button>
-            </div>
             <div class="card-content">
               <span class="card-badge badge-{{ tour.category | lower }}">{{ tour.category }}</span>
               <h3 class="card-title"><a href="/tours/{{ tour.seo_slug }}/">{{ tour.title }}</a></h3>
@@ -120,7 +118,10 @@ permalink: "/index.html"
               <p class="card-description">{{ tour.short_description }}</p>
               <div class="card-footer">
                 <span class="card-price">{{ tour.price.display }} <span class="price-basis">per person</span></span>
-                <a href="/tours/{{ tour.seo_slug }}/" class="btn btn-primary btn-sm">View Details</a>
+                <div class="card-actions">
+                  <a href="/tours/{{ tour.seo_slug }}/" class="btn btn-primary btn-sm">View Details</a>
+                  <a href="https://wa.me/255672450934?text=Hello%20Dhow%20Coast%20Travels%2C%20I%27m%20interested%20in%20{{ tour.title | urlencode }}" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Ask on WhatsApp</a>
+                </div>
               </div>
             </div>
           </article>

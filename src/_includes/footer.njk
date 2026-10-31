@@ -3,7 +3,7 @@
   <div class="footer-top">
     <div class="footer-col">
       <h4>Dhow Coast Travels</h4>
-      <p>Licensed Zanzibar tour operator. WhatsApp-first booking. Transparent pricing with marine fees included. Based in Mbuzini, Magharibi District, Zanzibar.</p>
+      <p>ZCT tour operator — licence application in progress. WhatsApp-first booking. Transparent pricing with marine fees included. Based in Mbuzini, Magharibi District, Zanzibar.</p>
     </div>
     <div class="footer-col">
       <h4>Tours & Experiences</h4>
@@ -29,7 +29,7 @@
       <h4>Contact</h4>
       <p>Mbuzini, Magharibi District, Zanzibar, Tanzania</p>
       <p><a href="https://wa.me/255672450934" target="_blank" rel="noopener">WhatsApp: +255 672 450 934</a></p>
-      <p><a href="mailto:bookings@dhowcoasttravels.com">bookings@dhowcoasttravels.com</a></p>
+      {% if site.contact and site.contact.email %}<p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>{% endif %}
     </div>
   </div>
   <div class="footer-bottom">
@@ -37,5 +37,9 @@
     <p class="disclaimer">Prices shown are planning ranges. Final quote includes marine park fees, guide fees, and transfers. Confirm before booking.</p>
   </div>
 </footer>
+<a class="wa-sticky" href="https://wa.me/255672450934?text=Jambo%21%20I%27d%20like%20help%20planning%20my%20Zanzibar%20trip." target="_blank" rel="noopener">
+  <span class="wa-sticky-icon" aria-hidden="true">💬</span>
+  <span>Chat on WhatsApp</span>
+</a>
 </body>
 </html>
